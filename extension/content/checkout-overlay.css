@@ -1,0 +1,35 @@
+#cc-checkout-pill {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 300px;
+  padding: 10px 12px;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  animation: cc-slide-in 0.25s ease-out;
+}
+@keyframes cc-slide-in {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+#cc-pill-close {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+#cc-pill-close:hover { color: #fff; }
+.cc-pill-main { display: flex; flex-direction: column; gap: 1px; }
+.cc-pill-label { color: #9ca3af; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+.cc-pill-card { font-size: 14px; }
+.cc-pill-sub { color: #d1d5db; font-size: 12px; }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Which card?</h1>
+    <button id="openOptions" title="Settings">⚙</button>
+  </header>
+
+  <section id="lookup">
+    <input id="merchant" type="text" placeholder="Merchant, e.g. Whole Foods" autocomplete="off">
+    <div id="result" class="hidden">
+      <div id="winner"></div>
+      <div id="detail"></div>
+      <ul id="runners"></ul>
+    </div>
+    <p id="noPortfolio" class="hidden warn">
+      No portfolio loaded yet. <button id="goOptions">Import it in Settings</button>
+    </p>
+  </section>
+
+  <section id="bankPanel" class="hidden">
+    <h2 id="bankName"></h2>
+    <p id="bankState"></p>
+    <button id="enrollBtn" class="primary">Enroll all offers</button>
+    <div id="progress" class="hidden"><div id="bar"></div></div>
+    <p id="enrollMsg"></p>
+  </section>
+
+  <footer>
+    <span id="lastRun"></span>
+  </footer>
+
+<script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Card Dashboard Companion — Settings</title>
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+<main>
+  <h1>Card Dashboard Companion</h1>
+  <p class="sub">Everything stays in this browser. No accounts, no servers.</p>
+
+  <section>
+    <h2>Portfolio</h2>
+    <p>The same portfolio JSON the dashboard uses (<code>categories</code> with card/rate, optional <code>offers</code>).</p>
+    <textarea id="portfolioText" rows="8" placeholder='Paste portfolio JSON here, or load a file'></textarea>
+    <div class="row">
+      <input type="file" id="portfolioFile" accept=".json,application/json">
+      <button id="savePortfolio" class="primary">Save portfolio</button>
+    </div>
+    <p id="portfolioStatus" class="status"></p>
+  </section>
+
+  <section>
+    <h2>Banks</h2>
+    <div id="bankToggles"></div>
+    <p class="hint">Bank of America deals are auto-active — nothing to enroll, so it's informational only.</p>
+  </section>
+
+  <section>
+    <h2>Weekly auto-enrollment</h2>
+    <label class="row"><input type="checkbox" id="scheduleEnabled"> Run automatically</label>
+    <div class="row">
+      <label>Day
+        <select id="scheduleDay">
+          <option value="0">Sunday</option><option value="1">Monday</option>
+          <option value="2">Tuesday</option><option value="3">Wednesday</option>
+          <option value="4">Thursday</option><option value="5">Friday</option>
+          <option value="6">Saturday</option>
+        </select>
+      </label>
+      <label>Hour
+        <select id="scheduleHour"></select>
+      </label>
+    </div>
+    <div class="row">
+      <label>Max enrollments per run <input type="number" id="maxPerRun" min="10" max="1000" step="10"></label>
+      <button id="runNow">Run now</button>
+    </div>
+    <p class="hint">Auto-enrollment only runs in bank tabs where you're already signed in. If a bank isn't open, you'll get a reminder instead.</p>
+  </section>
+
+  <section>
+    <h2>Checkout recommendations</h2>
+    <label class="row"><input type="checkbox" id="checkoutEnabled"> Show best-card pill on checkout pages</label>
+    <p class="hint">Needs permission to read shopping pages. Bank pages are never touched by this.</p>
+    <p id="permStatus" class="status"></p>
+  </section>
+
+  <section>
+    <h2>Recent enrollment runs</h2>
+    <ul id="enrollLog"></ul>
+  </section>
+</main>
+<script type="module" src="options.js"></script>
+</body>
+</html>

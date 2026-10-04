@@ -56,6 +56,16 @@ Seams for extension:
 - **Views** — `js/render.js`. Every function takes `doc` first, so views are unit-testable.
 - **Data shapes** — `schemas/portfolio.schema.json`, `schemas/offers.schema.json`.
 
+## Browser extension
+
+`extension/` holds **Card Dashboard Companion** (Manifest V3) — the hands to
+the dashboard's brain: best-card lookup popup, bank-offer auto-enrollment
+(Citi verified live; Amex/Chase from documented flows), a weekly enrollment
+schedule, and an optional checkout-page recommendation pill. Same
+`recommend()` engine, vendored via `tools/sync-shared.sh`. Fully local: no
+accounts, no servers, never touches login forms. See `extension/README.md`.
+Load unpacked from `chrome://extensions` in developer mode.
+
 ## Extending
 
 **Add a data source.** Create `js/my-provider.js`:

@@ -1,0 +1,44 @@
+body {
+  font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1c1c1e;
+  margin: 0;
+  background: #f9fafb;
+}
+main { max-width: 640px; margin: 0 auto; padding: 24px 20px 48px; }
+h1 { font-size: 22px; margin: 0; }
+.sub { color: #6b7280; margin: 4px 0 20px; }
+section {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+h2 { font-size: 16px; margin: 0 0 8px; }
+.hint { color: #6b7280; font-size: 12.5px; }
+.row { display: flex; align-items: center; gap: 10px; margin: 8px 0; flex-wrap: wrap; }
+textarea {
+  width: 100%;
+  font: 12px/1.4 ui-monospace, monospace;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+}
+button.primary {
+  background: #1d4ed8; color: #fff; border: none;
+  border-radius: 8px; padding: 8px 14px; font-size: 13.5px; cursor: pointer;
+}
+button:not(.primary) {
+  border: 1px solid #e5e7eb; background: #fff; border-radius: 8px;
+  padding: 7px 12px; font-size: 13px; cursor: pointer;
+}
+button:disabled { opacity: 0.5; cursor: default; }
+select, input[type="number"] {
+  border: 1px solid #e5e7eb; border-radius: 6px; padding: 6px 8px; font-size: 13.5px;
+}
+.status { font-size: 13px; }
+.status.ok { color: #047857; }
+.status.err { color: #b91c1c; }
+#enrollLog { margin: 8px 0 0; padding-left: 18px; font-size: 13px; }
+#enrollLog li { margin-bottom: 4px; }
+code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }

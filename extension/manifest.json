@@ -1,0 +1,70 @@
+{
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Card Dashboard Companion"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content/enroll.js",
+        "content/banks/_helpers.js",
+        "content/banks/amex.js",
+        "content/banks/chase.js",
+        "content/banks/bofa.js",
+        "content/banks/citi.js"
+      ],
+      "matches": [
+        "*://*.americanexpress.com/*",
+        "*://*.chase.com/*",
+        "*://*.bankofamerica.com/*",
+        "*://*.citi.com/*",
+        "*://online.citi.com/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Auto-enroll bank card offers, track them locally, and get best-card recommendations at checkout. No accounts, no servers, no tracking \u2014 your data never leaves this browser.",
+  "host_permissions": [
+    "*://*.americanexpress.com/*",
+    "*://*.amex.com/*",
+    "*://*.chase.com/*",
+    "*://*.bankofamerica.com/*",
+    "*://*.citi.com/*",
+    "*://online.citi.com/*"
+  ],
+  "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "manifest_version": 3,
+  "minimum_chrome_version": "116",
+  "name": "Card Dashboard Companion",
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "options_page": "options/options.html",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "scripting",
+    "activeTab"
+  ],
+  "version": "0.1.0",
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "vendor/*.js",
+        "content/checkout-overlay.css"
+      ]
+    }
+  ]
+}
