@@ -1,0 +1,9 @@
+# Your real portfolio data — never commit this.
+my-portfolio.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+
+# Node (if you ever add tooling)
+node_modules/

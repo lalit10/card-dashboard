@@ -1,0 +1,257 @@
+// DOM rendering. Every function takes `doc` (default: the global document)
+// so views stay decoupled from data and logic. No fetching, no decisions
+// about *what* to recommend — that lives in recommender.js.
+
+import { escapeHtml } from "./util.js";
+
+export function setText(doc, id, text) {
+  const el = doc.getElementById(id);
+  if (el) el.textContent = text;
+}
+
+// ---- portfolio meta / snapshot -------------------------------------------
+
+export function renderMeta(doc, data, cards) {
+  const meta = data.meta || {};
+  setText(doc, "heroEyebrow", [meta.eyebrow, meta.lastUpdated].filter(Boolean).join(" · "));
+  setText(doc, "page-heading", meta.heroHeading);
+  setText(doc, "heroCopy", meta.heroCopy);
+  setText(doc, "snapshotFees", meta.totalFees);
+  setText(doc, "snapshotFeesNote", meta.feesNote);
+  setText(doc, "snapshotCardCount", String(cards.length));
+  setText(doc, "snapshotMonthly", meta.monthlyTotal);
+  setText(doc, "cardsHeading", (meta.cardsHeading || "Your {n}-card lineup").replace("{n}", String(cards.length)));
+  setText(doc, "benefitsHeading", meta.benefitsHeading);
+  setText(doc, "monthlyTotalValue", meta.monthlyTotal);
+  setText(doc, "monthlyTotalLabel", meta.monthlyTotalLabel);
+
+  const mc = doc.getElementById("monthlyCredits");
+  if (mc)
+    mc.innerHTML = (data.monthlyCredits || [])
+      .map(
+        (c) =>
+          `<li class="benefit-item"><div><strong>${escapeHtml(c.card)} · ${escapeHtml(c.label)}</strong><p>${escapeHtml(c.detail)}</p></div><span class="amount">${escapeHtml(c.amount)}</span></li>`
+      )
+      .join("");
+
+  const pg = doc.getElementById("periodGroups");
+  if (pg)
+    pg.innerHTML = (data.periodCredits || [])
+      .map(
+        (g) =>
+          `<div class="period-group"><h3>${escapeHtml(g.group)}</h3>${(g.items || [])
+            .map(
+              (i) =>
+                `<div class="period-card"><span class="when">${escapeHtml(i.when)}</span><strong>${escapeHtml(i.title)}</strong><p>${escapeHtml(i.detail)}</p></div>`
+            )
+            .join("")}</div>`
+      )
+      .join("");
+
+  const op = doc.getElementById("offerPrograms");
+  if (op)
+    op.innerHTML = (data.offerPrograms || [])
+      .map(
+        (p) =>
+          `<div class="issuer-row" style="--issuer-color:${escapeHtml(p.color || "#666")}"><span class="issuer-dot"></span><div><strong>${escapeHtml(p.program)}</strong><span>${escapeHtml((p.cards || []).join(" · "))}</span></div></div>`
+      )
+      .join("");
+
+  const sg = doc.getElementById("sourceGrid");
+  if (sg) sg.innerHTML = (data.sources || []).map((s) => `<span>${escapeHtml(s)}</span>`).join("");
+
+  setText(doc, "sourcesNote", meta.sourcesNote);
+  setText(doc, "monthlyFinePrint", meta.monthlyFinePrint);
+
+  const wr = doc.getElementById("walletRules");
+  if (wr)
+    wr.innerHTML = (data.walletRules || [])
+      .map(
+        (r) =>
+          `<div class="ledger-cell"><strong>${escapeHtml(r.rate)}</strong><span>${escapeHtml(r.label)}</span></div>`
+      )
+      .join("");
+
+  setText(
+    doc,
+    "dataSourceNote",
+    `Portfolio data: ${data._source || "unknown"}. To use your own cards, copy data/sample-portfolio.json to my-portfolio.json in the repo root and edit it — my-portfolio.json is gitignored and never committed.`
+  );
+}
+
+// ---- spend guide ----------------------------------------------------------
+
+export function createGuide(doc, categories) {
+  const strip = doc.getElementById("categoryStrip");
+
+  function select(id) {
+    const item = categories.find((c) => c.id === id) || categories[0];
+    if (!item) return;
+    doc.querySelectorAll(".chip").forEach((btn) => btn.setAttribute("aria-pressed", String(btn.dataset.id === item.id)));
+    const recCard = doc.getElementById("recCard");
+    const recCategory = doc.getElementById("recCategory");
+    const recName = doc.getElementById("recName");
+    const recRate = doc.getElementById("recRate");
+    if (recCard) recCard.style.setProperty("--rec-bg", item.bg);
+    if (recCategory) recCategory.textContent = item.label;
+    if (recName) recName.textContent = item.card;
+    if (recRate && recRate.firstChild) recRate.firstChild.nodeValue = item.rate;
+    setText(doc, "recRateNote", item.rateNote);
+    setText(doc, "recHeadline", item.headline);
+    setText(doc, "recWhy", item.why);
+    setText(doc, "alertTitle", item.alert ? item.alert[0] : "");
+    setText(doc, "alertCopy", item.alert ? item.alert[1] : "");
+    const recAlternates = doc.getElementById("recAlternates");
+    if (recAlternates)
+      recAlternates.innerHTML = (item.alts || [])
+        .map(
+          (alt, index) => `
+        <div class="alt-row">
+          <span class="rank">${index + 2}</span>
+          <div><strong>${escapeHtml(alt[0])}</strong><span>${escapeHtml(alt[2])}</span></div>
+          <span class="alt-rate">${escapeHtml(alt[1])}</span>
+        </div>`
+        )
+        .join("");
+  }
+
+  (categories || []).forEach((category, index) => {
+    const button = doc.createElement("button");
+    button.type = "button";
+    button.className = "chip";
+    button.dataset.id = category.id;
+    button.setAttribute("aria-pressed", String(index === 0));
+    button.textContent = category.label;
+    button.addEventListener("click", () => select(category.id));
+    if (strip) strip.appendChild(button);
+  });
+
+  return { select };
+}
+
+// ---- card grid ------------------------------------------------------------
+
+// Card filter buttons are derived from the data: any filter value used by a
+// card gets a button. Known jobs sort first with friendly labels; anything
+// else is title-cased in data order.
+const FILTER_LABELS = {
+  travel: "Travel points",
+  cash: "Cash back",
+  premium: "Premium",
+  rotating: "Rotating",
+};
+const FILTER_ORDER = ["travel", "cash", "premium", "rotating"];
+
+function labelForFilter(value) {
+  return FILTER_LABELS[value] || value.charAt(0).toUpperCase() + value.slice(1);
+}
+
+export function renderCards(doc, cards, filter = "all") {
+  const grid = doc.getElementById("cardGrid");
+  if (!grid) return;
+  grid.innerHTML = cards
+    .map((card) => {
+      const hidden = filter !== "all" && !(card.filters || []).includes(filter);
+      return `<article class="portfolio-card${hidden ? " is-hidden" : ""}" style="--card-color:${escapeHtml(card.color)}">
+          <div class="card-top">
+            <div class="card-id"><span class="card-swatch"></span><div class="card-title"><h3>${escapeHtml(card.name)}</h3><p>${escapeHtml(card.issuer)}</p></div></div>
+            <span class="fee">${escapeHtml(card.fee)}</span>
+          </div>
+          <p class="role">${escapeHtml(card.role)}</p>
+          <ul class="earn-list">${(card.earns || []).map((e) => `<li><span>${escapeHtml(e[0])}</span><strong>${escapeHtml(e[1])}</strong></li>`).join("")}</ul>
+          <div class="tag-row">${(card.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
+        </article>`;
+    })
+    .join("");
+}
+
+export function buildCardFilters(doc, cards, onFilter) {
+  const wrap = doc.getElementById("cardFilters");
+  const seen = [];
+  for (const card of cards) for (const f of card.filters || []) if (!seen.includes(f)) seen.push(f);
+  const ordered = [
+    ...FILTER_ORDER.filter((f) => seen.includes(f)),
+    ...seen.filter((f) => !FILTER_ORDER.includes(f)),
+  ];
+  const filters = [
+    ["all", `All ${cards.length}`],
+    ...ordered.map((f) => [f, labelForFilter(f)]),
+  ];
+  filters.forEach(([id, label], index) => {
+    const btn = doc.createElement("button");
+    btn.type = "button";
+    btn.className = "filter";
+    btn.dataset.filter = id;
+    btn.setAttribute("aria-pressed", String(index === 0));
+    btn.textContent = label;
+    btn.addEventListener("click", () => {
+      doc.querySelectorAll(".filter").forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+      onFilter(id);
+    });
+    if (wrap) wrap.appendChild(btn);
+  });
+}
+
+// ---- best-card lookup ------------------------------------------------------
+
+export function renderLookup(doc, result) {
+  const box = doc.getElementById("lookupResult");
+  if (!box) return;
+  if (!result) {
+    box.innerHTML = `<div class="lookup-empty"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><strong>Ready when you are</strong><p>Choose a category for a portfolio recommendation. Add a merchant to check for an activated offer override.</p></div>`;
+    return;
+  }
+  const { category, offer, winner, rate, runners, inferred, merchant } = result;
+  const categoryLabel = category.label;
+  box.innerHTML = `
+        <div class="lookup-kicker">${merchant ? `Recommendation for ${escapeHtml(merchant)}` : escapeHtml(categoryLabel)}</div>
+        <div class="lookup-pick"><h3>${escapeHtml(winner)}</h3><span class="lookup-rate">${escapeHtml(rate)}</span></div>
+        ${offer ? `<div class="offer-hit"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 12 3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg><div><strong>Activated offer match</strong><p>${escapeHtml(offer.terms)} · expires ${escapeHtml(offer.expiry)}${offer.note ? ` · ${escapeHtml(offer.note)}` : ""}. Merchant-name match only—confirm the saved offer terms before paying.</p></div></div>` : ""}
+        <p class="lookup-reason">${offer ? `The activated ${escapeHtml(merchant)} offer takes priority over the normal ${escapeHtml(categoryLabel.toLowerCase())} earn recommendation.` : escapeHtml(category.why)}${inferred ? ` Category inferred as ${escapeHtml(categoryLabel)} from the merchant name.` : ""}</p>
+        <div class="runner-list"><h4>${offer ? "Base earn and other options" : "Runner-up cards"}</h4><div class="alternates">${runners.map((alt, index) => `<div class="alt-row"><span class="rank">${index + 2}</span><div><strong>${escapeHtml(alt[0])}</strong><span>${escapeHtml(alt[2])}</span></div><span class="alt-rate">${escapeHtml(alt[1])}</span></div>`).join("")}</div></div>`;
+}
+
+// ---- offer notes -----------------------------------------------------------
+
+export function renderOfferList(doc, offers, onRemove) {
+  const list = doc.getElementById("offerList");
+  if (!list) return;
+  if (!offers.length) {
+    list.className = "empty-state";
+    list.textContent = "No offer notes yet.";
+    return;
+  }
+  list.className = "offer-rows";
+  list.innerHTML = offers
+    .map(
+      (offer, index) => `<div class="offer-row">
+        <strong>${escapeHtml(offer.merchant)} · ${escapeHtml(offer.status)}</strong>
+        <span class="card-cell">${escapeHtml(offer.card)}</span>
+        <span class="terms-cell">${escapeHtml(offer.terms)}${offer.note ? " · " + escapeHtml(offer.note) : ""}</span>
+        <span class="date-cell">Exp ${escapeHtml(offer.expiry)}</span>
+        <button class="remove-offer" type="button" data-index="${index}" aria-label="Remove ${escapeHtml(offer.merchant)} offer">×</button>
+      </div>`
+    )
+    .join("");
+  list.querySelectorAll(".remove-offer").forEach((button) =>
+    button.addEventListener("click", () => onRemove(Number(button.dataset.index)))
+  );
+}
+
+export function offersToText(offers) {
+  return offers
+    .map(
+      (o) =>
+        `${o.merchant} — ${o.card} — ${o.status} — ${o.terms} — expires ${o.expiry}${o.note ? " — " + o.note : ""}`
+    )
+    .join("\n");
+}
+
+export function offersToCsv(offers) {
+  const quote = (value) => `"${String(value).replace(/"/g, '""')}"`;
+  const rows = [
+    ["Card", "Merchant", "Status", "Offer or trigger", "Expires", "Note"],
+    ...offers.map((o) => [o.card, o.merchant, o.status, o.terms, o.expiry, o.note]),
+  ];
+  return rows.map((row) => row.map(quote).join(",")).join("\n");
+}

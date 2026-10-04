@@ -1,0 +1,560 @@
+{
+  "cards": [
+    {
+      "color": "#2d77a9",
+      "earns": [
+        [
+          "Flights + hotels direct",
+          "3X"
+        ],
+        [
+          "Dining",
+          "2X"
+        ],
+        [
+          "Everything else",
+          "1X"
+        ]
+      ],
+      "fee": "$95/yr",
+      "filters": [
+        "travel",
+        "everyday"
+      ],
+      "issuer": "Meridian Bank",
+      "name": "Meridian Traveler",
+      "role": "Everyday travel earner",
+      "tags": [
+        "No foreign transaction fee",
+        "Trip delay coverage"
+      ]
+    },
+    {
+      "color": "#b92736",
+      "earns": [
+        [
+          "All eligible purchases",
+          "2% cash back"
+        ]
+      ],
+      "fee": "$0",
+      "filters": [
+        "cash",
+        "everyday"
+      ],
+      "issuer": "Harbor Bank",
+      "name": "Harbor Cash",
+      "role": "Simple 2% fallback",
+      "tags": [
+        "No annual fee",
+        "Cash simplicity"
+      ]
+    },
+    {
+      "color": "#28687c",
+      "earns": [
+        [
+          "Grocery stores",
+          "4% \u00b7 $4k/yr cap"
+        ],
+        [
+          "Streaming services",
+          "3%"
+        ],
+        [
+          "Everything else",
+          "1%"
+        ]
+      ],
+      "fee": "$0",
+      "filters": [
+        "cash",
+        "everyday"
+      ],
+      "issuer": "Cedar Financial",
+      "name": "Cedar Grocery Plus",
+      "role": "Groceries + streaming",
+      "tags": [
+        "No annual fee",
+        "Monthly streaming credit"
+      ]
+    },
+    {
+      "color": "#df6a1f",
+      "earns": [
+        [
+          "Rotating quarterly categories",
+          "5% \u00b7 $1.5k cap"
+        ],
+        [
+          "Everything else",
+          "1%"
+        ]
+      ],
+      "fee": "$0",
+      "filters": [
+        "cash",
+        "rotating"
+      ],
+      "issuer": "Orbit Bank",
+      "name": "Orbit Quarterly",
+      "role": "Activated quarterly categories",
+      "tags": [
+        "Activation required",
+        "Categories rotate quarterly"
+      ]
+    },
+    {
+      "color": "#2d3b49",
+      "earns": [
+        [
+          "Meridian Travel portal",
+          "6X"
+        ],
+        [
+          "Dining worldwide",
+          "3X"
+        ],
+        [
+          "Everything else",
+          "1X"
+        ]
+      ],
+      "fee": "$495/yr",
+      "filters": [
+        "travel",
+        "premium"
+      ],
+      "issuer": "Meridian Bank",
+      "name": "Summit Reserve",
+      "role": "Premium travel + lounges",
+      "tags": [
+        "$300 travel credit",
+        "Lounge access",
+        "No foreign transaction fee"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "alert": [
+        "Value lens matters",
+        "3X points is not automatically 3% cash \u2014 value depends on how you redeem."
+      ],
+      "alts": [
+        [
+          "Meridian Traveler",
+          "2X",
+          "No-fee points fallback"
+        ],
+        [
+          "Harbor Cash",
+          "2%",
+          "Simple cash alternative"
+        ]
+      ],
+      "bg": "#9a6d12",
+      "card": "Summit Reserve",
+      "headline": "Dining goes on the premium card",
+      "id": "dining",
+      "label": "Dining",
+      "rate": "3X",
+      "rateNote": "points at restaurants worldwide",
+      "why": "Summit Reserve earns 3X at restaurants and adds travel protections on the purchase."
+    },
+    {
+      "alert": [
+        "Watch the cap",
+        "After $4,000 in annual grocery spend the rate drops to 1%."
+      ],
+      "alts": [
+        [
+          "Harbor Cash",
+          "2%",
+          "Uncapped fallback"
+        ],
+        [
+          "Orbit Quarterly",
+          "5%",
+          "Only when groceries are the quarterly category"
+        ]
+      ],
+      "bg": "#23695a",
+      "card": "Cedar Grocery Plus",
+      "headline": "Best grocery return in the sample wallet",
+      "id": "groceries",
+      "label": "Groceries",
+      "rate": "4%",
+      "rateNote": "cash back at grocery stores, up to $4,000/year",
+      "why": "Cedar Grocery Plus pays 4% on grocery purchases up to its annual cap. Above the cap, switch to Harbor Cash."
+    },
+    {
+      "alert": [
+        "Compare prices",
+        "A higher earn rate never beats a meaningfully cheaper fare."
+      ],
+      "alts": [
+        [
+          "Meridian Traveler",
+          "3X",
+          "Direct bookings with trip coverage"
+        ],
+        [
+          "Harbor Cash",
+          "2%",
+          "Cash alternative"
+        ]
+      ],
+      "bg": "#263a51",
+      "card": "Summit Reserve",
+      "headline": "Portal rate leads; direct booking protects",
+      "id": "travel",
+      "label": "Flights & hotels",
+      "rate": "6X",
+      "rateNote": "when booked through the Meridian Travel portal",
+      "why": "The 6X portal rate is the highest in this sample wallet, but compare the portal price before booking."
+    },
+    {
+      "alert": [
+        "Quarterly only",
+        "Orbit's 5% applies only when gas stations are the activated quarterly category."
+      ],
+      "alts": [
+        [
+          "Orbit Quarterly",
+          "5%",
+          "Only during gas quarters"
+        ],
+        [
+          "Meridian Traveler",
+          "1X",
+          "No bonus"
+        ]
+      ],
+      "bg": "#b9571a",
+      "card": "Harbor Cash",
+      "headline": "Flat 2% beats juggling",
+      "id": "gas",
+      "label": "Gas & EV",
+      "rate": "2%",
+      "rateNote": "unlimited cash back at the pump",
+      "why": "No sample card has a permanent gas bonus, so the 2% flat card wins."
+    },
+    {
+      "alert": [
+        "Quarterly only",
+        "Orbit's 5% applies only when transit is the activated quarterly category."
+      ],
+      "alts": [
+        [
+          "Meridian Traveler",
+          "1X",
+          "No bonus"
+        ],
+        [
+          "Orbit Quarterly",
+          "5%",
+          "Only during transit quarters"
+        ]
+      ],
+      "bg": "#9b4e21",
+      "card": "Harbor Cash",
+      "headline": "Flat 2% on the commute",
+      "id": "transit",
+      "label": "Transit",
+      "rate": "2%",
+      "rateNote": "unlimited cash back on transit",
+      "why": "No sample card bonuses transit, so the 2% flat card wins by default."
+    },
+    {
+      "alert": [
+        "Stack the credit",
+        "An eligible subscription may also trigger the $5 monthly streaming credit \u2014 a double win."
+      ],
+      "alts": [
+        [
+          "Harbor Cash",
+          "2%",
+          "Simple fallback"
+        ],
+        [
+          "Meridian Traveler",
+          "1X",
+          "No bonus"
+        ]
+      ],
+      "bg": "#775a96",
+      "card": "Cedar Grocery Plus",
+      "headline": "Best ongoing streaming rate",
+      "id": "streaming",
+      "label": "Streaming",
+      "rate": "3%",
+      "rateNote": "on eligible streaming services",
+      "why": "Use Cedar Grocery Plus for eligible direct-billed streaming subscriptions."
+    },
+    {
+      "alert": [
+        "Quarterly only",
+        "Orbit's 5% applies only when drugstores are the activated quarterly category."
+      ],
+      "alts": [
+        [
+          "Orbit Quarterly",
+          "5%",
+          "Only during drugstore quarters"
+        ],
+        [
+          "Meridian Traveler",
+          "1X",
+          "No bonus"
+        ]
+      ],
+      "bg": "#7b5638",
+      "card": "Harbor Cash",
+      "headline": "Flat 2% at the pharmacy",
+      "id": "drugstores",
+      "label": "Drugstores",
+      "rate": "2%",
+      "rateNote": "unlimited cash back",
+      "why": "No sample card bonuses drugstores, so the flat 2% card wins."
+    },
+    {
+      "alert": [
+        "Check protections",
+        "If any sample card added phone protection, that could outweigh the earn difference."
+      ],
+      "alts": [
+        [
+          "Meridian Traveler",
+          "1X",
+          "No bonus"
+        ],
+        [
+          "Cedar Grocery Plus",
+          "1X",
+          "No bonus"
+        ]
+      ],
+      "bg": "#8e2f35",
+      "card": "Harbor Cash",
+      "headline": "Flat 2% on autopay",
+      "id": "phone",
+      "label": "Phone plan",
+      "rate": "2%",
+      "rateNote": "cash back on the phone bill",
+      "why": "No sample card bonuses phone bills, so the 2% flat card is the default."
+    },
+    {
+      "alert": [
+        "Keep it simple",
+        "One default card for everything else beats optimizing pennies."
+      ],
+      "alts": [
+        [
+          "Meridian Traveler",
+          "1X",
+          "Only for travel perks"
+        ],
+        [
+          "Cedar Grocery Plus",
+          "1X",
+          "Only inside the grocery cap"
+        ]
+      ],
+      "bg": "#a52031",
+      "card": "Harbor Cash",
+      "headline": "Make 2% your floor",
+      "id": "other",
+      "label": "Everything else",
+      "rate": "2%",
+      "rateNote": "unlimited cash back on uncategorized spend",
+      "why": "Harbor Cash pays a flat 2% on uncategorized spend. Pick one default to reduce decision fatigue."
+    }
+  ],
+  "merchantCategories": [
+    {
+      "category": "dining",
+      "terms": [
+        "restaurant",
+        "cafe",
+        "coffee",
+        "diner"
+      ]
+    },
+    {
+      "category": "groceries",
+      "terms": [
+        "grocery",
+        "supermarket",
+        "whole foods",
+        "trader joe"
+      ]
+    },
+    {
+      "category": "travel",
+      "terms": [
+        "airline",
+        "hotel",
+        "marriott",
+        "hilton",
+        "delta",
+        "united"
+      ]
+    },
+    {
+      "category": "gas",
+      "terms": [
+        "shell",
+        "chevron",
+        "exxon",
+        "chargepoint"
+      ]
+    },
+    {
+      "category": "transit",
+      "terms": [
+        "uber",
+        "lyft",
+        "subway",
+        "parking",
+        "toll"
+      ]
+    },
+    {
+      "category": "streaming",
+      "terms": [
+        "netflix",
+        "spotify",
+        "hulu",
+        "disney"
+      ]
+    },
+    {
+      "category": "drugstores",
+      "terms": [
+        "cvs",
+        "walgreens",
+        "pharmacy"
+      ]
+    },
+    {
+      "category": "phone",
+      "terms": [
+        "verizon",
+        "t-mobile",
+        "mint mobile"
+      ]
+    },
+    {
+      "category": "other",
+      "terms": [
+        "costco",
+        "walmart",
+        "target",
+        "amazon"
+      ]
+    }
+  ],
+  "meta": {
+    "benefitsHeading": "Credit check",
+    "cardsHeading": "Your {n}-card lineup",
+    "eyebrow": "Sample wallet playbook",
+    "feesNote": "Across two fee-bearing cards",
+    "heroCopy": "A practical category map for the cards in your wallet, plus a use-it-or-lose-it benefits view and an exportable merchant-offer note tool.",
+    "heroHeading": "Pick the right card before you tap.",
+    "lastUpdated": "Sep 2026",
+    "monthlyFinePrint": "*The sample monthly figure assumes each listed credit is eligible, enrolled where required, and fully used.",
+    "monthlyTotal": "$13",
+    "monthlyTotalLabel": "possible this month*",
+    "sourcesNote": "Sample data for demonstration only. Replace data/sample-portfolio.json with your own cards and rates. Issuer terms, targeted offers, and merchant coding control \u2014 verify everything before spending.",
+    "totalFees": "$590"
+  },
+  "monthlyCredits": [
+    {
+      "amount": "$5/mo",
+      "card": "Cedar Grocery Plus",
+      "detail": "Eligible streaming subscriptions; enrollment required.",
+      "label": "Streaming credit"
+    },
+    {
+      "amount": "$8/mo",
+      "card": "Meridian Traveler",
+      "detail": "Monthly credit at partner restaurants.",
+      "label": "Dining credit"
+    }
+  ],
+  "offerPrograms": [
+    {
+      "cards": [
+        "Meridian Traveler",
+        "Summit Reserve"
+      ],
+      "color": "#c8a54a",
+      "program": "Meridian Offers"
+    },
+    {
+      "cards": [
+        "Harbor Cash"
+      ],
+      "color": "#bf2a31",
+      "program": "Harbor Deals"
+    },
+    {
+      "cards": [
+        "Cedar Grocery Plus",
+        "Orbit Quarterly"
+      ],
+      "color": "#3774b9",
+      "program": "Cedar & Orbit promos"
+    }
+  ],
+  "periodCredits": [
+    {
+      "group": "Semiannual window",
+      "items": [
+        {
+          "detail": "Two $12.50 credits per half-year; enrollment required.",
+          "title": "Up to $25 grocery credit",
+          "when": "CEDAR GROCERY PLUS"
+        }
+      ]
+    },
+    {
+      "group": "Annual / anniversary",
+      "items": [
+        {
+          "detail": "Automatic on qualifying travel purchases.",
+          "title": "$300 broad travel credit",
+          "when": "SUMMIT RESERVE"
+        },
+        {
+          "detail": "Awarded on the account anniversary each year.",
+          "title": "10,000 anniversary points",
+          "when": "MERIDIAN TRAVELER"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Sample issuer product pages",
+    "Terms current at the sample date"
+  ],
+  "walletRules": [
+    {
+      "rate": "2%",
+      "label": "cash-back floor"
+    },
+    {
+      "rate": "6X",
+      "label": "top travel rate (portal)"
+    },
+    {
+      "rate": "5%",
+      "label": "rotating quarterly categories"
+    },
+    {
+      "rate": "4%",
+      "label": "top grocery rate"
+    }
+  ]
+}

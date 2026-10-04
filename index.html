@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:," />
+  <title>Card Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="intro" aria-labelledby="page-heading">
+      <div class="hero">
+        <p class="eyebrow" id="heroEyebrow"></p>
+        <h1 id="page-heading"></h1>
+        <p id="heroCopy"></p>
+      </div>
+      <aside class="snapshot" aria-label="Portfolio snapshot">
+        <div>
+          <div class="snapshot-label">Listed annual fees</div>
+          <div class="snapshot-number" id="snapshotFees"></div>
+          <p class="snapshot-sub" id="snapshotFeesNote"></p>
+        </div>
+        <div class="snapshot-row">
+          <div><strong id="snapshotCardCount"></strong><span>cards mapped</span></div>
+          <div><strong id="snapshotMonthly"></strong><span>monthly credits to check*</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <nav class="topnav" role="tablist" aria-label="Dashboard sections">
+      <button role="tab" aria-selected="true" aria-controls="guide" id="tab-guide">Spend guide</button>
+      <button role="tab" aria-selected="false" aria-controls="best-card" id="tab-best-card">Best card</button>
+      <button role="tab" aria-selected="false" aria-controls="cards" id="tab-cards">All cards</button>
+      <button role="tab" aria-selected="false" aria-controls="benefits" id="tab-benefits">Benefits</button>
+      <button role="tab" aria-selected="false" aria-controls="offers" id="tab-offers">Offers notes</button>
+    </nav>
+
+    <section class="tab-panel" id="guide" role="tabpanel" aria-labelledby="tab-guide">
+      <div class="section-head">
+        <div><p class="eyebrow">Fast answer</p><h2>What are you paying for?</h2></div>
+        <p>Choose a category. The default favors the strongest published earn rate, with caps and trade-offs called out.</p>
+      </div>
+      <div class="category-strip" id="categoryStrip" aria-label="Purchase categories"></div>
+      <div class="recommendation" aria-live="polite">
+        <article class="rec-card" id="recCard">
+          <div><div class="mini" id="recCategory">–</div><h3 id="recName">Loading…</h3></div>
+          <div class="rate" id="recRate">–<small id="recRateNote"></small></div>
+        </article>
+        <div class="rec-copy">
+          <h3 id="recHeadline">Loading your cards…</h3>
+          <p id="recWhy"></p>
+          <div class="alternates" id="recAlternates"></div>
+        </div>
+      </div>
+      <div class="alert" id="categoryAlert">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5m0 4h.01M10.3 3.7 2.6 17a2 2 0 0 0 1.74 3h15.32A2 2 0 0 0 21.4 17L13.7 3.7a2 2 0 0 0-3.4 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <div><strong id="alertTitle">Loading</strong><p id="alertCopy"></p></div>
+      </div>
+      <div class="ledger" id="walletRules" aria-label="Wallet rules"></div>
+    </section>
+
+    <section class="tab-panel" id="best-card" role="tabpanel" aria-labelledby="tab-best-card" hidden>
+      <div class="lookup-layout">
+        <article class="lookup-controls">
+          <p class="eyebrow">Quick lookup</p>
+          <h2>Best Card to Use</h2>
+          <p>Enter a merchant, pick a category, or do both. Activated offer notes take priority when the merchant matches.</p>
+          <form class="lookup-form" id="lookupForm">
+            <label>Merchant
+              <input id="lookupMerchant" type="text" autocomplete="off" placeholder="e.g. DoorDash, Costco, United" />
+            </label>
+            <label>Spending category
+              <select id="lookupCategory" aria-label="Spending category"></select>
+            </label>
+            <div class="lookup-actions">
+              <button class="btn primary" type="submit">Find best card</button>
+              <button class="btn" id="lookupClear" type="button">Clear</button>
+            </div>
+          </form>
+          <p class="lookup-example">Merchant matching uses the activated notes from Offers notes in this open session. If no offer matches, the category map decides.</p>
+        </article>
+        <article class="lookup-result" id="lookupResult" aria-live="polite">
+          <div class="lookup-empty">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <strong>Ready when you are</strong>
+            <p>Choose a category for a portfolio recommendation. Add a merchant to check for an activated offer override.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="cards" role="tabpanel" aria-labelledby="tab-cards" hidden>
+      <div class="section-head">
+        <div><p class="eyebrow">Portfolio</p><h2 id="cardsHeading"></h2></div>
+        <p>Filter by the job each card performs. Rates are a dated snapshot, not account-specific terms.</p>
+      </div>
+      <div class="filters" id="cardFilters" aria-label="Filter cards"></div>
+      <div class="card-grid" id="cardGrid"></div>
+    </section>
+
+    <section class="tab-panel" id="benefits" role="tabpanel" aria-labelledby="tab-benefits" hidden>
+      <div class="benefit-layout">
+        <article class="benefit-panel">
+          <p class="eyebrow">Monthly reset</p>
+          <h2 id="benefitsHeading"></h2>
+          <p style="color:var(--muted)">These are recurring statement-credit opportunities already attached to the cards. Activation, merchant eligibility, and account terms still control.</p>
+          <div class="monthly-total"><strong id="monthlyTotalValue"></strong><span id="monthlyTotalLabel"></span></div>
+          <ul class="benefit-list" id="monthlyCredits"></ul>
+        </article>
+        <aside class="calendar-panel">
+          <p class="eyebrow">Larger clocks</p>
+          <h2>Half-year & annual</h2>
+          <div id="periodGroups"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="offers" role="tabpanel" aria-labelledby="tab-offers" hidden>
+      <div class="offers-intro">
+        <article class="offers-copy">
+          <p class="eyebrow">Merchant offers</p>
+          <h2>Activate in the issuer account. Log it here.</h2>
+          <p>Card-linked offers are personalized and change often. Review them in the bank app or website, add the offer to the exact card, then record the merchant, trigger, and expiry below.</p>
+          <div class="offer-steps">
+            <div class="offer-step"><b>01</b><span>Open the issuer’s offers area.</span></div>
+            <div class="offer-step"><b>02</b><span>Add the offer before spending.</span></div>
+            <div class="offer-step"><b>03</b><span>Export the note list before closing.</span></div>
+          </div>
+        </article>
+        <aside class="issuer-stack">
+          <h3>Where to check</h3>
+          <div id="offerPrograms"></div>
+        </aside>
+      </div>
+
+      <section class="offer-tool" aria-labelledby="offer-tool-title">
+        <div class="tool-head">
+          <div><h3 id="offer-tool-title">Offer note builder</h3><p>Add activated or to-activate offers, then download a CSV or copy the list.</p></div>
+          <span class="session-badge">SESSION ONLY</span>
+        </div>
+        <form class="offer-form" id="offerForm">
+          <label>Card
+            <select id="offerCard" aria-label="Offer card" required></select>
+          </label>
+          <label>Merchant
+            <input id="offerMerchant" type="text" autocomplete="off" aria-label="Offer merchant" placeholder="e.g. Hilton" required />
+          </label>
+          <label>Status
+            <select id="offerStatus" aria-label="Offer status"><option>Activated</option><option>To activate</option><option>Used</option></select>
+          </label>
+          <label>Offer / trigger
+            <input id="offerTerms" type="text" autocomplete="off" aria-label="Offer terms" placeholder="e.g. Spend $200, get $40" required />
+          </label>
+          <label>Expires
+            <input id="offerExpiry" type="date" aria-label="Offer expiration date" required />
+          </label>
+          <label>Short note
+            <input id="offerNote" type="text" autocomplete="off" aria-label="Offer note" placeholder="Book direct; one use" />
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Add note</button>
+            <button class="btn danger" id="clearOffers" type="button">Clear session</button>
+          </div>
+          <p class="message" id="offerMessage" role="status"></p>
+        </form>
+        <div class="offer-output">
+          <div id="offerList" class="empty-state">No offer notes yet.</div>
+          <div class="export-row">
+            <button class="btn" id="copyOffers" type="button">Copy notes</button>
+            <button class="btn" id="downloadOffers" type="button">Download CSV</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="sources">
+      <details>
+        <summary>Sources & assumptions</summary>
+        <div class="source-grid" id="sourceGrid"></div>
+        <p class="fine-print" id="sourcesNote"></p>
+      </details>
+    </section>
+    <p class="fine-print" id="monthlyFinePrint"></p>
+  <p class="fine-print" id="dataSourceNote"></p>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
