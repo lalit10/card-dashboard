@@ -1,199 +1,160 @@
 {
-  "source": "github.com/rithkott/credit_card_picker",
-  "source_ref": "b7de080ca59bcf39ef86ad329e9c5060596398e6",
+  "source": "github.com/lalit10/card-data",
   "source_license": "MIT",
-  "fetched_at": "2026-10-04T23:57:34Z",
+  "fetched_at": "2026-10-05T02:43:01Z",
   "card_count": 112,
   "valuations": {
-    "cash": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Cash back"
-    },
-    "chase_ur": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 2.0,
-      "label": "Chase Ultimate Rewards"
-    },
-    "amex_mr": {
-      "floor_cpp": 0.6,
-      "optimistic_cpp": 1.9,
-      "label": "American Express Membership Rewards"
-    },
-    "citi_typ": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.7,
-      "label": "Citi ThankYou Points"
-    },
-    "capital_one_miles": {
-      "floor_cpp": 0.5,
-      "optimistic_cpp": 1.7,
-      "label": "Capital One Miles"
-    },
-    "wells_fargo_rewards": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.3,
-      "label": "Wells Fargo Rewards"
-    },
-    "bilt_points": {
-      "floor_cpp": 0.55,
-      "optimistic_cpp": 1.9,
-      "label": "Bilt Rewards"
-    },
-    "discover_cashback": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Discover Cashback Bonus"
-    },
-    "bofa_premium_rewards": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Bank of America Premium Rewards points"
-    },
-    "bofa_travel_rewards": {
-      "floor_cpp": 0.6,
-      "optimistic_cpp": 1.0,
-      "label": "Bank of America Travel Rewards points"
-    },
-    "navy_federal_rewards": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Navy Federal Rewards points"
-    },
-    "penfed_points": {
-      "floor_cpp": 0.85,
-      "optimistic_cpp": 1.0,
-      "label": "PenFed Rewards points"
-    },
-    "fidelity_rewards": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Fidelity Rewards points"
-    },
-    "sofi_points": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "SoFi Rewards points"
-    },
-    "robinhood_points": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Robinhood Gold points"
-    },
-    "delta_skymiles": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.3,
-      "label": "Delta SkyMiles"
-    },
-    "united_mileageplus": {
-      "floor_cpp": 0.8,
-      "optimistic_cpp": 1.3,
-      "label": "United MileagePlus"
-    },
-    "southwest_rapid_rewards": {
-      "floor_cpp": 1.3,
-      "optimistic_cpp": 1.4,
-      "label": "Southwest Rapid Rewards"
-    },
-    "jetblue_trueblue": {
-      "floor_cpp": 1.2,
-      "optimistic_cpp": 1.35,
-      "label": "JetBlue TrueBlue"
-    },
     "aa_advantage": {
       "floor_cpp": 0.8,
-      "optimistic_cpp": 1.5,
-      "label": "American Airlines AAdvantage"
+      "optimistic_cpp": 1.5
     },
     "aeroplan": {
       "floor_cpp": 1.0,
-      "optimistic_cpp": 1.4,
-      "label": "Air Canada Aeroplan"
-    },
-    "avios": {
-      "floor_cpp": 0.8,
-      "optimistic_cpp": 1.4,
-      "label": "Avios (British Airways / Iberia / Aer Lingus)"
-    },
-    "flying_blue": {
-      "floor_cpp": 0.9,
-      "optimistic_cpp": 1.3,
-      "label": "Air France-KLM Flying Blue"
-    },
-    "emirates_skywards": {
-      "floor_cpp": 0.8,
-      "optimistic_cpp": 1.2,
-      "label": "Emirates Skywards"
-    },
-    "frontier_miles": {
-      "floor_cpp": 0.6,
-      "optimistic_cpp": 1.0,
-      "label": "Frontier Miles"
-    },
-    "miles_and_more": {
-      "floor_cpp": 0.7,
-      "optimistic_cpp": 1.2,
-      "label": "Lufthansa Miles & More"
-    },
-    "atmos_rewards": {
-      "floor_cpp": 1.0,
-      "optimistic_cpp": 1.6,
-      "label": "Atmos Rewards (Alaska / Hawaiian)"
+      "optimistic_cpp": 1.4
     },
     "allegiant_points": {
       "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Allegiant Allways Rewards"
+      "optimistic_cpp": 1.0
     },
-    "world_of_hyatt": {
-      "floor_cpp": 1.2,
-      "optimistic_cpp": 2.0,
-      "label": "World of Hyatt"
-    },
-    "marriott_bonvoy": {
+    "amex_mr": {
       "floor_cpp": 0.6,
-      "optimistic_cpp": 0.9,
-      "label": "Marriott Bonvoy"
+      "optimistic_cpp": 1.9
     },
-    "hilton_honors": {
-      "floor_cpp": 0.4,
-      "optimistic_cpp": 0.6,
-      "label": "Hilton Honors"
+    "atmos_rewards": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.6
     },
-    "ihg_one_rewards": {
-      "floor_cpp": 0.4,
-      "optimistic_cpp": 0.7,
-      "label": "IHG One Rewards"
+    "avios": {
+      "floor_cpp": 0.8,
+      "optimistic_cpp": 1.4
     },
-    "wyndham_rewards": {
-      "floor_cpp": 0.7,
-      "optimistic_cpp": 1.1,
-      "label": "Wyndham Rewards"
+    "bilt_points": {
+      "floor_cpp": 0.55,
+      "optimistic_cpp": 1.9
+    },
+    "bofa_premium_rewards": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "bofa_travel_rewards": {
+      "floor_cpp": 0.6,
+      "optimistic_cpp": 1.0
+    },
+    "capital_one_miles": {
+      "floor_cpp": 0.5,
+      "optimistic_cpp": 1.7
+    },
+    "cash": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "chase_ur": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 2.0
     },
     "choice_privileges": {
       "floor_cpp": 0.5,
-      "optimistic_cpp": 0.8,
-      "label": "Choice Privileges"
+      "optimistic_cpp": 0.8
     },
-    "mycruise_points": {
+    "citi_typ": {
       "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "MyCruise points (Royal Caribbean / Celebrity / Silversea)"
+      "optimistic_cpp": 1.7
+    },
+    "delta_skymiles": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.3
+    },
+    "discover_cashback": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "emirates_skywards": {
+      "floor_cpp": 0.8,
+      "optimistic_cpp": 1.2
+    },
+    "fidelity_rewards": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "flying_blue": {
+      "floor_cpp": 0.9,
+      "optimistic_cpp": 1.3
+    },
+    "frontier_miles": {
+      "floor_cpp": 0.6,
+      "optimistic_cpp": 1.0
     },
     "gm_rewards": {
       "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "My GM Rewards points"
+      "optimistic_cpp": 1.0
     },
-    "verizon_dollars": {
+    "hilton_honors": {
+      "floor_cpp": 0.4,
+      "optimistic_cpp": 0.6
+    },
+    "ihg_one_rewards": {
+      "floor_cpp": 0.4,
+      "optimistic_cpp": 0.7
+    },
+    "jetblue_trueblue": {
+      "floor_cpp": 1.2,
+      "optimistic_cpp": 1.35
+    },
+    "marriott_bonvoy": {
+      "floor_cpp": 0.6,
+      "optimistic_cpp": 0.9
+    },
+    "miles_and_more": {
+      "floor_cpp": 0.7,
+      "optimistic_cpp": 1.2
+    },
+    "mycruise_points": {
       "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "Verizon Dollars"
+      "optimistic_cpp": 1.0
+    },
+    "navy_federal_rewards": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "penfed_points": {
+      "floor_cpp": 0.85,
+      "optimistic_cpp": 1.0
     },
     "rci_rewards": {
       "floor_cpp": 1.0,
-      "optimistic_cpp": 1.0,
-      "label": "RCI Elite Rewards"
+      "optimistic_cpp": 1.0
+    },
+    "robinhood_points": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "sofi_points": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "southwest_rapid_rewards": {
+      "floor_cpp": 1.3,
+      "optimistic_cpp": 1.4
+    },
+    "united_mileageplus": {
+      "floor_cpp": 0.8,
+      "optimistic_cpp": 1.3
+    },
+    "verizon_dollars": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "wells_fargo_rewards": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.3
+    },
+    "world_of_hyatt": {
+      "floor_cpp": 1.2,
+      "optimistic_cpp": 2.0
+    },
+    "wyndham_rewards": {
+      "floor_cpp": 0.7,
+      "optimistic_cpp": 1.1
     }
   },
   "cards": [

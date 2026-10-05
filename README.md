@@ -66,6 +66,13 @@ schedule, and an optional checkout-page recommendation pill. Same
 accounts, no servers, never touches login forms. See `extension/README.md`.
 Load unpacked from `chrome://extensions` in developer mode.
 
+## Card data
+
+The Catalog and Transfers tabs are powered by **[card-data](https://github.com/lalit10/card-data)**,
+our open credit card dataset: 112 cards (one YAML per card), point valuations,
+and 186 transfer pairs. The dashboard ships a snapshot in `data/` and refreshes
+it weekly via `tools/sync-catalog.sh` — no build step, no API keys, no scraping.
+
 ## Extending
 
 **Add a data source.** Create `js/my-provider.js`:

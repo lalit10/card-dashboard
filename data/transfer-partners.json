@@ -1,7 +1,7 @@
 {
-  "source": "mcp.milesandpointsdaily.com + hand-compiled Marriott supplement",
-  "source_license_note": "Feed: data license ambiguous (endpoint free, no auth; code MIT). Ratios are issuer-published facts. Verify before transferring.",
-  "fetched_at": "2026-10-05T00:56:15Z",
+  "source": "github.com/lalit10/card-data",
+  "source_license": "MIT",
+  "built_at": "2026-10-05T02:43:01Z",
   "program_count": 18,
   "pair_count": 186,
   "programs": [
@@ -9,6 +9,7 @@
       "id": "anz-rewards",
       "name": "ANZ Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Air New Zealand",
@@ -56,6 +57,7 @@
       "id": "amex-mr",
       "name": "American Express Membership Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "ANA",
@@ -263,6 +265,7 @@
       "id": "amex-mr-au",
       "name": "American Express Membership Rewards (Australia)",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Air New Zealand",
@@ -360,6 +363,7 @@
       "id": "amex-mr-uk",
       "name": "American Express Membership Rewards (UK)",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Aer Lingus",
@@ -477,6 +481,7 @@
       "id": "barclaycard-avios",
       "name": "Barclaycard Avios",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Aer Lingus",
@@ -524,6 +529,7 @@
       "id": "bilt",
       "name": "Bilt Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Accor Live Limitless",
@@ -781,6 +787,7 @@
       "id": "capital-one",
       "name": "Capital One Miles",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Accor Live Limitless",
@@ -1008,6 +1015,7 @@
       "id": "chase-ur",
       "name": "Chase Ultimate Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Aer Lingus",
@@ -1155,6 +1163,7 @@
       "id": "citi-typ",
       "name": "Citi ThankYou Points",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Accor Live Limitless",
@@ -1362,6 +1371,7 @@
       "id": "cba-awards",
       "name": "CommBank Awards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Cathay Pacific",
@@ -1419,6 +1429,7 @@
       "id": "currensea",
       "name": "Currensea Sea Miles",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Hilton",
@@ -1466,6 +1477,7 @@
       "id": "hsbc-premier",
       "name": "HSBC Premier Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "British Airways",
@@ -1741,6 +1753,7 @@
       "id": "nab-rewards",
       "name": "NAB Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Delta Air Lines",
@@ -1778,6 +1791,7 @@
       "id": "us-bank",
       "name": "US Bank Altitude Reserve",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Accor Live Limitless",
@@ -1825,6 +1839,7 @@
       "id": "virgin-money-uk",
       "name": "Virgin Money Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Virgin Atlantic",
@@ -1842,6 +1857,7 @@
       "id": "wells-fargo",
       "name": "Wells Fargo Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Aer Lingus",
@@ -1939,6 +1955,7 @@
       "id": "westpac-altitude",
       "name": "Westpac Altitude Rewards",
       "coverage": "full",
+      "coverage_note": null,
       "partners": [
         {
           "name": "Cathay Pacific",
