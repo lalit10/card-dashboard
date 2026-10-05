@@ -464,3 +464,56 @@
   background: #fef3c7;
   color: #92400e;
 }
+
+/* ---- transfer explorer ---- */
+.transfer-toolbar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.transfer-toolbar label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.transfer-toolbar select,
+.transfer-toolbar input[type="search"] {
+  padding: 9px 12px;
+  font-size: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  min-width: 240px;
+}
+.table-wrap { overflow-x: auto; }
+.transfer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+.transfer-table th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+.transfer-table td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.transfer-table .ratio { white-space: nowrap; }
+.transfer-sub { color: var(--muted); font-size: 12px; }
+.transfer-notes { color: var(--muted); font-size: 12.5px; }
+.transfer-meta { font-size: 12.5px; color: var(--muted); }
+.tag-hand {
+  background: #e0e7ff;
+  color: #3730a3;
+}

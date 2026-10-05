@@ -36,6 +36,7 @@
       <button role="tab" aria-selected="false" aria-controls="benefits" id="tab-benefits">Benefits</button>
       <button role="tab" aria-selected="false" aria-controls="offers" id="tab-offers">Offers notes</button>
       <button role="tab" aria-selected="false" aria-controls="catalog" id="tab-catalog">Catalog</button>
+      <button role="tab" aria-selected="false" aria-controls="transfers" id="tab-transfers">Transfers</button>
     </nav>
 
     <section class="tab-panel" id="guide" role="tabpanel" aria-labelledby="tab-guide">
@@ -186,6 +187,28 @@
       </div>
       <p class="catalog-meta" id="catalogMeta"></p>
       <div class="card-grid" id="catalogGrid"></div>
+    </section>
+
+    <section class="tab-panel" id="transfers" role="tabpanel" aria-labelledby="tab-transfers" hidden>
+      <div class="section-head">
+        <div><p class="eyebrow">Transfer explorer</p><h2>Where can your points go?</h2></div>
+        <p>Pick a points currency to see every transfer partner and ratio — or search an airline/hotel to see who transfers there. Ratios are issuer-published facts; always confirm before transferring, since transfers are irreversible.</p>
+      </div>
+      <div class="transfer-toolbar">
+        <label>Points currency
+          <select id="transferProgram"></select>
+        </label>
+        <label>Or find who transfers to…
+          <input id="transferReverse" type="search" placeholder="e.g. United, Hyatt, Aeroplan">
+        </label>
+      </div>
+      <p class="catalog-meta" id="transferMeta"></p>
+      <div class="table-wrap">
+        <table class="transfer-table">
+          <thead><tr><th>Partner</th><th>Type</th><th>Ratio</th><th>Notes</th></tr></thead>
+          <tbody id="transferTable"></tbody>
+        </table>
+      </div>
     </section>
 
     <section class="sources">

@@ -4,6 +4,7 @@
 
 import { escapeHtml } from "./util.js";
 import { topEarn, formatPct, categoryLabel, bonusSummary, searchCatalog } from "./catalog.js";
+import { programOptions, partnersFor, sourcesFor } from "./transfers.js";
 
 export function setText(doc, id, text) {
   const el = doc.getElementById(id);
@@ -261,6 +262,64 @@ export function buildCatalogSearch(doc, catalog) {
     clearTimeout(t);
     t = setTimeout(() => renderCatalog(doc, catalog, input.value), 150);
   });
+}
+
+// ---- transfer explorer -----------------------------------------------------
+
+function transferRowHtml(programName, partner) {
+  const notes = partner.notes ? ` <span class="transfer-notes">${escapeHtml(partner.notes)}</span>` : "";
+  const hand = partner.provenance === "hand-compiled" ? ` <span class="tag tag-hand">hand-checked</span>` : "";
+  return `<tr>
+      <td><strong>${escapeHtml(partner.name || "")}</strong><br><span class="transfer-sub">${escapeHtml(partner.program || partner.currency || "")}</span></td>
+      <td><span class="tag">${escapeHtml(partner.type || "")}</span></td>
+      <td class="ratio"><strong>${escapeHtml(partner.ratio || "—")}</strong></td>
+      <td class="transfer-meta">${programName ? escapeHtml(programName) : ""}${notes}${hand}</td>
+    </tr>`;
+}
+
+export function renderTransfers(doc, data) {
+  const select = doc.getElementById("transferProgram");
+  const table = doc.getElementById("transferTable");
+  const meta = doc.getElementById("transferMeta");
+  const reverse = doc.getElementById("transferReverse");
+  if (!select || !table) return;
+
+  const draw = () => {
+    const rows = partnersFor(data, select.value);
+    table.innerHTML = rows.map((t) => transferRowHtml("", t)).join("");
+    if (meta) {
+      const p = (data.programs || []).find((x) => x.id === select.value);
+      meta.textContent =
+        `${rows.length} partners` +
+        (p && p.coverage === "partial" ? ` · ${p.coverage_note || "partial coverage"}` : "") +
+        ` · source: ${data.source} · fetched ${data.fetched_at.slice(0, 10)}`;
+    }
+  };
+
+  select.innerHTML = programOptions(data)
+    .map((p) => `<option value="${escapeHtml(p.id)}">${escapeHtml(p.name)} (${p.count})</option>`)
+    .join("");
+  // Default to a program most users hold: Chase UR, else first.
+  const preferred = ["chase-ur", "amex-mr", "citi-typ", "capital-one", "bilt"].find((id) =>
+    programOptions(data).some((p) => p.id === id)
+  );
+  if (preferred) select.value = preferred;
+  select.addEventListener("change", draw);
+  draw();
+
+  if (reverse) {
+    let t = null;
+    reverse.addEventListener("input", () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        const rows = sourcesFor(data, reverse.value);
+        table.innerHTML =
+          rows.map((r) => transferRowHtml(r.program.name, r.partner)).join("") ||
+          `<tr><td colspan="4" class="empty">No programs transfer there. Try an airline or hotel name.</td></tr>`;
+        if (meta) meta.textContent = `${rows.length} ways to get there · best ratio first`;
+      }, 150);
+    });
+  }
 }
 
 // ---- best-card lookup ------------------------------------------------------

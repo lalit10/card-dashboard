@@ -1,0 +1,1996 @@
+{
+  "source": "mcp.milesandpointsdaily.com + hand-compiled Marriott supplement",
+  "source_license_note": "Feed: data license ambiguous (endpoint free, no auth; code MIT). Ratios are issuer-published facts. Verify before transferring.",
+  "fetched_at": "2026-10-05T00:56:15Z",
+  "program_count": 18,
+  "pair_count": 186,
+  "programs": [
+    {
+      "id": "anz-rewards",
+      "name": "ANZ Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Air New Zealand",
+          "program": "Airpoints",
+          "currency": "Airpoints Dollars",
+          "type": "airline",
+          "ratio": "200:1",
+          "ratio_value": 0.005,
+          "notes": "200 ANZ Points = 1 Airpoints Dollar",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 ANZ Points = 1 Asia Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 ANZ Points = 1 KrisFlyer Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Velocity",
+          "program": "Velocity Frequent Flyer",
+          "currency": "Velocity Points",
+          "type": "airline",
+          "ratio": "2:1",
+          "ratio_value": 0.5,
+          "notes": "2 ANZ Points = 1 Velocity Point",
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "amex-mr",
+      "name": "American Express Membership Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "ANA",
+          "program": "Mileage Club",
+          "currency": "ANA Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Aer Lingus",
+          "program": "AerClub",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Aeromexico",
+          "program": "Aeromexico Rewards",
+          "currency": "Aeromexico Rewards Points",
+          "type": "airline",
+          "ratio": "1:1.6",
+          "ratio_value": 1.6,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air Canada",
+          "program": "Aeroplan",
+          "currency": "Aeroplan Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": "Flying Blue Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Avianca",
+          "program": "LifeMiles",
+          "currency": "LifeMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "5:4",
+          "ratio_value": 0.8,
+          "notes": "Devalued from 1:1 on March 1, 2026",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Choice Privileges",
+          "program": "Choice Privileges",
+          "currency": "Choice Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Delta Air Lines",
+          "program": "SkyMiles",
+          "currency": "SkyMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": "Skywards Miles",
+          "type": "airline",
+          "ratio": "5:4",
+          "ratio_value": 0.8,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Etihad Airways",
+          "program": "Etihad Guest",
+          "currency": "Etihad Guest Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": "Transfers end June 30, 2026",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Hilton Honors",
+          "program": "Hilton Honors",
+          "currency": "Hilton Points",
+          "type": "hotel",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Iberia",
+          "program": "Iberia Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "JetBlue",
+          "program": "TrueBlue",
+          "currency": "TrueBlue Points",
+          "type": "airline",
+          "ratio": "1:0.8",
+          "ratio_value": 0.8,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Marriott Bonvoy",
+          "program": "Marriott Bonvoy",
+          "currency": "Marriott Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": "Qantas Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qatar Airways",
+          "program": "Privilege Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "amex-mr-au",
+      "name": "American Express Membership Rewards (Australia)",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Air New Zealand",
+          "program": "Airpoints",
+          "currency": "Airpoints Dollars",
+          "type": "airline",
+          "ratio": "100:1",
+          "ratio_value": 0.01,
+          "notes": "100 MR Points = 1 Airpoints Dollar",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": "Skywards Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Hilton Honors",
+          "program": "Hilton Honors",
+          "currency": "Hilton Points",
+          "type": "hotel",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Malaysia Airlines",
+          "program": "Enrich",
+          "currency": "Enrich Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Marriott Bonvoy",
+          "program": "Marriott Bonvoy",
+          "currency": "Marriott Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": "Qantas Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Velocity",
+          "program": "Velocity Frequent Flyer",
+          "currency": "Velocity Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "amex-mr-uk",
+      "name": "American Express Membership Rewards (UK)",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Aer Lingus",
+          "program": "AerClub",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Delta Air Lines",
+          "program": "SkyMiles",
+          "currency": "SkyMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": "Skywards Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Etihad Airways",
+          "program": "Etihad Guest",
+          "currency": "Etihad Guest Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Finnair",
+          "program": "Finnair Plus",
+          "currency": "Finnair Plus Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Hilton Honors",
+          "program": "Hilton Honors",
+          "currency": "Hilton Points",
+          "type": "hotel",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Iberia",
+          "program": "Iberia Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Marriott Bonvoy",
+          "program": "Marriott Bonvoy",
+          "currency": "Marriott Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "barclaycard-avios",
+      "name": "Barclaycard Avios",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Aer Lingus",
+          "program": "AerClub",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": "Avios earned directly; can be combined with BA Executive Club balance",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Iberia",
+          "program": "Iberia Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qatar Airways",
+          "program": "Privilege Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "bilt",
+      "name": "Bilt Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Accor Live Limitless",
+          "program": "Accor Live Limitless",
+          "currency": "Accor Points",
+          "type": "hotel",
+          "ratio": "3:2",
+          "ratio_value": 0.6666666666666666,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Aer Lingus",
+          "program": "AerClub",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air Canada",
+          "program": "Aeroplan",
+          "currency": "Aeroplan Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": "Flying Blue Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Alaska Airlines",
+          "program": "Atmos Rewards",
+          "currency": "Atmos Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "American Airlines",
+          "program": "AAdvantage",
+          "currency": "AAdvantage Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Avianca",
+          "program": "LifeMiles",
+          "currency": "LifeMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": "Skywards Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Etihad Airways",
+          "program": "Etihad Guest",
+          "currency": "Etihad Guest Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Hilton Honors",
+          "program": "Hilton Honors",
+          "currency": "Hilton Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "IHG One Rewards",
+          "program": "IHG One Rewards",
+          "currency": "IHG Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Iberia",
+          "program": "Iberia Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Japan Airlines",
+          "program": "Mileage Bank",
+          "currency": "JAL Mileage Bank Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Marriott Bonvoy",
+          "program": "Marriott Bonvoy",
+          "currency": "Marriott Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qatar Airways",
+          "program": "Privilege Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Southwest Airlines",
+          "program": "Rapid Rewards",
+          "currency": "Rapid Rewards Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Spirit Airlines",
+          "program": "Free Spirit",
+          "currency": "Free Spirit Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "TAP Air Portugal",
+          "program": "Miles&Go",
+          "currency": "TAP Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Turkish Airlines",
+          "program": "Miles&Smiles",
+          "currency": "Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "United Airlines",
+          "program": "MileagePlus",
+          "currency": "MileagePlus Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "World of Hyatt",
+          "program": "World of Hyatt",
+          "currency": "Hyatt Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Wyndham Rewards",
+          "program": "Wyndham Rewards",
+          "currency": "Wyndham Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "capital-one",
+      "name": "Capital One Miles",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Accor Live Limitless",
+          "program": "Accor Live Limitless",
+          "currency": "Accor Points",
+          "type": "hotel",
+          "ratio": "2:1",
+          "ratio_value": 0.5,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Aeromexico",
+          "program": "Aeromexico Rewards",
+          "currency": "Aeromexico Rewards Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air Canada",
+          "program": "Aeroplan",
+          "currency": "Aeroplan Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": "Flying Blue Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Avianca",
+          "program": "LifeMiles",
+          "currency": "LifeMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Choice Privileges",
+          "program": "Choice Privileges",
+          "currency": "Choice Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "EVA Air",
+          "program": "Infinity MileageLands",
+          "currency": "EVA Miles",
+          "type": "airline",
+          "ratio": "4:3",
+          "ratio_value": 0.75,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": "Skywards Miles",
+          "type": "airline",
+          "ratio": "4:3",
+          "ratio_value": 0.75,
+          "notes": "Devalued from 1:1 on January 13, 2026",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Etihad Airways",
+          "program": "Etihad Guest",
+          "currency": "Etihad Guest Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Finnair",
+          "program": "Finnair Plus",
+          "currency": "Finnair Plus Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "I Prefer",
+          "program": "I Prefer Hotel Rewards",
+          "currency": "I Prefer Points",
+          "type": "hotel",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Japan Airlines",
+          "program": "Mileage Bank",
+          "currency": "JAL Mileage Bank Miles",
+          "type": "airline",
+          "ratio": "4:3",
+          "ratio_value": 0.75,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "JetBlue",
+          "program": "TrueBlue",
+          "currency": "TrueBlue Points",
+          "type": "airline",
+          "ratio": "5:3",
+          "ratio_value": 0.6,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": "Qantas Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qatar Airways",
+          "program": "Privilege Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "TAP Air Portugal",
+          "program": "Miles&Go",
+          "currency": "TAP Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Turkish Airlines",
+          "program": "Miles&Smiles",
+          "currency": "Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Red",
+          "program": "Virgin Red",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Wyndham Rewards",
+          "program": "Wyndham Rewards",
+          "currency": "Wyndham Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "chase-ur",
+      "name": "Chase Ultimate Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Aer Lingus",
+          "program": "AerClub",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air Canada",
+          "program": "Aeroplan",
+          "currency": "Aeroplan Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": "Flying Blue Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "IHG One Rewards",
+          "program": "IHG One Rewards",
+          "currency": "IHG Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Iberia",
+          "program": "Iberia Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "JetBlue",
+          "program": "TrueBlue",
+          "currency": "TrueBlue Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Marriott Bonvoy",
+          "program": "Marriott Bonvoy",
+          "currency": "Marriott Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Southwest Airlines",
+          "program": "Rapid Rewards",
+          "currency": "Rapid Rewards Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "United Airlines",
+          "program": "MileagePlus",
+          "currency": "MileagePlus Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "World of Hyatt",
+          "program": "World of Hyatt",
+          "currency": "Hyatt Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Wyndham Rewards",
+          "program": "Wyndham Rewards",
+          "currency": "Wyndham Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "citi-typ",
+      "name": "Citi ThankYou Points",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Accor Live Limitless",
+          "program": "Accor Live Limitless",
+          "currency": "Accor Points",
+          "type": "hotel",
+          "ratio": "2:1",
+          "ratio_value": 0.5,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Aer Lingus",
+          "program": "AerClub",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": "Flying Blue Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "American Airlines",
+          "program": "AAdvantage",
+          "currency": "AAdvantage Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Avianca",
+          "program": "LifeMiles",
+          "currency": "LifeMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Choice Privileges",
+          "program": "Choice Privileges",
+          "currency": "Choice Points",
+          "type": "hotel",
+          "ratio": "1:1.5",
+          "ratio_value": 1.5,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "EVA Air",
+          "program": "Infinity MileageLands",
+          "currency": "EVA Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": "Skywards Miles",
+          "type": "airline",
+          "ratio": "1:0.8",
+          "ratio_value": 0.8,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Etihad Airways",
+          "program": "Etihad Guest",
+          "currency": "Etihad Guest Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "JetBlue",
+          "program": "TrueBlue",
+          "currency": "TrueBlue Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Leading Hotels of the World",
+          "program": "Leaders Club",
+          "currency": "Leaders Club Points",
+          "type": "hotel",
+          "ratio": "5:1",
+          "ratio_value": 0.2,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Preferred Hotels & Resorts",
+          "program": "I Prefer",
+          "currency": "I Prefer Points",
+          "type": "hotel",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": "Qantas Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qatar Airways",
+          "program": "Privilege Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Thai Airways",
+          "program": "Royal Orchid Plus",
+          "currency": "Royal Orchid Plus Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Turkish Airlines",
+          "program": "Miles&Smiles",
+          "currency": "Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Wyndham Rewards",
+          "program": "Wyndham Rewards",
+          "currency": "Wyndham Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "cba-awards",
+      "name": "CommBank Awards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "2.5:1",
+          "ratio_value": 0.4,
+          "notes": "2.5 Award Points = 1 Asia Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Malaysia Airlines",
+          "program": "Enrich",
+          "currency": "Enrich Miles",
+          "type": "airline",
+          "ratio": "2.5:1",
+          "ratio_value": 0.4,
+          "notes": "2.5 Award Points = 1 Enrich Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": "Qantas Points",
+          "type": "airline",
+          "ratio": "2.5:1",
+          "ratio_value": 0.4,
+          "notes": "2.5 Award Points = 1 Qantas Point",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "2.5:1",
+          "ratio_value": 0.4,
+          "notes": "2.5 Award Points = 1 KrisFlyer Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Velocity",
+          "program": "Velocity Frequent Flyer",
+          "currency": "Velocity Points",
+          "type": "airline",
+          "ratio": "2.5:1",
+          "ratio_value": 0.4,
+          "notes": "2.5 Award Points = 1 Velocity Point",
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "currensea",
+      "name": "Currensea Sea Miles",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Hilton",
+          "program": "Hilton Honors",
+          "currency": "Hilton Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": "Via Currensea Hilton Honors co-branded debit card",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Marriott",
+          "program": "Marriott Bonvoy",
+          "currency": "Marriott Points",
+          "type": "hotel",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": "Via Currensea Marriott Bonvoy co-branded debit card",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": "Currensea KrisFlyer card earns 2 KrisFlyer miles per \u00a31 spent abroad",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "United Airlines",
+          "program": "MileagePlus",
+          "currency": "MileagePlus Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": "Via Currensea United Airlines co-branded debit card",
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "hsbc-premier",
+      "name": "HSBC Premier Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": "Skywards Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Etihad Airways",
+          "program": "Etihad Guest",
+          "currency": "Etihad Guest Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "marriott-bonvoy",
+      "name": "Marriott Bonvoy",
+      "coverage": "partial",
+      "coverage_note": "Major airline partners only; hand-compiled. 5,000 bonus miles per 60,000 points transferred in one transaction.",
+      "partners": [
+        {
+          "name": "ANA",
+          "program": "Mileage Club",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Air Canada",
+          "program": "Aeroplan",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Alaska Airlines",
+          "program": "Atmos Rewards",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "American Airlines",
+          "program": "AAdvantage",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Avianca",
+          "program": "LifeMiles",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Delta Air Lines",
+          "program": "SkyMiles",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Emirates",
+          "program": "Skywards",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Etihad Airways",
+          "program": "Etihad Guest",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "JetBlue",
+          "program": "TrueBlue",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Korean Air",
+          "program": "SKYPASS",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Qatar Airways",
+          "program": "Privilege Club",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Southwest Airlines",
+          "program": "Rapid Rewards",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Turkish Airlines",
+          "program": "Miles&Smiles",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "United Airlines",
+          "program": "MileagePlus",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": null,
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": null,
+          "provenance": "hand-compiled"
+        }
+      ]
+    },
+    {
+      "id": "nab-rewards",
+      "name": "NAB Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Delta Air Lines",
+          "program": "SkyMiles",
+          "currency": "SkyMiles",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 NAB Points = 1 SkyMile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 NAB Points = 1 KrisFlyer Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Velocity",
+          "program": "Velocity Frequent Flyer",
+          "currency": "Velocity Points",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 NAB Points = 1 Velocity Point",
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "us-bank",
+      "name": "US Bank Altitude Reserve",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Accor Live Limitless",
+          "program": "Accor Live Limitless",
+          "currency": "Accor Points",
+          "type": "hotel",
+          "ratio": "2:1",
+          "ratio_value": 0.5,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": "Flying Blue Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Ethiopian Airlines",
+          "program": "ShebaMiles",
+          "currency": "ShebaMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": "Qantas Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "virgin-money-uk",
+      "name": "Virgin Money Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": "Points earned directly as Virgin Points",
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "wells-fargo",
+      "name": "Wells Fargo Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Aer Lingus",
+          "program": "AerClub",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Air France/KLM",
+          "program": "Flying Blue",
+          "currency": "Flying Blue Miles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Avianca",
+          "program": "LifeMiles",
+          "currency": "LifeMiles",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "British Airways",
+          "program": "The British Airways Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Choice Privileges",
+          "program": "Choice Privileges",
+          "currency": "Choice Points",
+          "type": "hotel",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Iberia",
+          "program": "Iberia Club",
+          "currency": "Avios",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "JetBlue",
+          "program": "TrueBlue",
+          "currency": "TrueBlue Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Virgin Atlantic",
+          "program": "Flying Club",
+          "currency": "Virgin Points",
+          "type": "airline",
+          "ratio": "1:1",
+          "ratio_value": 1.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Wyndham Rewards",
+          "program": "Wyndham Rewards",
+          "currency": "Wyndham Points",
+          "type": "hotel",
+          "ratio": "1:2",
+          "ratio_value": 2.0,
+          "notes": null,
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    },
+    {
+      "id": "westpac-altitude",
+      "name": "Westpac Altitude Rewards",
+      "coverage": "full",
+      "partners": [
+        {
+          "name": "Cathay Pacific",
+          "program": "Asia Miles",
+          "currency": "Asia Miles",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 Altitude Points = 1 Asia Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Malaysia Airlines",
+          "program": "Enrich",
+          "currency": "Enrich Miles",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 Altitude Points = 1 Enrich Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Qantas",
+          "program": "Frequent Flyer",
+          "currency": "Qantas Points",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 Altitude Points = 1 Qantas Point; requires Qantas Rewards fee A$75/yr",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Singapore Airlines",
+          "program": "KrisFlyer",
+          "currency": "KrisFlyer Miles",
+          "type": "airline",
+          "ratio": "3:1",
+          "ratio_value": 0.3333333333333333,
+          "notes": "3 Altitude Points = 1 KrisFlyer Mile",
+          "provenance": "mcp.milesandpointsdaily.com"
+        },
+        {
+          "name": "Velocity",
+          "program": "Velocity Frequent Flyer",
+          "currency": "Velocity Points",
+          "type": "airline",
+          "ratio": "2:1",
+          "ratio_value": 0.5,
+          "notes": "2 Altitude Points = 1 Velocity Point",
+          "provenance": "mcp.milesandpointsdaily.com"
+        }
+      ]
+    }
+  ]
+}

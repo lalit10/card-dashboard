@@ -30,6 +30,7 @@ import {
   renderOfferList,
   renderCatalog,
   buildCatalogSearch,
+  renderTransfers,
   offersToText,
   offersToCsv,
 } from "./render.js";
@@ -227,6 +228,30 @@ async function boot() {
     }
   } catch (_) {
     const tab = doc.getElementById("tab-catalog");
+    if (tab) tab.hidden = true;
+  }
+  // ---- transfer explorer (optional reference data) ----
+  try {
+    let tdata = null;
+    for (const url of ["my-transfer-partners.json", "data/transfer-partners.json"]) {
+      try {
+        const r = await fetch(url);
+        if (r.ok) {
+          tdata = await r.json();
+          break;
+        }
+      } catch (_) {
+        /* try next */
+      }
+    }
+    if (tdata && Array.isArray(tdata.programs)) {
+      renderTransfers(doc, tdata);
+    } else {
+      const tab = doc.getElementById("tab-transfers");
+      if (tab) tab.hidden = true;
+    }
+  } catch (_) {
+    const tab = doc.getElementById("tab-transfers");
     if (tab) tab.hidden = true;
   }
 }
