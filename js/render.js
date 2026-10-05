@@ -246,7 +246,8 @@ export function renderCatalog(doc, catalog, query = "") {
     meta.textContent =
       `${cards.length} of ${catalog.cards.length} cards` +
       (q ? ` matching “${q}”` : "") +
-      ` · source: ${catalog.source} @ ${String(catalog.source_ref).slice(0, 7)}` +
+      ` · source: ${catalog.source}` +
+      (catalog.source_ref ? ` @ ${String(catalog.source_ref).slice(0, 7)}` : "") +
       ` · fetched ${catalog.fetched_at.slice(0, 10)}`;
   }
   grid.innerHTML =
@@ -292,7 +293,7 @@ export function renderTransfers(doc, data) {
       meta.textContent =
         `${rows.length} partners` +
         (p && p.coverage === "partial" ? ` · ${p.coverage_note || "partial coverage"}` : "") +
-        ` · source: ${data.source} · fetched ${data.fetched_at.slice(0, 10)}`;
+        ` · source: ${data.source} · fetched ${String(data.fetched_at || data.built_at || "").slice(0, 10)}`;
     }
   };
 
