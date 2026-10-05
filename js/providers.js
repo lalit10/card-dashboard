@@ -14,8 +14,15 @@
 // from your own module (or a <script type="module"> block) before boot() runs.
 // See README.md ("Extending") for examples.
 
+// A catalog provider is any object with:
+//   loadCatalog() -> catalog object | null   (null = "not this one, try the next")
+// A catalog is read-only reference data: every known card's earn rates, fees,
+// credits, and signup bonuses (see schemas/catalog.schema.json). The user's
+// own cards live in the portfolio, not here.
+
 const portfolioProviders = [];
 const offerProviders = [];
+const catalogProviders = [];
 
 export function registerPortfolioProvider(name, provider) {
   portfolioProviders.push({ name, provider });
@@ -23,6 +30,10 @@ export function registerPortfolioProvider(name, provider) {
 
 export function registerOfferProvider(name, provider) {
   offerProviders.push({ name, provider });
+}
+
+export function registerCatalogProvider(name, provider) {
+  catalogProviders.push({ name, provider });
 }
 
 export function normalizeOffer(input = {}) {
@@ -75,6 +86,23 @@ export async function loadOffers() {
   return merged;
 }
 
+// Catalogs are optional reference data: no catalog is fine, the dashboard
+// just hides the Catalog tab.
+export async function loadCatalog() {
+  for (const { name, provider } of catalogProviders) {
+    try {
+      const data = await provider.loadCatalog();
+      if (data && Array.isArray(data.cards)) {
+        data._source = data._source || name;
+        return data;
+      }
+    } catch (_) {
+      /* try the next provider */
+    }
+  }
+  return null;
+}
+
 // ---------------------------------------------------------------------------
 // Built-in providers
 // ---------------------------------------------------------------------------
@@ -124,6 +152,36 @@ export function csvOfferProvider(param = "offers") {
       const response = await fetch(url);
       if (!response.ok) return null;
       return parseOfferCsv(await response.text());
+    },
+  };
+}
+
+// Load a card catalog JSON from a URL passed as ?catalog=<url>.
+export function catalogQueryParamProvider(param = "catalog") {
+  return {
+    async loadCatalog() {
+      const url = new URLSearchParams(location.search).get(param);
+      if (!url) return null;
+      const response = await fetch(url);
+      if (!response.ok) return null;
+      return await response.json();
+    },
+  };
+}
+
+// Try a list of catalog JSON URLs in order.
+export function catalogFileProvider(...urls) {
+  return {
+    async loadCatalog() {
+      for (const url of urls) {
+        try {
+          const response = await fetch(url);
+          if (response.ok) return await response.json();
+        } catch (_) {
+          /* try the next URL */
+        }
+      }
+      return null;
     },
   };
 }

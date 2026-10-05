@@ -35,6 +35,7 @@
       <button role="tab" aria-selected="false" aria-controls="cards" id="tab-cards">All cards</button>
       <button role="tab" aria-selected="false" aria-controls="benefits" id="tab-benefits">Benefits</button>
       <button role="tab" aria-selected="false" aria-controls="offers" id="tab-offers">Offers notes</button>
+      <button role="tab" aria-selected="false" aria-controls="catalog" id="tab-catalog">Catalog</button>
     </nav>
 
     <section class="tab-panel" id="guide" role="tabpanel" aria-labelledby="tab-guide">
@@ -173,6 +174,18 @@
           </div>
         </div>
       </section>
+    </section>
+
+    <section class="tab-panel" id="catalog" role="tabpanel" aria-labelledby="tab-catalog" hidden>
+      <div class="section-head">
+        <div><p class="eyebrow">Card catalog</p><h2>Every card, earn in plain %</h2></div>
+        <p>Reference data from an open card database (MIT). Points converted to cash-equivalent % using the catalog's valuations. Verify terms with the issuer before applying.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <input id="catalogSearch" type="search" placeholder="Search cards, issuers, categories…" aria-label="Search the card catalog">
+      </div>
+      <p class="catalog-meta" id="catalogMeta"></p>
+      <div class="card-grid" id="catalogGrid"></div>
     </section>
 
     <section class="sources">

@@ -3,6 +3,7 @@
 // about *what* to recommend — that lives in recommender.js.
 
 import { escapeHtml } from "./util.js";
+import { topEarn, formatPct, categoryLabel, bonusSummary, searchCatalog } from "./catalog.js";
 
 export function setText(doc, id, text) {
   const el = doc.getElementById(id);
@@ -189,6 +190,76 @@ export function buildCardFilters(doc, cards, onFilter) {
       onFilter(id);
     });
     if (wrap) wrap.appendChild(btn);
+  });
+}
+
+// ---- card catalog ----------------------------------------------------------
+
+function catalogCardHtml(card) {
+  const fee = card.annual_fee_usd > 0 ? `$${card.annual_fee_usd}/yr` : "No annual fee";
+  const earnRows = topEarn(card, 4)
+    .map(
+      (e) =>
+        `<li><span>${escapeHtml(categoryLabel(e.key))}${e.portal_only ? " <em>(portal)</em>" : ""}${e.cap_usd ? ` <em>(cap $${e.cap_usd.toLocaleString()})</em>` : ""}</span><strong>${escapeHtml(formatPct(e.pct))}</strong></li>`
+    )
+    .join("");
+  const bonus = bonusSummary(card);
+  const credits =
+    (card.credits || []).length > 0
+      ? `<p class="catalog-credits">${card.credits.length} credit${card.credits.length === 1 ? "" : "s"}: ${escapeHtml(
+          card.credits
+            .slice(0, 3)
+            .map((c) => c.name)
+            .join(", ")
+        )}${card.credits.length > 3 ? "…" : ""}</p>`
+      : "";
+  const stale =
+    card.verified_date && card.verified_date < "2026-01-01"
+      ? `<span class="tag tag-stale" title="Last verified ${escapeHtml(card.verified_date)}">stale data</span>`
+      : "";
+  const discontinued =
+    card.availability === "discontinued" ? `<span class="tag tag-stale">discontinued</span>` : "";
+  return `<article class="portfolio-card catalog-card" data-card-id="${escapeHtml(card.id)}">
+      <div class="card-top">
+        <div class="card-id"><div class="card-title"><h3>${escapeHtml(card.name)}</h3><p>${escapeHtml(card.issuer)}${card.network ? " · " + escapeHtml(card.network) : ""}</p></div></div>
+        <span class="fee">${escapeHtml(fee)}</span>
+      </div>
+      <ul class="earn-list">${earnRows || `<li><span>Base earn</span><strong>${escapeHtml(formatPct(card.base_rate))}</strong></li>`}</ul>
+      ${bonus ? `<p class="catalog-bonus">🎁 ${escapeHtml(bonus)}</p>` : ""}
+      ${credits}
+      <div class="tag-row">${stale}${discontinued}${
+        card.currency_program && card.currency_program !== "cash"
+          ? `<span class="tag">${escapeHtml(card.currency_program)}</span>`
+          : `<span class="tag">cash back</span>`
+        }</div>
+    </article>`;
+}
+
+export function renderCatalog(doc, catalog, query = "") {
+  const grid = doc.getElementById("catalogGrid");
+  const meta = doc.getElementById("catalogMeta");
+  if (!grid) return;
+  const cards = searchCatalog(catalog.cards || [], query);
+  if (meta) {
+    const q = query.trim();
+    meta.textContent =
+      `${cards.length} of ${catalog.cards.length} cards` +
+      (q ? ` matching “${q}”` : "") +
+      ` · source: ${catalog.source} @ ${String(catalog.source_ref).slice(0, 7)}` +
+      ` · fetched ${catalog.fetched_at.slice(0, 10)}`;
+  }
+  grid.innerHTML =
+    cards.map(catalogCardHtml).join("") ||
+    `<p class="empty">No cards match. Try a different search.</p>`;
+}
+
+export function buildCatalogSearch(doc, catalog) {
+  const input = doc.getElementById("catalogSearch");
+  if (!input) return;
+  let t = null;
+  input.addEventListener("input", () => {
+    clearTimeout(t);
+    t = setTimeout(() => renderCatalog(doc, catalog, input.value), 150);
   });
 }
 

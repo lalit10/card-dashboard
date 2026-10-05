@@ -9,11 +9,15 @@
 import {
   registerPortfolioProvider,
   registerOfferProvider,
+  registerCatalogProvider,
   loadPortfolio,
   loadOffers,
+  loadCatalog,
   jsonFileProvider,
   queryParamProvider,
   csvOfferProvider,
+  catalogQueryParamProvider,
+  catalogFileProvider,
 } from "./providers.js";
 import { recommend, DEFAULT_MERCHANT_CATEGORIES } from "./recommender.js";
 import {
@@ -24,6 +28,8 @@ import {
   renderCards,
   renderLookup,
   renderOfferList,
+  renderCatalog,
+  buildCatalogSearch,
   offersToText,
   offersToCsv,
 } from "./render.js";
@@ -33,6 +39,8 @@ import {
 registerPortfolioProvider("query param (?portfolio=)", queryParamProvider());
 registerPortfolioProvider("local files", jsonFileProvider("my-portfolio.json", "data/sample-portfolio.json"));
 registerOfferProvider("csv (?offers=)", csvOfferProvider());
+registerCatalogProvider("query param (?catalog=)", catalogQueryParamProvider());
+registerCatalogProvider("local files", catalogFileProvider("my-catalog.json", "data/card-catalog.json"));
 
 async function boot() {
   const doc = document;
@@ -206,6 +214,21 @@ async function boot() {
     });
 
   refreshOffers();
+
+  // ---- card catalog (optional reference data) ----
+  try {
+    const catalog = await loadCatalog();
+    if (catalog) {
+      renderCatalog(doc, catalog);
+      buildCatalogSearch(doc, catalog);
+    } else {
+      const tab = doc.getElementById("tab-catalog");
+      if (tab) tab.hidden = true;
+    }
+  } catch (_) {
+    const tab = doc.getElementById("tab-catalog");
+    if (tab) tab.hidden = true;
+  }
 }
 
 boot();

@@ -444,3 +444,23 @@
       .shell { max-width: none; padding: 0; }
       .hero, .recommendation, .portfolio-card, .benefit-panel, .calendar-panel { box-shadow: none; break-inside: avoid; }
     }
+
+/* ---- card catalog ---- */
+.catalog-toolbar { margin: 0 0 8px; }
+.catalog-toolbar input[type="search"] {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.catalog-meta { color: var(--muted); font-size: 12.5px; margin: 0 0 12px; }
+.catalog-bonus { margin: 8px 0 0; font-size: 13px; }
+.catalog-credits { margin: 8px 0 0; font-size: 12.5px; color: var(--muted); }
+.tag-stale {
+  background: #fef3c7;
+  color: #92400e;
+}
