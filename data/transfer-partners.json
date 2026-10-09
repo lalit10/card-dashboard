@@ -1,9 +1,9 @@
 {
   "source": "github.com/lalit10/card-data",
-  "source_license": "MIT",
-  "built_at": "2026-10-05T02:43:01Z",
+  "source_license": "see LICENSE; card facts compiled from public issuer sources",
+  "fetched_at": "2026-10-05T23:05:23Z",
   "program_count": 18,
-  "pair_count": 186,
+  "pair_count": 185,
   "programs": [
     {
       "id": "anz-rewards",
@@ -167,16 +167,6 @@
           "ratio": "5:4",
           "ratio_value": 0.8,
           "notes": null,
-          "provenance": "mcp.milesandpointsdaily.com"
-        },
-        {
-          "name": "Etihad Airways",
-          "program": "Etihad Guest",
-          "currency": "Etihad Guest Miles",
-          "type": "airline",
-          "ratio": "1:1",
-          "ratio_value": 1.0,
-          "notes": "Transfers end June 30, 2026",
           "provenance": "mcp.milesandpointsdaily.com"
         },
         {

@@ -1,8 +1,8 @@
 {
   "source": "github.com/lalit10/card-data",
-  "source_license": "MIT",
-  "fetched_at": "2026-10-05T02:43:01Z",
-  "card_count": 112,
+  "source_license": "see LICENSE; card facts compiled from public issuer sources",
+  "fetched_at": "2026-10-05T23:05:23Z",
+  "card_count": 137,
   "valuations": {
     "aa_advantage": {
       "floor_cpp": 0.8,
@@ -28,9 +28,17 @@
       "floor_cpp": 0.8,
       "optimistic_cpp": 1.4
     },
+    "barnes_noble": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
     "bilt_points": {
       "floor_cpp": 0.55,
       "optimistic_cpp": 1.9
+    },
+    "breezepoints": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
     },
     "bofa_premium_rewards": {
       "floor_cpp": 1.0,
@@ -43,6 +51,14 @@
     "capital_one_miles": {
       "floor_cpp": 0.5,
       "optimistic_cpp": 1.7
+    },
+    "capital_vacations": {
+      "floor_cpp": 0.8,
+      "optimistic_cpp": 1.0
+    },
+    "carnival_rewards": {
+      "floor_cpp": 0.8,
+      "optimistic_cpp": 1.0
     },
     "cash": {
       "floor_cpp": 1.0,
@@ -83,6 +99,10 @@
     "frontier_miles": {
       "floor_cpp": 0.6,
       "optimistic_cpp": 1.0
+    },
+    "gap_encore": {
+      "floor_cpp": 0.2,
+      "optimistic_cpp": 0.2
     },
     "gm_rewards": {
       "floor_cpp": 1.0,
@@ -155,9 +175,139 @@
     "wyndham_rewards": {
       "floor_cpp": 0.7,
       "optimistic_cpp": 1.1
+    },
+    "wells_onekey": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
+    },
+    "xbox_points": {
+      "floor_cpp": 1.0,
+      "optimistic_cpp": 1.0
     }
   },
   "cards": [
+    {
+      "id": "barclays-aarp-essential",
+      "name": "AARP Essential Rewards Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 3,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on gas"
+        },
+        {
+          "type": "category",
+          "key": "drugstores",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% at drug stores (excl. Target/Walmart)"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2% on eligible medical expenses"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 100,
+        "spend_usd": 500,
+        "months": 3,
+        "notes": "$100 cash back bonus after $500 spend in 90 days"
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "id": "barclays-aarp-travel",
+      "name": "AARP Travel Rewards Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 0,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on airfare"
+        },
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on hotel stays"
+        },
+        {
+          "type": "category",
+          "key": "travel_other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on car rentals"
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2% on eligible restaurants"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 100,
+        "spend_usd": 500,
+        "months": 3,
+        "notes": "$100 cash back bonus after $500 spend in 90 days"
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
+    },
     {
       "id": "citi-att-points-plus",
       "name": "AT&T Points Plus Card from Citi",
@@ -193,6 +343,15 @@
       ],
       "credits": [
         {
+          "name": "Purchase milestone credit",
+          "amount_usd": 20,
+          "period": "monthly",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$20 statement credit each billing cycle after $1,000+ in purchases (up to $240/yr)."
+        },
+        {
           "name": "Recurring statement credit ($1,000/cycle)",
           "amount_usd": 20,
           "period": "monthly",
@@ -202,10 +361,16 @@
           "notes": "$20 posts only in billing cycles where net new purchases (spend minus returns) reach $1,000+. Captured only by cardholders who consistently run $1,000+/month through the card; nothing in lighter-spend months."
         }
       ],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 200,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "$200 statement credit after $1,000 in purchases in the first 3 months."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-aer-lingus",
@@ -272,8 +437,8 @@
         "priority_boarding",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-aeroplan",
@@ -292,7 +457,7 @@
         {
           "type": "category",
           "key": "travel_flights",
-          "rate": 3,
+          "rate": 5,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
@@ -338,9 +503,9 @@
         }
       ],
       "signup_bonus": {
-        "points": 60000,
+        "points": 75000,
         "cash_usd": null,
-        "spend_usd": 3000,
+        "spend_usd": 4000,
         "months": 3,
         "notes": "Not available to current cardmembers of this card or previous cardmembers who received a bonus for this card within the last 24 months. Allow 6-8 weeks to post."
       },
@@ -349,8 +514,8 @@
         "complimentary_elite_status",
         "concierge"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-flying-blue",
@@ -392,13 +557,41 @@
         "cash_usd": null,
         "spend_usd": 2000,
         "months": 3,
-        "notes": "Bonus also grants 100 Experience Points (XP) toward Flying Blue elite status \u2014 not structured (elite-status progress is not a scored value). Some third-party reporting cites a 70,000-mile offer; the 50,000 official-page figure is used. NEEDS human verification."
+        "notes": "50,000 bonus miles plus 100 XP after $2,000+ in purchases in the first 90 days."
       },
       "benefits": [
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "alliant-alliant-platinum",
+      "name": "Alliant Visa Platinum Card",
+      "issuer": "alliant",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": null,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "No welcome offer stated. Low-APR card: 0% intro APR 12 months on purchases and balance transfers, then 14.49%-26.49% variable. 2% balance transfer fee."
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "bank-of-america-allegiant",
@@ -429,14 +622,14 @@
         "points": 30000,
         "cash_usd": null,
         "spend_usd": 1500,
-        "months": 3,
-        "notes": "Offer file also reports an older/third-party figure of \"15,000 points\" \u2014 the 30,000 figure is used but flagged as promotion-dependent and unconfirmed. NEEDS human verification of the current welcome offer against the live page."
+        "months": null,
+        "notes": "30,000 bonus points ($300 off a future Allegiant trip) after $1,500 in spend."
       },
       "benefits": [
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-amazon-visa",
@@ -526,10 +719,16 @@
         }
       ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 50,
+        "spend_usd": null,
+        "months": null,
+        "notes": "$50 Amazon gift card instantly loaded to the Amazon account gift card balance on approval."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-aadvantage-mileup",
@@ -565,10 +764,16 @@
         }
       ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": 15000,
+        "cash_usd": 100,
+        "spend_usd": 500,
+        "months": 3,
+        "notes": "Limited-time offer \u2014 15,000 AAdvantage bonus miles plus a $100 statement credit after $500 in purchases in the first 3 months."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-gold",
@@ -691,15 +896,15 @@
         "purchase_protection",
         "trip_cancellation_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-green",
       "name": "American Express Green Card",
       "issuer": "amex",
       "network": "amex",
-      "availability": "active",
+      "availability": "discontinued",
       "annual_fee_usd": 150,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
@@ -785,8 +990,8 @@
         "no_foreign_transaction_fee",
         "trip_cancellation_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "goldman-sachs-apple-card",
@@ -803,20 +1008,76 @@
       "base_rate": 1,
       "earn": [
         {
-          "type": "merchant",
-          "key": "uber",
-          "rate": 1,
+          "type": "category",
+          "key": "base",
+          "rate": 2,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "3% Daily Cash applies at Uber only when paid via Apple Pay. Apple's 3% partner list changes over time (offer file names Nike, Uber, Walgreens, Booking.com, Exxon Mobil, ChargePoint, Hertz, Duane Reade, Ace Hardware as examples) \u2014 Uber is modeled here because it is the only listed partner with a registry key; the rest are omitted (no merchant key). Also, all purchases made directly from Apple (Apple Store, apple.com, App Store, Apple services) earn 3%, but there is no 'apple' merchant key, so that is captured only in the card notes below. NEEDS human verification of the current partner list (support.apple.com/en-us/120400)."
+          "notes": "2% Daily Cash on purchases made with Apple Pay; unlimited, real cash."
+        },
+        {
+          "type": "merchant",
+          "key": "apple_and_select_partners",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% Daily Cash on Apple purchases and select merchants with Apple Pay (Ace Hardware, Booking.com, ChargePoint, Duane Reade, Exxon Mobil, Hertz, Nike, Uber, Uber Eats, Walgreens)."
         }
       ],
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "barclays-athleta-encore",
+      "name": "Athleta Encore Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": null,
+      "currency_type": "points",
+      "currency_program": "gap_encore",
+      "cpp_floor": 0.2,
+      "cpp_optimistic": 0.2,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5x at Gap Inc. family of brands"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x at all eligible retail apparel brands"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "20% off first purchase with new card"
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "bank-of-america-atmos-ascent",
@@ -883,16 +1144,16 @@
       "signup_bonus": {
         "points": 50000,
         "cash_usd": null,
-        "spend_usd": 2000,
+        "spend_usd": 1500,
         "months": 3,
-        "notes": "Offer also includes a \"buy one ticket, get one for just the taxes and fees\" companion award ($0 fare plus taxes and fees from $23). That in-kind BOGO is not structured into value \u2014 it is a one-time award whose worth depends on the fare booked. Described here for the reviewer."
+        "notes": "Limited-time \u2014 50,000 bonus points plus a $99 Companion Fare (plus taxes/fees from $23) after $1,500 in purchases in the first 90 days."
       },
       "benefits": [
         "free_checked_bag",
         "no_blackout_dates"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-atmos-summit",
@@ -948,19 +1209,66 @@
         }
       ],
       "signup_bonus": {
-        "points": 100000,
+        "points": 95000,
         "cash_usd": null,
-        "spend_usd": 6500,
-        "months": 3,
-        "notes": "Bonus also includes a 25,000-point Global Companion Award and a 50% flight discount code \u2014 both in-kind and not structured into value. Offer file notes a lower targeted offer (80,000 points + companion award after $4,000); the $6,500/100,000 official-page figure is used."
+        "spend_usd": 3000,
+        "months": null,
+        "notes": "Limited-time \u2014 70,000 bonus points plus a 25,000-point Global Companion Award after $3,000+ in spend."
       },
       "benefits": [
         "lounge_access",
         "free_checked_bag",
         "no_change_fees"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "barclays-banana-republic-encore",
+      "name": "Banana Republic Encore Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": null,
+      "currency_type": "points",
+      "currency_program": "gap_encore",
+      "cpp_floor": 0.2,
+      "cpp_optimistic": 0.2,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5x at Gap Inc. family of brands (numeric rate follows the shared Encore program structure verified on the Gap and Athleta pages; this card's own page renders the multiplier in graphics not captured in text)"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x at all eligible retail apparel brands (numeric rate follows the shared Encore program structure verified on the Gap and Athleta pages; this card's own page renders the multiplier in graphics not captured in text)"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "20% off first purchase with new card"
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "bank-of-america-bankamericard",
@@ -981,13 +1289,60 @@
       "benefits": [
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
-      "id": "cardless-bilt-blue",
+      "id": "barclays-barnes-noble",
+      "name": "Barnes & Noble Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 3,
+      "currency_type": "points",
+      "currency_program": "barnes_noble",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5% back on B&N and Paper Source purchases"
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x at restaurants (excl. B&N Cafe)"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 25,
+        "spend_usd": null,
+        "months": null,
+        "notes": "$25 B&N gift card after first purchase or balance transfer. Free Premium Membership after $7,500/yr spend."
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "id": "firstbank-bilt-blue",
       "name": "Bilt Blue Card",
-      "issuer": "cardless",
+      "issuer": "firstbank",
       "network": "mastercard",
       "availability": "active",
       "annual_fee_usd": 0,
@@ -1000,39 +1355,75 @@
       "earn": [
         {
           "type": "category",
+          "key": "dining",
+          "rate": 4,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "4x Bilt points at 20,000+ Bilt partner restaurants."
+        },
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x points on hotels booked through the Bilt Travel Portal."
+        },
+        {
+          "type": "merchant",
+          "key": "lyft",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x points on Lyft after linking accounts."
+        },
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x points on flights booked through the Bilt Travel Portal."
+        },
+        {
+          "type": "category",
           "key": "housing",
           "rate": 1.25,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Bilt Housing Payments (rent/mortgage/HOA dues/utilities/property tax paid via the Bilt app, no transaction fee, no cap). Earn is a variable 0x-1.25x per billing cycle set by the \"Everyday Spend Ratio\" = Everyday Spend \u00f7 Housing Payment (25-49%=0.5x, 50-74%=0.75x, 75-99%=1x, 100%+=1.25x; 250-pt/cycle floor below 25%). The optimizer resolves the tier from how much everyday spend it routes onto this card (earn_ratio steering pass), so the multiplier is portfolio-dependent, not a fixed rate."
+          "notes": "Up to 1.25x points on rent and mortgage payments."
         },
         {
-          "type": "merchant",
-          "key": "lyft",
-          "rate": 4,
+          "type": "category",
+          "key": "base",
+          "rate": 1,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "User-reported 4x on Lyft rideshare, not stated in the offer file terms sheet (which only says partner rates \"vary by partner/merchant, set in the Bilt app\"). Offer file states partner earning \"stacks with base 1X\" \u2014 modeled here as the merchant rate itself (4x), not 5x on top of base; confirm stacking behavior against the Bilt app before treating as high confidence."
+          "notes": "1x point on other everyday purchases."
         }
       ],
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
-        "spend_usd": 0,
-        "months": 1,
-        "notes": "$100 Bilt Cash credited at account opening with no spend requirement (approval-time credit, modeled as a $0-spend bonus). Bilt Cash is cash-equivalent, valued at ~1cpp. Not available if you currently hold, previously held, or already received a Welcome Bonus for any Bilt Card 2.0 (Blue/Obsidian/Palladium)."
+        "cash_usd": 100,
+        "spend_usd": null,
+        "months": 0,
+        "notes": "$100 of Bilt Cash when you apply and are approved; no spend requirement."
       },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
-      "id": "cardless-bilt-obsidian",
+      "id": "firstbank-bilt-obsidian",
       "name": "Bilt Obsidian Card",
-      "issuer": "cardless",
+      "issuer": "firstbank",
       "network": "mastercard",
       "availability": "active",
       "annual_fee_usd": 95,
@@ -1045,30 +1436,39 @@
       "earn": [
         {
           "type": "category",
-          "key": "housing",
-          "rate": 1.25,
+          "key": "dining",
+          "rate": 6,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Bilt Housing Payments (rent/mortgage/HOA dues/utilities/property tax paid via the Bilt app, no transaction fee, no cap). Earn is a variable 0x-1.25x per billing cycle set by the \"Everyday Spend Ratio\" = Everyday Spend \u00f7 Housing Payment (25-49%=0.5x, 50-74%=0.75x, 75-99%=1x, 100%+=1.25x; 250-pt/cycle floor below 25%). The optimizer resolves the tier from how much everyday spend it routes onto this card (earn_ratio steering pass)."
-        },
-        {
-          "type": "category",
-          "key": "travel_flights",
-          "rate": 2,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": null
+          "notes": "Up to 6x points at Bilt partner restaurants."
         },
         {
           "type": "category",
           "key": "travel_hotels",
-          "rate": 2,
+          "rate": 4,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
+          "notes": "4x points on hotels booked through the Bilt Travel Portal."
+        },
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x points on flights booked through the Bilt Travel Portal."
+        },
+        {
+          "type": "category",
+          "key": "choice",
+          "rate": 3,
+          "cap_usd": 25000,
+          "cap_period": "annual",
+          "portal_only": false,
+          "notes": "3x points on your choice of dining or grocery (grocery capped at $25,000/yr)."
         },
         {
           "type": "category",
@@ -1077,28 +1477,28 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Covers cruise lines and car rental agencies from the same 2x travel bucket."
+          "notes": "2x points on other travel."
         },
         {
           "type": "category",
-          "key": "choice",
-          "rate": 3,
+          "key": "housing",
+          "rate": 1.25,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
-        },
-        {
-          "type": "merchant",
-          "key": "lyft",
-          "rate": 4,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "User-reported 4x on Lyft rideshare, not stated in the offer file terms sheet (which only says partner rates \"vary by partner/merchant, set in the Bilt app\"). Offer file states partner earning \"stacks with base rate\" \u2014 modeled here as the merchant rate itself (4x), not on top of base; confirm stacking behavior against the Bilt app before treating as high confidence."
+          "notes": "Up to 1.25x points on rent and mortgage payments."
         }
       ],
       "credits": [
+        {
+          "name": "Bilt Travel hotel credit",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Two $50 statement credits per year for qualifying hotel bookings via Bilt Travel."
+        },
         {
           "name": "Bilt Travel Hotel Credit",
           "amount_usd": 50,
@@ -1111,19 +1511,19 @@
       ],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
-        "spend_usd": 0,
-        "months": 1,
-        "notes": "$200 Bilt Cash credited at account opening with no spend requirement (approval-time credit, modeled as a $0-spend bonus). Bilt Cash is cash-equivalent, valued at ~1cpp. Not available if you currently/previously held or already received a Welcome Bonus for any Bilt Card 2.0."
+        "cash_usd": 200,
+        "spend_usd": null,
+        "months": 0,
+        "notes": "$200 of Bilt Cash as listed on the Bilt comparison page; no spend requirement stated."
       },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
-      "id": "cardless-bilt-palladium",
+      "id": "firstbank-bilt-palladium",
       "name": "Bilt Palladium Card",
-      "issuer": "cardless",
+      "issuer": "firstbank",
       "network": "mastercard",
       "availability": "active",
       "annual_fee_usd": 495,
@@ -1136,12 +1536,21 @@
       "earn": [
         {
           "type": "category",
-          "key": "housing",
-          "rate": 1.25,
+          "key": "dining",
+          "rate": 5,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Bilt Housing Payments (rent/mortgage/HOA dues/utilities/property tax paid via the Bilt app, no transaction fee, no cap). Earn is a variable 0x-1.25x per billing cycle set by the \"Everyday Spend Ratio\" = Everyday Spend \u00f7 Housing Payment (25-49%=0.5x, 50-74%=0.75x, 75-99%=1x, 100%+=1.25x; 250-pt/cycle floor below 25%). The optimizer resolves the tier from how much everyday spend it routes onto this card (earn_ratio steering pass)."
+          "notes": "Up to 5x points at Bilt partner restaurants."
+        },
+        {
+          "type": "category",
+          "key": "travel_other",
+          "rate": 4,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "4x points on hotels and flights booked through the Bilt Travel Portal."
         },
         {
           "type": "merchant",
@@ -1150,10 +1559,46 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "User-reported 4x on Lyft rideshare, not stated in the offer file terms sheet (which only says partner rates \"vary by partner/merchant, set in the Bilt app\"). Offer file states partner earning \"stacks with base rate\" \u2014 modeled here as the merchant rate itself (4x), not on top of base; confirm stacking behavior against the Bilt app before treating as high confidence."
+          "notes": "4x points on Lyft."
+        },
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x points on other everyday purchases."
+        },
+        {
+          "type": "category",
+          "key": "housing",
+          "rate": 1.25,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Up to 1.25x points on rent and mortgage payments."
         }
       ],
       "credits": [
+        {
+          "name": "Bilt Travel hotel credit",
+          "amount_usd": 400,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Two $200 statement credits per year for qualifying hotel bookings via Bilt Travel."
+        },
+        {
+          "name": "Bilt Cash annual credit",
+          "amount_usd": 200,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$200/yr in Bilt Cash; up to $100 can roll over."
+        },
         {
           "name": "Annual Bilt Cash Credit",
           "amount_usd": 200,
@@ -1174,18 +1619,156 @@
         }
       ],
       "signup_bonus": {
-        "points": null,
-        "cash_usd": null,
-        "spend_usd": 0,
+        "points": 50000,
+        "cash_usd": 300,
+        "spend_usd": 4000,
         "months": 3,
-        "notes": "Bonus modeled as two tranches within the same ~90-day window: $300 Bilt Cash credited immediately at account opening (no spend, base value), PLUS 50,000 points after $4,000 Everyday Spend (tier). ALSO grants Bilt Gold Elite Status (unscored, see benefit_flags) lasting through Jan 15 of the second following year \u2014 not represented as a bonus value. Window is 90 days (97 days for accounts opened 2/7/2026); offer file gives a relative window, so window_months is approximate. Not available if you currently/previously held or already received a Welcome Bonus for any Bilt Card 2.0."
+        "notes": "50,000 Bilt points plus Bilt Gold Status after $4,000 in everyday purchases in the first 90 days (rent/mortgage excluded); plus $300 of Bilt Cash."
       },
       "benefits": [
+        "priority_pass",
         "lounge_access",
         "elite_status"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "amex-blue-cash-everyday",
+      "name": "Blue Cash Everyday Card",
+      "issuer": "amex",
+      "network": "amex",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": null,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 3,
+          "cap_usd": 6000,
+          "cap_period": "annual",
+          "portal_only": false,
+          "notes": "3% back at US supermarkets on up to $6,000/yr, then 1%."
+        },
+        {
+          "type": "category",
+          "key": "online_shopping",
+          "rate": 3,
+          "cap_usd": 6000,
+          "cap_period": "annual",
+          "portal_only": false,
+          "notes": "3% back on US online retail purchases on up to $6,000/yr, then 1%."
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 3,
+          "cap_usd": 6000,
+          "cap_period": "annual",
+          "portal_only": false,
+          "notes": "3% back at US gas stations on up to $6,000/yr, then 1%."
+        }
+      ],
+      "credits": [
+        {
+          "name": "Disney Streaming Credit",
+          "amount_usd": 7,
+          "period": "monthly",
+          "category": "streaming",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "Up to $7/month ($84/yr) statement credit after using the enrolled card for a subscription at DisneyPlus.com, Hulu.com, or Stream.ESPN.com; enrollment required; monthly forfeit."
+        }
+      ],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 150,
+        "spend_usd": 2000,
+        "months": 6,
+        "notes": "Earn $150 cash back (as Reward Dollars) after $2,000 in purchases in the first 6 months. Plus 0% intro APR for up to 18 months on purchases and balance transfers."
+      },
+      "benefits": [],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "amex-blue-cash-preferred",
+      "name": "Blue Cash Preferred Card",
+      "issuer": "amex",
+      "network": "amex",
+      "availability": "active",
+      "annual_fee_usd": 95,
+      "foreign_transaction_pct": null,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 6,
+          "cap_usd": 6000,
+          "cap_period": "annual",
+          "portal_only": false,
+          "notes": "6% back at US supermarkets on up to $6,000/yr, then 1%."
+        },
+        {
+          "type": "category",
+          "key": "streaming",
+          "rate": 6,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "6% back on select US streaming subscriptions."
+        },
+        {
+          "type": "category",
+          "key": "transit",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% back on transit including taxis, rideshare, parking, tolls, trains, and buses."
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% back at US gas stations."
+        }
+      ],
+      "credits": [
+        {
+          "name": "Disney Streaming Credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "streaming",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "Up to $10/month ($120/yr) statement credit after using the enrolled card for a subscription (including the bundle) at DisneyPlus.com, Hulu.com, or Stream.ESPN.com; enrollment required; subject to auto-renewal; monthly forfeit."
+        }
+      ],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 250,
+        "spend_usd": 3000,
+        "months": 6,
+        "notes": "Earn $250 cash back (as Reward Dollars) after $3,000 in purchases in the first 6 months. Plus 0% intro APR for up to 18 months on purchases and balance transfers. $0 intro annual fee for the first year, then $95."
+      },
+      "benefits": [],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bread-financial-bread-cashback",
@@ -1210,8 +1793,84 @@
         "zero_fraud_liability",
         "id_theft_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "barclays-breeze-easy",
+      "name": "Breeze Easy Visa Credit Card",
+      "issuer": "barclays",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 89,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "breezepoints",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5x card-earned (\"when you buy\") on Nicer and Nicest bundle purchases. Breeze Airways separately awards another 5x to the loyalty account when you fly, for up to 10x total; the fly portion is program earn, not card earn."
+        },
+        {
+          "type": "category",
+          "key": "travel_other",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x card-earned (\"when you buy\") on Nice bundle purchases. Breeze Airways separately awards another 2x when you fly, for up to 4x total; the fly portion is program earn, not card earn."
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x at eligible grocery stores"
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x at restaurants incl. Breeze inflight food/beverage"
+        }
+      ],
+      "credits": [
+        {
+          "name": "Anniversary bonus points",
+          "amount_usd": null,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "7,500 anniversary bonus BreezePoints with eligible purchases"
+        }
+      ],
+      "signup_bonus": {
+        "points": 30000,
+        "cash_usd": null,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "Limited-time offer. Earn 30,000 bonus BreezePoints plus Breezy 1 benefits after $1,000 in purchases within the first 90 days; plus 20,000 more bonus BreezePoints after $5,000 total purchases within the first 180 days (up to 50,000 total)."
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "chase-british-airways",
@@ -1277,8 +1936,8 @@
         "companion_certificate",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "capital-one-capital-one-platinum",
@@ -1301,8 +1960,8 @@
         "zero_fraud_liability",
         "virtual_card_numbers"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "capital-one-quicksilver",
@@ -1318,6 +1977,15 @@
       "cpp_optimistic": 1.0,
       "base_rate": 1.5,
       "earn": [
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 1.5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "1.5% cash back on every purchase."
+        },
         {
           "type": "category",
           "key": "travel_hotels",
@@ -1349,14 +2017,14 @@
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
+        "cash_usd": 200,
         "spend_usd": 500,
         "months": 3,
-        "notes": "\"$200 cash bonus\" after \"$500 within 3 months of opening your account\" (per secondary sources; exact wording to verify). Existing/previous cardmembers ineligible if they received a bonus for this product in the past 48 months. Figures third-party/unconfirmed per the offer file's NEEDS_VERIFICATION marker."
+        "notes": "$200 cash bonus after $500 in purchases in the first 3 months."
       },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "capital-one-quicksilver-one",
@@ -1371,12 +2039,31 @@
       "cpp_floor": 1.0,
       "cpp_optimistic": 1.0,
       "base_rate": 1.5,
-      "earn": [],
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": true,
+          "notes": "5% on hotels and rental cars booked through Capital One Travel"
+        },
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": true,
+          "notes": "5% on flights booked through Capital One Travel"
+        }
+      ],
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "capital-one-savor",
@@ -1392,6 +2079,15 @@
       "cpp_optimistic": 1.0,
       "base_rate": 1,
       "earn": [
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 1,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "1% cash back on all other purchases, no cap."
+        },
         {
           "type": "category",
           "key": "dining",
@@ -1450,16 +2146,82 @@
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
+        "cash_usd": 200,
         "spend_usd": 500,
         "months": 3,
-        "notes": "\"Earn a one-time $250 cash bonus once you spend $500 on purchases within the first 3 months.\" Marked limited-time in the offer file. Existing cardmembers ineligible if they received a bonus in the past 48 months. Figures third-party/unconfirmed per the offer file's NEEDS_VERIFICATION marker."
+        "notes": "$200 cash bonus after $500 in purchases in the first 3 months."
       },
       "benefits": [
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "capital-one-savor-one",
+      "name": "Capital One SavorOne Rewards",
+      "issuer": "capital-one",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 39,
+      "foreign_transaction_pct": 0,
+      "currency_type": "cash",
+      "currency_program": "capital_one_rewards",
+      "cpp_floor": null,
+      "cpp_optimistic": null,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on dining"
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% at grocery stores, excludes superstores like Walmart and Target"
+        },
+        {
+          "type": "category",
+          "key": "entertainment",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on entertainment"
+        },
+        {
+          "type": "category",
+          "key": "streaming",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on popular streaming services"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "No welcome offer stated on the official SavorOne page (2026-10-05)"
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "zero_intro_apr_purchases"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "capital-one-venture",
@@ -1519,7 +2281,7 @@
         "cash_usd": null,
         "spend_usd": 4000,
         "months": 3,
-        "notes": "\"Earn 75,000 bonus miles once you spend $4,000 on purchases within the first 3 months from account opening.\" Figures third-party/unconfirmed per the offer file's NEEDS_VERIFICATION marker."
+        "notes": "Limited-time offer \u2014 $300 to use on hotel and vacation rental bookings through Capital One Travel in the first cardholder year, plus 75,000 bonus miles after $4,000 in purchases in the first 3 months."
       },
       "benefits": [
         "auto_rental_cdw",
@@ -1528,8 +2290,8 @@
         "no_foreign_transaction_fee",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "capital-one-venture-x",
@@ -1590,25 +2352,25 @@
           "category": "travel_other",
           "requires_enrollment": false,
           "expires": null,
-          "notes": "\"$300 annual Capital One Travel credit\" \u2014 Capital One Travel portal only. NEEDS human verification."
+          "notes": "$300/yr toward hotels, flights, and vacation rentals booked via Capital One Travel; expires each account anniversary."
         },
         {
-          "name": "Anniversary bonus miles",
-          "amount_usd": null,
-          "period": "annual",
-          "category": null,
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "\"10,000 bonus miles every year, starting on the first anniversary.\" NEEDS human verification."
-        },
-        {
-          "name": "Global Entry / TSA PreCheck fee credit",
+          "name": "Global Entry or TSA PreCheck fee credit",
           "amount_usd": 120,
           "period": "every_4_years",
           "category": null,
           "requires_enrollment": false,
           "expires": null,
-          "notes": "\"up to $120 statement credit ... one credit per account every four years.\" NEEDS human verification."
+          "notes": "Up to $120 every 4 years for a trusted-traveler application fee."
+        },
+        {
+          "name": "Anniversary bonus miles",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "10,000 bonus miles ($100 toward travel) each account anniversary starting year one."
         }
       ],
       "signup_bonus": {
@@ -1627,8 +2389,8 @@
         "concierge",
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "capital-one-venture-one",
@@ -1644,6 +2406,15 @@
       "cpp_optimistic": 1.7,
       "base_rate": 1.25,
       "earn": [
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 1.25,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "1.25x miles on every purchase."
+        },
         {
           "type": "category",
           "key": "travel_hotels",
@@ -1674,8 +2445,114 @@
       "benefits": [
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "barclays-capital-vacations",
+      "name": "Capital Vacations World Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "capital_vacations",
+      "cpp_floor": 0.8,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [],
+      "credits": [
+        {
+          "name": "Resort stay certificate",
+          "amount_usd": 250,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "3-night Capital Vacations resort stay certificate (~$250 value) after $10,000 net purchases/calendar year"
+        }
+      ],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "Welcome after first purchase (details not stated on page)"
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
       "confidence": "low"
+    },
+    {
+      "id": "barclays-carnival-rewards",
+      "name": "Carnival Rewards Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "carnival_rewards",
+      "cpp_floor": 0.8,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x on eligible Carnival purchases (card earn only; up to 6x total with Carnival Rewards program)"
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x at restaurants"
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x at eligible grocery stores"
+        }
+      ],
+      "credits": [
+        {
+          "name": "Anniversary bonus points",
+          "amount_usd": null,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "2,500 bonus points each anniversary year after $2,000 in eligible purchases"
+        }
+      ],
+      "signup_bonus": {
+        "points": 50000,
+        "cash_usd": null,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "50,000 points after $1,000 spend in 90 days"
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "alliant-cashback",
@@ -1690,14 +2567,30 @@
       "cpp_floor": 1.0,
       "cpp_optimistic": 1.0,
       "base_rate": 1.5,
-      "earn": [],
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 2.5,
+          "cap_usd": 10000,
+          "cap_period": "annual",
+          "portal_only": false,
+          "notes": "Up to 2.5% cash back on first $10,000 of qualifying eligible purchases per year; 1.5% on purchases over $10,000"
+        }
+      ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "No welcome offer stated on Alliant site (2026-10-05)"
+      },
       "benefits": [
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "chase-freedom-flex",
@@ -1706,13 +2599,22 @@
       "network": "mastercard",
       "availability": "active",
       "annual_fee_usd": 0,
-      "foreign_transaction_pct": 3,
+      "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "chase_ur",
       "cpp_floor": 1.0,
       "cpp_optimistic": 2.0,
       "base_rate": 1,
       "earn": [
+        {
+          "type": "category",
+          "key": "rotating",
+          "rate": 5,
+          "cap_usd": 1500,
+          "cap_period": "quarterly",
+          "portal_only": false,
+          "notes": "Quarterly rotating bonus categories; requires activation each quarter."
+        },
         {
           "type": "category",
           "key": "dining",
@@ -1780,15 +2682,15 @@
         }
       ],
       "signup_bonus": {
-        "points": 20000,
+        "points": 25000,
         "cash_usd": null,
         "spend_usd": 500,
         "months": 3,
-        "notes": "Marketed as \"$200 cash back\" (20,000 UR points at 1cpp). Not available to current cardmembers or those who received a bonus for this card in the last 24 months. Allow 6-8 weeks to post."
+        "notes": "Marketed as \"$250 cash back\" (25,000 UR points at 1cpp). All Cards listing shows NEW $250; detail page hero still showed $200 as of 2026-10-05. Not available to current cardmembers or those who received a bonus for this card in the last 24 months. Allow 6-8 weeks to post."
       },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-freedom-rise",
@@ -1797,7 +2699,7 @@
       "network": "visa",
       "availability": "active",
       "annual_fee_usd": 0,
-      "foreign_transaction_pct": 3,
+      "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "chase_ur",
       "cpp_floor": 1.0,
@@ -1827,16 +2729,16 @@
       ],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
-        "spend_usd": 0,
+        "cash_usd": 25,
+        "spend_usd": null,
         "months": 3,
-        "notes": "The $25 is enrollment-gated, not spend-gated: requires enrolling in autopay within the first 3 months and staying enrolled 90+ consecutive days (allow 6-8 weeks to post). SEPARATELY, the card offers an intro elevated rate of 3% total on dining (incl. takeout/delivery) for the first 6 months or until $6,000 in dining spend, whichever comes first \u2014 this year-one intro boost is described here rather than as a permanent category reward (the standing dining rate is the 1.5% base). Not available to current cardmembers or those who got a bonus for this card in the last 24 months."
+        "notes": "$25 statement credit after making 10 purchases within the first 3 months. 1.5% cash back on all purchases. Credit-building focused card."
       },
       "benefits": [
         "free_credit_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-freedom-unlimited",
@@ -1845,7 +2747,7 @@
       "network": "visa",
       "availability": "active",
       "annual_fee_usd": 0,
-      "foreign_transaction_pct": 3,
+      "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "chase_ur",
       "cpp_floor": 1.0,
@@ -1919,15 +2821,15 @@
         }
       ],
       "signup_bonus": {
-        "points": 20000,
+        "points": 30000,
         "cash_usd": null,
-        "spend_usd": 500,
-        "months": 3,
-        "notes": "Marketed as \"$200 cash back\" (20,000 UR points at 1cpp). Not available to current cardmembers or those who received a bonus for this card in the last 24 months. Allow 6-8 weeks to post; account must be open and not in default at fulfillment."
+        "spend_usd": 20000,
+        "months": 12,
+        "notes": "Earn an extra 1.5% cash back on everything (on up to $20,000 spent in the first year), worth up to $300, with effective first-year rates of 6.5% Chase Travel, 4.5% dining/drugstores, 3% everything else; reverts to standard rates after year one or $20,000 spent. Not available to current cardmembers or those who received a bonus for this card in the last 24 months."
       },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-sapphire-preferred",
@@ -2009,13 +2911,40 @@
       ],
       "credits": [
         {
+          "name": "DoorDash promo credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "dining",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$10/month ($120/yr) DoorDash promo; monthly forfeit."
+        },
+        {
+          "name": "DashPass membership credit",
+          "amount_usd": 120,
+          "period": "annual",
+          "category": "dining",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "12-month DashPass membership ($120 value); enrollment required."
+        },
+        {
+          "name": "Apple TV credit",
+          "amount_usd": 156,
+          "period": "annual",
+          "category": "streaming",
+          "requires_enrollment": true,
+          "expires": "2026-12-31",
+          "notes": "1 year complimentary Apple TV ($156 value); must activate by 12/31/2026."
+        },
+        {
           "name": "Annual Chase Travel Hotel Credit",
-          "amount_usd": 100,
+          "amount_usd": 50,
           "period": "annual",
           "category": "travel_hotels",
           "requires_enrollment": false,
           "expires": null,
-          "notes": "Automatic statement credit on the first $100/year of hotel purchases booked through Chase Travel (year = account anniversary cycle). Easy full capture for anyone who books at least one hotel through the portal; the first $100 of such hotel spend does NOT also earn points."
+          "notes": "Automatic statement credit on the first $50/year of hotel purchases booked through Chase Travel (year = account anniversary cycle). Easy full capture for anyone who books at least one hotel through the portal; the first $50 of such hotel spend does NOT also earn points. Verified against issuer listing 2026-10-05; earlier $100 figure was incorrect."
         },
         {
           "name": "Global Entry / TSA PreCheck / NEXUS application fee credit",
@@ -2028,15 +2957,15 @@
         }
       ],
       "signup_bonus": {
-        "points": 100000,
+        "points": 75000,
         "cash_usd": null,
         "spend_usd": 5000,
         "months": 3,
         "notes": "Not available to current cardmembers or previous cardmembers who received a bonus for this card. Allow 6-8 weeks to post."
       },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-sapphire-reserve",
@@ -2099,6 +3028,33 @@
         }
       ],
       "credits": [
+        {
+          "name": "Apple TV and Apple Music credit",
+          "amount_usd": 24,
+          "period": "monthly",
+          "category": "streaming",
+          "requires_enrollment": true,
+          "expires": "2027-06-22",
+          "notes": "Up to $24/month ($288/yr) toward Apple TV and Apple Music subscriptions, through 6/22/2027; enrollment required; monthly forfeit."
+        },
+        {
+          "name": "DashPass membership credit",
+          "amount_usd": 120,
+          "period": "annual",
+          "category": "dining",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "12-month DashPass membership ($120 value); enrollment required."
+        },
+        {
+          "name": "DoorDash promo credit",
+          "amount_usd": 25,
+          "period": "monthly",
+          "category": "dining",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $25/month ($300/yr) in DoorDash promos \u2014 $5 monthly promo plus two $10 promos; monthly forfeit."
+        },
         {
           "name": "Annual Travel Credit",
           "amount_usd": 300,
@@ -2200,8 +3156,64 @@
       "benefits": [
         "lounge_access"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "chase-slate",
+      "name": "Chase Slate",
+      "issuer": "chase",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 3,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 0,
+      "earn": [],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "No rewards or cash-back welcome offer. 0% intro APR for 21 months on purchases and balance transfers, then 18.49%-28.49% variable. Balance transfer fee is $5 or 5% of each transfer, whichever is greater."
+      },
+      "benefits": [
+        "no_annual_fee"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "chase-slate-edge",
+      "name": "Chase Slate Edge",
+      "issuer": "chase",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 3,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 0,
+      "earn": [],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "No new-cardmember offer shown on the page. Built for building/improving credit; automatic credit-line-increase review every 6 months. Purchase APR 29.24% variable."
+      },
+      "benefits": [
+        "no_annual_fee"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-aadvantage-executive",
@@ -2209,7 +3221,7 @@
       "issuer": "citi",
       "network": "mastercard",
       "availability": "active",
-      "annual_fee_usd": 595,
+      "annual_fee_usd": 695,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "aa_advantage",
@@ -2247,6 +3259,33 @@
       ],
       "credits": [
         {
+          "name": "AA Vacations credit",
+          "amount_usd": 250,
+          "period": "semiannual",
+          "category": "travel_other",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$250 twice a year ($500/yr) on eligible AA Vacations purchases."
+        },
+        {
+          "name": "Lyft credit",
+          "amount_usd": 15,
+          "period": "monthly",
+          "category": "transit",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$15/month ($180/yr) after 3 eligible Lyft rides in the month."
+        },
+        {
+          "name": "Avis/Budget credit",
+          "amount_usd": 120,
+          "period": "annual",
+          "category": "travel_other",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $120/yr on eligible prepaid Avis/Budget car rentals."
+        },
+        {
           "name": "Lyft credit",
           "amount_usd": 10,
           "period": "monthly",
@@ -2283,14 +3322,20 @@
           "notes": "One credit every 4 years toward whichever of Global Entry / TSA PreCheck is charged first. Only captured by travelers who apply/renew."
         }
       ],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": 125000,
+        "cash_usd": null,
+        "spend_usd": 15000,
+        "months": 5,
+        "notes": "Limited-time offer \u2014 125,000 AAdvantage bonus miles after $15,000 in purchases in the first 5 months."
+      },
       "benefits": [
         "lounge_access",
         "free_checked_bag",
         "priority_boarding"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-aadvantage-globe",
@@ -2399,13 +3444,19 @@
           "notes": "One credit every 4 years toward whichever of Global Entry / TSA PreCheck is charged first. Only captured by travelers who apply/renew."
         }
       ],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": 60000,
+        "cash_usd": null,
+        "spend_usd": 4000,
+        "months": 3,
+        "notes": "60,000 AAdvantage bonus miles after $4,000 in purchases in the first 3 months."
+      },
       "benefits": [
         "free_checked_bag",
         "preferred_boarding"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-aadvantage-platinum-select",
@@ -2451,6 +3502,24 @@
       ],
       "credits": [
         {
+          "name": "AA flight discount",
+          "amount_usd": 125,
+          "period": "annual",
+          "category": "travel_flights",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$125/yr AA flight discount after $20,000+ spend in the cardmembership year plus card renewal."
+        },
+        {
+          "name": "Turo credit",
+          "amount_usd": 180,
+          "period": "annual",
+          "category": "travel_other",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "Up to $180/yr ($30 per eligible trip) on Turo; must link card at Turo.com/AAdvantagePlatinum."
+        },
+        {
           "name": "American Airlines Flight Discount certificate",
           "amount_usd": 125,
           "period": "annual",
@@ -2469,13 +3538,19 @@
           "notes": "Limited-time (Oct 19, 2025 - Oct 18, 2026): $30 per completed Turo trip, up to 6, requires linking the card to a Turo account (digital-wallet payments excluded). Captured only by Turo renters during the promo window."
         }
       ],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": 80000,
+        "cash_usd": null,
+        "spend_usd": 3500,
+        "months": 4,
+        "notes": "Limited-time offer \u2014 80,000 AAdvantage bonus miles after $3,500 in purchases in the first 4 months. $99 annual fee waived the first year."
+      },
       "benefits": [
         "free_checked_bag",
         "preferred_boarding"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-custom-cash",
@@ -2504,8 +3579,8 @@
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-14",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-diamond-preferred",
@@ -2524,8 +3599,8 @@
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-double-cash",
@@ -2561,10 +3636,16 @@
         }
       ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 200,
+        "spend_usd": 1500,
+        "months": 6,
+        "notes": "$200 cash back bonus after $1,500 in purchases in the first 6 months. Rewards earned as ThankYou points."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-simplicity",
@@ -2583,8 +3664,8 @@
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-strata",
@@ -2665,10 +3746,16 @@
         }
       ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": 20000,
+        "cash_usd": null,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "20,000 bonus points after $1,000 in purchases in the first 3 months."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-strata-elite",
@@ -2723,6 +3810,33 @@
       ],
       "credits": [
         {
+          "name": "Hotel benefit",
+          "amount_usd": 300,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$300/yr on a 2+ night stay via cititravel.com."
+        },
+        {
+          "name": "Splurge Credit",
+          "amount_usd": 200,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "$200/yr \u2014 choose up to 2 merchants from a rotating list."
+        },
+        {
+          "name": "Blacklane credit",
+          "amount_usd": 200,
+          "period": "annual",
+          "category": "transit",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$200/yr Blacklane credit."
+        },
+        {
           "name": "Annual hotel benefit (Citi Travel)",
           "amount_usd": 300,
           "period": "annual",
@@ -2759,13 +3873,19 @@
           "notes": "One credit every 4 years toward whichever of Global Entry / TSA PreCheck is charged first. Only captured by travelers who apply/renew."
         }
       ],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": 75000,
+        "cash_usd": null,
+        "spend_usd": 6000,
+        "months": 3,
+        "notes": "75,000 bonus points after $6,000 in purchases in the first 3 months."
+      },
       "benefits": [
         "lounge_access",
         "primary_rental_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-strata-premier",
@@ -2847,6 +3967,15 @@
       ],
       "credits": [
         {
+          "name": "Annual Hotel Benefit",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$100 off a single $500+ hotel stay (excl. taxes/fees) via cititravel.com, once per calendar year."
+        },
+        {
           "name": "Annual hotel benefit (Citi Travel)",
           "amount_usd": 100,
           "period": "annual",
@@ -2856,10 +3985,16 @@
           "notes": "Once per calendar year, $100 off a single $500+ hotel stay booked and prepaid via Citi Travel (portal-only; points not earned on the discounted portion). Captured only by cardholders who book a qualifying $500+ hotel stay through the portal each year."
         }
       ],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": 60000,
+        "cash_usd": null,
+        "spend_usd": 4000,
+        "months": 3,
+        "notes": "60,000 bonus points after $4,000 in purchases in the first 3 months."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "citi-costco-anywhere",
@@ -2933,8 +4068,8 @@
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-customized-cash",
@@ -2972,16 +4107,74 @@
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
+        "cash_usd": 200,
         "spend_usd": 1000,
         "months": 3,
-        "notes": null
+        "notes": "$200 online cash rewards bonus after $1,000 in purchases in the first 90 days. First-year bonus \u2014 6% in the choice category (3% base + 3% bonus)."
       },
       "benefits": [
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "amex-delta-blue",
+      "name": "Delta SkyMiles Blue American Express Card",
+      "issuer": "amex",
+      "network": "amex",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "delta_skymiles",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.3,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x at restaurants including takeout and delivery in the US."
+        },
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2x on purchases made directly with Delta."
+        }
+      ],
+      "credits": [
+        {
+          "name": "20% Back on In-Flight Purchases",
+          "amount_usd": 15,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "20% savings as a statement credit on eligible Delta in-flight purchases (automatic); percentage-based with no dollar cap stated \u2014 modeled at ~$15/yr."
+        }
+      ],
+      "signup_bonus": {
+        "points": 10000,
+        "cash_usd": null,
+        "spend_usd": 1000,
+        "months": 6,
+        "notes": "Earn 10,000 bonus miles after $1,000 in eligible purchases in the first 6 months."
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "no_blackout_dates"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-delta-gold",
@@ -3017,6 +4210,24 @@
         }
       ],
       "credits": [
+        {
+          "name": "Rideshare Credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "transit",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "$10/month on US rideshare purchases with select providers; applies after the first card renewal; monthly forfeit."
+        },
+        {
+          "name": "Delta Stays Credit",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$100/yr statement credit on prepaid hotel or vacation-rental bookings through Delta Stays on delta.com."
+        },
         {
           "name": "Delta Flight Credit",
           "amount_usd": 200,
@@ -3064,11 +4275,11 @@
         }
       ],
       "signup_bonus": {
-        "points": 70000,
-        "cash_usd": null,
+        "points": 80000,
+        "cash_usd": 250,
         "spend_usd": 3000,
         "months": 6,
-        "notes": "Limited-time offer ending 07/15/2026 (11:59pm MST per the offer file). The standard evergreen bonus is not stated in the offer file \u2014 flag for verification."
+        "notes": "Limited-time offer ends 11/4/2026 \u2014 $250 statement credit plus up to 80,000 bonus miles after\" $3,000 in purchases in the first 6 months. Welcome offers vary; page says to apply to see your offer."
       },
       "benefits": [
         "no_foreign_transaction_fee",
@@ -3077,8 +4288,8 @@
         "car_rental_insurance",
         "extended_warranty"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-delta-platinum",
@@ -3094,6 +4305,15 @@
       "cpp_optimistic": 1.3,
       "base_rate": 1,
       "earn": [
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Purchases made directly with Delta."
+        },
         {
           "type": "category",
           "key": "groceries",
@@ -3188,11 +4408,11 @@
         }
       ],
       "signup_bonus": {
-        "points": 80000,
-        "cash_usd": null,
+        "points": 90000,
+        "cash_usd": 300,
         "spend_usd": 4000,
         "months": 6,
-        "notes": "Limited-time offer ending 07/15/2026 (11:59pm MST). Standard evergreen bonus not stated in the offer file \u2014 flag for verification."
+        "notes": "Limited-time offer ends 11/4/2026 \u2014 $300 statement credit plus up to 90,000 bonus miles after\" $4,000 in purchases in the first 6 months. Welcome offers vary; page says to apply to see your offer."
       },
       "benefits": [
         "no_foreign_transaction_fee",
@@ -3203,8 +4423,8 @@
         "car_rental_insurance",
         "extended_warranty"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-delta-reserve",
@@ -3286,11 +4506,11 @@
         }
       ],
       "signup_bonus": {
-        "points": 100000,
+        "points": 50000,
         "cash_usd": null,
-        "spend_usd": 6000,
-        "months": 6,
-        "notes": "Offer ends 07/15/2026 per the offer file (\"public offer \u2014 check for renewal\"). Standard evergreen bonus not stated in the offer file."
+        "spend_usd": null,
+        "months": null,
+        "notes": "Limited-time offer ends 11/4/2026 \u2014 two round-trip Delta Comfort flight certificates plus 50,000\" bonus miles. Spend requirement was truncated on the page and could not be confirmed."
       },
       "benefits": [
         "no_foreign_transaction_fee",
@@ -3302,8 +4522,8 @@
         "car_rental_insurance",
         "extended_warranty"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "discover-it-cash-back",
@@ -3340,8 +4560,8 @@
       "benefits": [
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "discover-it-chrome",
@@ -3388,8 +4608,8 @@
         "zero_fraud_liability",
         "free_fico_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "discover-it-miles",
@@ -3417,8 +4637,8 @@
         "zero_fraud_liability",
         "free_fico_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "discover-it-student-cash-back",
@@ -3455,14 +4675,170 @@
       "benefits": [
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
-      "id": "chase-doordash-rewards",
-      "name": "DoorDash Rewards Mastercard",
+      "id": "chase-disney-inspire",
+      "name": "Disney Inspire Visa Card",
       "issuer": "chase",
-      "network": "mastercard",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 149,
+      "foreign_transaction_pct": 0,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "streaming",
+          "rate": 10,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "10% back in Disney Rewards Dollars on card purchases made directly at DisneyPlus.com, Hulu.com, or Stream.ESPN.com."
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% back at gas stations and most other US Disney locations."
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2% back at grocery stores."
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2% back at restaurants."
+        }
+      ],
+      "credits": [
+        {
+          "name": "Disney Rewards Dollars anniversary credit",
+          "amount_usd": 200,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$200 in Disney Rewards Dollars each anniversary year after $2,000 in spend on US Disney Resort stays and Disney Cruise Line bookings."
+        },
+        {
+          "name": "Theme park tickets statement credit",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$100 statement credit each anniversary year after $200 in spend on US Disney theme park tickets."
+        },
+        {
+          "name": "Streaming subscription credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "streaming",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "$10/month statement credit after $10+ in qualifying subscriptions directly at DisneyPlus.com, Hulu.com, or Stream.ESPN.com; yearly activation required; monthly forfeit."
+        }
+      ],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 500,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "$500 offer \u2014 $300 Disney gift card eGift on approval plus a $200 statement credit after $1,000 in purchases in the first 3 months."
+      },
+      "benefits": [
+        "no_foreign_transaction_fee"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "chase-disney-premier",
+      "name": "Disney Premier Visa Card",
+      "issuer": "chase",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 49,
+      "foreign_transaction_pct": 3,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "streaming",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5% back in Disney Rewards Dollars on card purchases made directly at DisneyPlus.com, Hulu.com, or Stream.ESPN.com."
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2% back at gas stations and most Disney US locations."
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2% back at grocery stores."
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "2% back at restaurants."
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 300,
+        "spend_usd": 500,
+        "months": 3,
+        "notes": "$300 offer \u2014 $200 Disney gift card eGift on approval plus a $100 statement credit after $500 in purchases in the first 3 months."
+      },
+      "benefits": [],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "chase-disney-visa",
+      "name": "Disney Visa Card",
+      "issuer": "chase",
+      "network": "visa",
       "availability": "active",
       "annual_fee_usd": 0,
       "foreign_transaction_pct": 3,
@@ -3471,7 +4847,44 @@
       "cpp_floor": 1.0,
       "cpp_optimistic": 1.0,
       "base_rate": 1,
+      "earn": [],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 150,
+        "spend_usd": 500,
+        "months": 3,
+        "notes": "$150 offer \u2014 $100 Disney gift card eGift on approval plus a $50 statement credit after $500 in purchases in the first 3 months. Earns 1% back in Disney Rewards Dollars on all card purchases with no earning limits."
+      },
+      "benefits": [
+        "no_annual_fee"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "chase-doordash-rewards",
+      "name": "DoorDash Rewards Mastercard",
+      "issuer": "chase",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 0,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
       "earn": [
+        {
+          "type": "merchant",
+          "key": "doordash",
+          "rate": 4,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "4% back on DoorDash and Caviar orders."
+        },
         {
           "type": "category",
           "key": "dining",
@@ -3511,13 +4924,19 @@
           "notes": "12 months of complimentary DashPass for the primary cardmember (auto-activated on approval) + up to 1 authorized user; renews for another 12 months in any Anniversary Year with $10,000+ card spend, otherwise auto-enrolls in the paid DashPass Annual Plan. Value estimated at the ~$96/yr annual-plan price; captured only by regular DoorDash users (waived delivery fees + reduced service fees). amount_usd is a curator estimate (issuer states no dollar value) \u2014 NEEDS human verification."
         }
       ],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 96,
+        "spend_usd": null,
+        "months": null,
+        "notes": "Free year of DashPass on approval (auto-renews at $96/yr; cancel anytime). Plus $5 off eligible non-restaurant orders."
+      },
       "benefits": [
         "cell_phone_protection",
         "concierge"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "barclays-emirates-premier",
@@ -3536,20 +4955,11 @@
         {
           "type": "category",
           "key": "travel_flights",
-          "rate": 2,
+          "rate": 3,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "\"Eligible travel purchases\" \u2014 the issuer's broad travel definition. Modeled across the three travel sub-categories at 2x; exact merchant-category-code scope not stated in the offer file. NEEDS human verification."
-        },
-        {
-          "type": "category",
-          "key": "travel_hotels",
-          "rate": 2,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": null
+          "notes": "Eligible Emirates purchases"
         },
         {
           "type": "category",
@@ -3558,27 +4968,36 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
+          "notes": "Eligible travel purchases"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 1,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "All other purchases [moved to base_rate]"
         }
       ],
       "credits": [
         {
-          "name": "Global Entry / TSA PreCheck fee credit",
+          "name": "Global Entry / TSA PreCheck credit",
           "amount_usd": 120,
           "period": "every_5_years",
           "category": null,
           "requires_enrollment": false,
           "expires": null,
-          "notes": "One statement credit up to $120 per 5-year cycle for a Global Entry/TSA PreCheck application fee. Captured only by travelers who apply/renew; worthless to those who never enroll."
+          "notes": "Automatic statement credit for one application fee every five years, up to $120"
         },
         {
-          "name": "Anniversary bonus Skywards Miles",
+          "name": "Anniversary bonus miles",
           "amount_usd": null,
           "period": "annual",
           "category": null,
           "requires_enrollment": false,
           "expires": null,
-          "notes": "Requires $30,000 of total card spend in the cardmembership year; captured only by heavy spenders. Valued via the card's Emirates Skywards program."
+          "notes": "10,000 anniversary bonus Skywards Miles after spending $30,000 on purchases each cardmembership year"
         }
       ],
       "signup_bonus": {
@@ -3586,7 +5005,7 @@
         "cash_usd": null,
         "spend_usd": 3000,
         "months": 3,
-        "notes": null
+        "notes": "50,000 Skywards Miles after $3,000 spend in 90 days. Includes Emirates Skywards Gold tier membership during first year (retain by spending $40,000/cardmembership year)."
       },
       "benefits": [
         "lounge_access",
@@ -3596,8 +5015,8 @@
         "free_fico_score",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "barclays-emirates-skywards",
@@ -3616,20 +5035,11 @@
         {
           "type": "category",
           "key": "travel_flights",
-          "rate": 2,
+          "rate": 3,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "\"Eligible travel purchases\" \u2014 the issuer's broad travel definition; modeled across the three travel sub-categories at 2x. Exact merchant-category scope not stated. NEEDS human verification."
-        },
-        {
-          "type": "category",
-          "key": "travel_hotels",
-          "rate": 2,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": null
+          "notes": "Eligible Emirates purchases (emirates.com or Emirates Sales office)"
         },
         {
           "type": "category",
@@ -3638,7 +5048,16 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
+          "notes": "Eligible travel purchases"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 1,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "All other purchases [moved to base_rate]"
         }
       ],
       "credits": [],
@@ -3647,7 +5066,7 @@
         "cash_usd": null,
         "spend_usd": 3000,
         "months": 3,
-        "notes": null
+        "notes": "40,000 Skywards Miles after $3,000 spend in 90 days. Includes Emirates Skywards Silver tier membership during first year (retain by spending $20,000/cardmembership year)."
       },
       "benefits": [
         "complimentary_elite_status",
@@ -3656,8 +5075,8 @@
         "free_fico_score",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "elan-fidelity-rewards",
@@ -3676,8 +5095,8 @@
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "barclays-frontier",
@@ -3715,11 +5134,11 @@
         }
       ],
       "signup_bonus": {
-        "points": 60000,
+        "points": null,
         "cash_usd": null,
-        "spend_usd": 1000,
+        "spend_usd": null,
         "months": 3,
-        "notes": "Also requires paying the annual fee in full within the first 90 days."
+        "notes": "Welcome after first purchase within 90 days of account opening (2026-10-05); bonus miles amount not shown in page text. Card also grants instant Elite Gold status after first purchase."
       },
       "benefits": [
         "free_checked_bag",
@@ -3729,8 +5148,8 @@
         "no_foreign_transaction_fee",
         "free_fico_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "barclays-my-gm-rewards",
@@ -3745,21 +5164,87 @@
       "cpp_floor": 1.0,
       "cpp_optimistic": 1.0,
       "base_rate": 3,
-      "earn": [],
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 7,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible GM purchases \u2014 up to 10x total including up to 3x for being a GM Rewards Member"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "All other purchases including groceries, gas, restaurants, travel [moved to base_rate]"
+        }
+      ],
       "credits": [],
       "signup_bonus": {
         "points": 30000,
         "cash_usd": null,
         "spend_usd": 1000,
         "months": 3,
-        "notes": null
+        "notes": "30,000 bonus points after $1,000 spend in first 90 days. Note: 3% foreign transaction fee."
       },
       "benefits": [
         "zero_fraud_liability",
         "free_fico_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "id": "barclays-gap-encore",
+      "name": "Gap Encore Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": null,
+      "currency_type": "points",
+      "currency_program": "gap_encore",
+      "cpp_floor": 0.2,
+      "cpp_optimistic": 0.2,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5x at Gap Inc. family of brands"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x at all eligible retail apparel brands"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "20% off first purchase with new card"
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "amex-hilton-aspire",
@@ -3775,6 +5260,15 @@
       "cpp_optimistic": 0.6,
       "base_rate": 3,
       "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 14,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible purchases made directly with a hotel or resort in the Hilton portfolio."
+        },
         {
           "type": "category",
           "key": "dining",
@@ -3878,11 +5372,11 @@
         }
       ],
       "signup_bonus": {
-        "points": 175000,
+        "points": 200000,
         "cash_usd": null,
         "spend_usd": 6000,
-        "months": 6,
-        "notes": "Offer ends 07/29/2026 per the offer file. Bonus points don't count toward elite qualification. Standard evergreen bonus not separately stated."
+        "months": null,
+        "notes": "Best Hilton points offer yet per the page \u2014 200,000 Hilton Honors bonus points after $6,000 in purchases. The spend time window was not shown in the visible page text."
       },
       "benefits": [
         "no_foreign_transaction_fee",
@@ -3892,8 +5386,8 @@
         "car_rental_insurance",
         "extended_warranty"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-hilton-honors",
@@ -3909,6 +5403,15 @@
       "cpp_optimistic": 0.6,
       "base_rate": 3,
       "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 7,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible purchases made directly with a hotel or resort in the Hilton portfolio."
+        },
         {
           "type": "category",
           "key": "dining",
@@ -3949,11 +5452,11 @@
         }
       ],
       "signup_bonus": {
-        "points": 100000,
+        "points": 70000,
         "cash_usd": null,
         "spend_usd": 2000,
         "months": 6,
-        "notes": "Mixed bonus: 100,000 Hilton points plus a $100 statement credit. Offer ends 07/29/2026 per the offer file (\"public offer \u2014 check for renewal\"). Bonus points don't count toward elite-tier qualification."
+        "notes": "Limited-time offer \u2014 70,000 Hilton Honors bonus points plus one Free Night Reward after $2,000 in purchases in the first 6 months. Bonus points don't count toward elite-tier qualification."
       },
       "benefits": [
         "no_foreign_transaction_fee",
@@ -3961,8 +5464,8 @@
         "extended_warranty",
         "purchase_protection"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-hilton-surpass",
@@ -3978,6 +5481,15 @@
       "cpp_optimistic": 0.6,
       "base_rate": 3,
       "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 12,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible purchases made directly with a hotel or resort in the Hilton portfolio."
+        },
         {
           "type": "category",
           "key": "dining",
@@ -4049,157 +5561,18 @@
         "cash_usd": null,
         "spend_usd": 3000,
         "months": 6,
-        "notes": "Offer ends 07/29/2026 per the offer file. Bonus points don't count toward elite qualification. Standard evergreen bonus not separately stated."
+        "notes": "Limited-time offer ends 01/13/2027 per the offer file. Bonus points don't count toward elite qualification. Standard evergreen bonus not separately stated."
       },
       "benefits": [
         "no_foreign_transaction_fee",
         "elite_status"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
-    },
-    {
-      "id": "chase-ihg-premier",
-      "name": "IHG One Rewards Premier",
-      "issuer": "chase",
-      "network": "mastercard",
-      "availability": "active",
-      "annual_fee_usd": 99,
-      "foreign_transaction_pct": 0,
-      "currency_type": "points",
-      "currency_program": "ihg_one_rewards",
-      "cpp_floor": 0.4,
-      "cpp_optimistic": 0.7,
-      "base_rate": 3,
-      "earn": [
-        {
-          "type": "category",
-          "key": "travel_hotels",
-          "rate": 10,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "10x applies to IHG-brand hotel stays (the card's co-brand). Modeled at the co-brand rate; non-IHG hotels earn only the 5x general-travel rate but cannot be split by brand within the travel_hotels category. This is the card's earn only \u2014 IHG program base points (10 base pts/$1 at most brands + Platinum 60% bonus) post separately to the IHG account and are not included here."
-        },
-        {
-          "type": "category",
-          "key": "travel_flights",
-          "rate": 5,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "Part of the card's broad 5x \"travel\" category (excludes IHG hotel stays, which earn 10x)."
-        },
-        {
-          "type": "category",
-          "key": "travel_other",
-          "rate": 5,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "Part of the card's broad 5x \"travel\" category (excludes IHG hotel stays, which earn 10x)."
-        },
-        {
-          "type": "category",
-          "key": "gas",
-          "rate": 5,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": null
-        },
-        {
-          "type": "category",
-          "key": "dining",
-          "rate": 5,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": null
-        }
-      ],
-      "credits": [
-        {
-          "name": "Anniversary Free Night",
-          "amount_usd": 150,
-          "period": "annual",
-          "category": "travel_hotels",
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "Automatic each cardmember anniversary, valid 12 months; captured by anyone who takes one IHG stay a year. Estimated at ~$150: the award tops out at a 40,000-point redemption ceiling and IHG points realistically redeem near 0.4-0.5 cents each (~$160-200 at the ceiling), haircut toward $150 for the ceiling not always being reachable and blackout/availability friction. Marketing \"worth up to $X\" ignored."
-        },
-        {
-          "name": "Anniversary statement credit ($20k spend)",
-          "amount_usd": 100,
-          "period": "annual",
-          "category": null,
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "Pays only after $20,000 of card spend in a calendar year; captured only by heavy spenders. Paired with a 10,000-point bonus at the same threshold (separate entry)."
-        },
-        {
-          "name": "Anniversary bonus points ($20k spend)",
-          "amount_usd": null,
-          "period": "annual",
-          "category": null,
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "Pays only after $20,000 of card spend in a calendar year; captured only by heavy spenders. Paired with the $100 statement credit at the same threshold."
-        },
-        {
-          "name": "United TravelBank deposit",
-          "amount_usd": 25,
-          "period": "semiannual",
-          "category": null,
-          "requires_enrollment": true,
-          "expires": null,
-          "notes": "$25 into a linked United MileagePlus TravelBank account each January and July after a one-time registration; each deposit expires ~6 months after crediting. Captured only by United flyers who register and spend the TravelBank cash before it expires; worthless to non-United travelers."
-        },
-        {
-          "name": "Global Entry / TSA PreCheck / NEXUS fee credit",
-          "amount_usd": 120,
-          "period": "every_4_years",
-          "category": null,
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "One statement credit up to $120 per 4-year cycle covering a trusted-traveler application fee. Captured only by travelers who apply/renew."
-        },
-        {
-          "name": "DashPass DoorDash quarterly credit",
-          "amount_usd": 10,
-          "period": "quarterly",
-          "category": null,
-          "requires_enrollment": true,
-          "expires": null,
-          "notes": "Requires activating complimentary DashPass and one qualifying DoorDash non-restaurant order each quarter (no rollover). Active DoorDash users only."
-        },
-        {
-          "name": "Instacart monthly credit",
-          "amount_usd": 10,
-          "period": "monthly",
-          "category": null,
-          "requires_enrollment": true,
-          "expires": null,
-          "notes": "Requires an active Instacart+ membership (3 months complimentary, then auto-renews at $99/year) and a qualifying purchase each month (no rollover). After the free window the $99/year membership is a real cost; only regular Instacart users net ahead."
-        }
-      ],
-      "signup_bonus": {
-        "points": 140000,
-        "cash_usd": null,
-        "spend_usd": 3000,
-        "months": 3,
-        "notes": "Standard offer transcribed from the offer file. A separate 10,000-point bonus for adding an authorized user in the first 3 months (once per account) is not modeled as signup value \u2014 it requires an authorized user rather than primary-cardholder spend. Not available to current cardmembers of any personal IHG One Rewards card or previous cardmembers who received a bonus within the last 24 months."
-      },
-      "benefits": [
-        "complimentary_elite_status",
-        "fourth_night_free_award"
-      ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-ihg-traveler",
-      "name": "IHG One Rewards Traveler",
+      "name": "IHG One Rewards Credit Card",
       "issuer": "chase",
       "network": "mastercard",
       "availability": "active",
@@ -4218,7 +5591,7 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "5x applies to IHG-brand hotel stays. This is the card's earn only \u2014 IHG program base points (10 base pts/$1 at most brands + Silver 20% bonus) post separately to the IHG account and are not included here."
+          "notes": "5x on IHG-brand hotel stays (card earn only; IHG program base points post separately)"
         },
         {
           "type": "category",
@@ -4287,7 +5660,7 @@
         }
       ],
       "signup_bonus": {
-        "points": 80000,
+        "points": 135000,
         "cash_usd": null,
         "spend_usd": 2000,
         "months": 3,
@@ -4297,8 +5670,313 @@
         "complimentary_elite_status",
         "fourth_night_free_award"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "chase-ihg-premier",
+      "name": "IHG One Rewards Premier",
+      "issuer": "chase",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 99,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "ihg_one_rewards",
+      "cpp_floor": 0.4,
+      "cpp_optimistic": 0.7,
+      "base_rate": 3,
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 10,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "10x on IHG-brand hotel stays (card earn only; IHG program base points post separately)"
+        },
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Part of the card's broad 5x \"travel\" category (excludes IHG hotel stays, which earn 10x)."
+        },
+        {
+          "type": "category",
+          "key": "travel_other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Part of the card's broad 5x \"travel\" category (excludes IHG hotel stays, which earn 10x)."
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": null
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": null
+        }
+      ],
+      "credits": [
+        {
+          "name": "Food and Beverage Rewards",
+          "amount_usd": 25,
+          "period": "quarterly",
+          "category": "dining",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $25/quarter ($100/yr) in Food and Beverage Rewards vouchers at IHG Hotels; quarterly forfeit."
+        },
+        {
+          "name": "Airline Statement Credit",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": "travel_flights",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$100/yr airline statement credit when you spend $250+ on flights purchased directly with the airline each calendar year."
+        },
+        {
+          "name": "DoorDash non-restaurant promo credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "groceries",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $10/month ($120/yr) in DoorDash promos on non-restaurant orders (groceries/essentials); monthly forfeit."
+        },
+        {
+          "name": "Anniversary Free Night",
+          "amount_usd": 150,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Automatic each cardmember anniversary, valid 12 months; captured by anyone who takes one IHG stay a year. Estimated at ~$150: the award tops out at a 40,000-point redemption ceiling and IHG points realistically redeem near 0.4-0.5 cents each (~$160-200 at the ceiling), haircut toward $150 for the ceiling not always being reachable and blackout/availability friction. Marketing \"worth up to $X\" ignored."
+        },
+        {
+          "name": "Anniversary statement credit ($20k spend)",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Pays only after $20,000 of card spend in a calendar year; captured only by heavy spenders. Paired with a 10,000-point bonus at the same threshold (separate entry)."
+        },
+        {
+          "name": "Anniversary bonus points ($20k spend)",
+          "amount_usd": null,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Pays only after $20,000 of card spend in a calendar year; captured only by heavy spenders. Paired with the $100 statement credit at the same threshold."
+        },
+        {
+          "name": "United TravelBank deposit",
+          "amount_usd": 25,
+          "period": "semiannual",
+          "category": null,
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "$25 into a linked United MileagePlus TravelBank account each January and July after a one-time registration; each deposit expires ~6 months after crediting. Captured only by United flyers who register and spend the TravelBank cash before it expires; worthless to non-United travelers."
+        },
+        {
+          "name": "Global Entry / TSA PreCheck / NEXUS fee credit",
+          "amount_usd": 120,
+          "period": "every_4_years",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "One statement credit up to $120 per 4-year cycle covering a trusted-traveler application fee. Captured only by travelers who apply/renew."
+        },
+        {
+          "name": "DashPass DoorDash quarterly credit",
+          "amount_usd": 10,
+          "period": "quarterly",
+          "category": null,
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "Requires activating complimentary DashPass and one qualifying DoorDash non-restaurant order each quarter (no rollover). Active DoorDash users only."
+        },
+        {
+          "name": "Instacart monthly credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": null,
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "Requires an active Instacart+ membership (3 months complimentary, then auto-renews at $99/year) and a qualifying purchase each month (no rollover). After the free window the $99/year membership is a real cost; only regular Instacart users net ahead."
+        }
+      ],
+      "signup_bonus": {
+        "points": 190000,
+        "cash_usd": null,
+        "spend_usd": 3000,
+        "months": 3,
+        "notes": "Standard offer transcribed from the offer file. A separate 10,000-point bonus for adding an authorized user in the first 3 months (once per account) is not modeled as signup value \u2014 it requires an authorized user rather than primary-cardholder spend. Not available to current cardmembers of any personal IHG One Rewards card or previous cardmembers who received a bonus within the last 24 months."
+      },
+      "benefits": [
+        "complimentary_elite_status",
+        "fourth_night_free_award"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "chase-ihg-premier-select",
+      "name": "IHG One Rewards Premier Select Credit Card",
+      "issuer": "chase",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 350,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "ihg_one_rewards",
+      "cpp_floor": 0.4,
+      "cpp_optimistic": 0.7,
+      "base_rate": 3,
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 12,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "12x with this card on IHG Hotels and Resorts stays (up to 28x total with member and Platinum Elite bonuses posting separately)."
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 6,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "6x on dining and all other travel including rideshare."
+        },
+        {
+          "type": "category",
+          "key": "travel_other",
+          "rate": 6,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "6x on all other travel including rideshare."
+        }
+      ],
+      "credits": [
+        {
+          "name": "Food and Beverage Rewards",
+          "amount_usd": 75,
+          "period": "quarterly",
+          "category": "dining",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$75/quarter ($300/yr) in Food and Beverage Rewards vouchers redeemable at IHG Hotels; quarterly forfeit."
+        },
+        {
+          "name": "Airline Statement Credit",
+          "amount_usd": 200,
+          "period": "annual",
+          "category": "travel_flights",
+          "requires_enrollment": false,
+          "expires": "2027-12-31",
+          "notes": "$200/calendar-year airline statement credit after $250+ in flights purchased directly with the airline; through 12/31/2027."
+        },
+        {
+          "name": "Global Entry or TSA PreCheck or NEXUS fee credit",
+          "amount_usd": 120,
+          "period": "every_4_years",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $120 statement credit every 4 years for a trusted-traveler application fee charged to the card."
+        },
+        {
+          "name": "DashPass membership credit",
+          "amount_usd": 120,
+          "period": "annual",
+          "category": "dining",
+          "requires_enrollment": true,
+          "expires": "2027-12-31",
+          "notes": "One-year complimentary DoorDash DashPass ($120 value); activate by 12/31/2027; auto-renews at the monthly rate after."
+        },
+        {
+          "name": "DoorDash non-restaurant promo credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "groceries",
+          "requires_enrollment": true,
+          "expires": "2027-12-31",
+          "notes": "Up to $10/month ($120/yr) off groceries and essentials via DoorDash, through 12/31/2027; requires DashPass enrollment."
+        },
+        {
+          "name": "United TravelBank Cash",
+          "amount_usd": 50,
+          "period": "annual",
+          "category": "travel_flights",
+          "requires_enrollment": true,
+          "expires": null,
+          "notes": "Up to $50/yr United TravelBank Cash after registering the card with a MileagePlus account."
+        },
+        {
+          "name": "Instacart monthly credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "groceries",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $10/month ($120/yr) in Instacart credits on direct Instacart purchases; monthly forfeit."
+        },
+        {
+          "name": "Anniversary Free Night",
+          "amount_usd": 300,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "One anniversary Free Night each year (60,000-point redemption cap); estimated ~$300 at ~0.5cpp."
+        },
+        {
+          "name": "Anniversary Free Night ($40k spend)",
+          "amount_usd": 300,
+          "period": "annual",
+          "category": "travel_hotels",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Additional anniversary Free Night (60,000-point cap) after $40,000 in calendar-year purchases."
+        }
+      ],
+      "signup_bonus": {
+        "points": 210000,
+        "cash_usd": null,
+        "spend_usd": 5000,
+        "months": 3,
+        "notes": "New cardmember offer \u2014 200,000 bonus points after $5,000 in purchases in the first 3 months, plus 10,000 bonus points after adding an authorized user in the first 3 months."
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "elite_status"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-iberia",
@@ -4364,8 +6042,8 @@
         "companion_certificate",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-instacart-mastercard",
@@ -4374,13 +6052,22 @@
       "network": "mastercard",
       "availability": "active",
       "annual_fee_usd": 0,
-      "foreign_transaction_pct": 3,
+      "foreign_transaction_pct": 0,
       "currency_type": "cash",
       "currency_program": "cash",
       "cpp_floor": 1.0,
       "cpp_optimistic": 1.0,
       "base_rate": 1,
       "earn": [
+        {
+          "type": "merchant",
+          "key": "instacart",
+          "rate": 5,
+          "cap_usd": 6000,
+          "cap_period": "annual",
+          "portal_only": false,
+          "notes": "5% back on qualifying Instacart.com and Instacart app purchases on the first $6,000 annually."
+        },
         {
           "type": "category",
           "key": "gas",
@@ -4437,10 +6124,16 @@
         }
       ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 50,
+        "spend_usd": null,
+        "months": null,
+        "notes": "$50 Instacart credit automatically loaded to the Instacart.com account on approval."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "barclays-jetblue",
@@ -4477,19 +6170,19 @@
       ],
       "credits": [],
       "signup_bonus": {
-        "points": 10000,
+        "points": null,
         "cash_usd": null,
         "spend_usd": 1000,
         "months": 3,
-        "notes": null
+        "notes": "Welcome requires $1,000 in purchases within 90 days (page-stated 2026-10-05); bonus points amount not shown in page text"
       },
       "benefits": [
         "no_blackout_dates",
         "no_foreign_transaction_fee",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "barclays-jetblue-plus",
@@ -4507,41 +6200,41 @@
       "earn": [
         {
           "type": "category",
+          "key": "travel_flights",
+          "rate": 6,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible JetBlue purchases"
+        },
+        {
+          "type": "category",
           "key": "dining",
           "rate": 2,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
+          "notes": "Restaurants and eligible grocery stores"
         },
         {
           "type": "category",
-          "key": "groceries",
-          "rate": 2,
+          "key": "other",
+          "rate": 1,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "\"Eligible grocery stores\" \u2014 superstores/warehouse clubs may be excluded (not stated). NEEDS human verification."
+          "notes": "All other purchases [moved to base_rate]"
         }
       ],
       "credits": [
         {
-          "name": "Anniversary bonus points",
-          "amount_usd": null,
-          "period": "annual",
-          "category": null,
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "Automatic 5,000 TrueBlue points each year after the account anniversary; captured by every cardholder who keeps the card open. Valued via the card's TrueBlue program."
-        },
-        {
           "name": "JetBlue Vacations statement credit",
           "amount_usd": 100,
           "period": "annual",
-          "category": null,
+          "category": "travel_other",
           "requires_enrollment": false,
           "expires": null,
-          "notes": "Scoped trigger: requires buying a JetBlue Vacations package of $100+ (limit one per year) \u2014 NOT total card spend, so unlock_spend_usd is intentionally unset. Captured only by cardholders who book a JetBlue Vacations package; worthless otherwise."
+          "notes": "After purchase of a JetBlue Vacations package of $100+ with the card; one per year"
         }
       ],
       "signup_bonus": {
@@ -4549,7 +6242,7 @@
         "cash_usd": null,
         "spend_usd": 1000,
         "months": 3,
-        "notes": "Also requires paying the annual fee in full within the first 90 days."
+        "notes": "60,000 TrueBlue points after $1,000 spend and paying annual fee in full, both within 90 days (2026-10-05). Homepage showed limited-time 70,000 offer same day."
       },
       "benefits": [
         "free_checked_bag",
@@ -4558,8 +6251,8 @@
         "no_foreign_transaction_fee",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "barclays-jetblue-premier",
@@ -4596,57 +6289,39 @@
       ],
       "credits": [
         {
-          "name": "TrueBlue Travel statement credit",
+          "name": "TrueBlue Travel statement credits",
           "amount_usd": 300,
           "period": "annual",
-          "category": "travel_flights",
+          "category": "travel_other",
           "requires_enrollment": false,
           "expires": null,
-          "notes": "Up to $300/calendar year automatically credited against eligible TrueBlue Travel purchases. Easily captured by anyone who spends $300+/year on JetBlue/TrueBlue travel; worthless to non-JetBlue flyers."
+          "notes": "Up to $300 in statement credits on TrueBlue Travel purchases per calendar year"
         },
         {
-          "name": "Anniversary bonus points",
-          "amount_usd": null,
-          "period": "annual",
-          "category": null,
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "Automatic 5,000 TrueBlue points each year after the account anniversary; captured by every cardholder who keeps the card open."
-        },
-        {
-          "name": "Global Entry / TSA PreCheck fee credit",
+          "name": "Global Entry / TSA PreCheck credit",
           "amount_usd": 120,
           "period": "every_4_years",
           "category": null,
           "requires_enrollment": false,
           "expires": null,
-          "notes": "One statement credit up to $120 per 4-year cycle for a Global Entry/TSA PreCheck fee. Captured only by travelers who apply/renew."
+          "notes": "Up to $120 application fee statement credit every 4 years"
         },
         {
-          "name": "Companion Pass credit \u2014 first tranche",
-          "amount_usd": 500,
+          "name": "Companion pass statement credits",
+          "amount_usd": 2000,
           "period": "annual",
           "category": null,
           "requires_enrollment": false,
           "expires": null,
-          "notes": "One-time $500 statement credit once $15,000 in total net purchases posts in a calendar year; reached only by fairly heavy spenders. Marketed as offsetting a JetBlue Companion Pass."
-        },
-        {
-          "name": "Companion Pass credit \u2014 second tranche",
-          "amount_usd": 1500,
-          "period": "annual",
-          "category": null,
-          "requires_enrollment": false,
-          "expires": null,
-          "notes": "Additional one-time $1,500 statement credit once cumulative total net purchases reach $75,000 in the same calendar year; reachable only by very high spenders."
+          "notes": "Spend-based: up to $500 after $15,000 eligible net purchases/calendar year, plus up to $1,500 more after $75,000 (incl. initial $15k)"
         }
       ],
       "signup_bonus": {
-        "points": 100000,
+        "points": null,
         "cash_usd": null,
         "spend_usd": 5000,
         "months": 3,
-        "notes": "Also requires paying the annual fee in full within the first 90 days."
+        "notes": "Requires $5,000 spend and paying annual fee in full, both within 90 days (2026-10-05); bonus points amount not shown in page text"
       },
       "benefits": [
         "lounge_access",
@@ -4657,8 +6332,8 @@
         "no_foreign_transaction_fee",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "amex-marriott-bevy",
@@ -4674,6 +6349,15 @@
       "cpp_optimistic": 0.9,
       "base_rate": 2,
       "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 6,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible purchases at hotels participating in Marriott Bonvoy (direct)."
+        },
         {
           "type": "category",
           "key": "dining",
@@ -4725,8 +6409,8 @@
         "elite_status",
         "trip_cancellation_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-marriott-bold",
@@ -4749,7 +6433,7 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "3x applies to Marriott-brand hotel stays. This is the card's earn only \u2014 Marriott program base points (10 base pts/$1 at most brands + Silver 10% bonus) post separately to the Marriott account and are not included here."
+          "notes": "3x applies to Marriott-brand hotel stays. Card earn only: Marriott program base points (10 base pts/$1 at most brands + Silver 10% bonus) post separately to the Marriott account and are not included here."
         },
         {
           "type": "category",
@@ -4809,7 +6493,7 @@
         }
       ],
       "signup_bonus": {
-        "points": 60000,
+        "points": 45000,
         "cash_usd": null,
         "spend_usd": 1000,
         "months": 3,
@@ -4819,8 +6503,8 @@
         "complimentary_elite_status",
         "concierge"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-marriott-boundless",
@@ -4903,18 +6587,18 @@
         }
       ],
       "signup_bonus": {
-        "points": 125000,
-        "cash_usd": null,
+        "points": null,
+        "cash_usd": 100,
         "spend_usd": 3000,
         "months": 3,
-        "notes": "The public offer also includes 1 Free Night Award (redemption level up to 50,000 points, 12-month expiry) after the same $3,000/3-month spend \u2014 an in-kind item that cannot be expressed in the points/usd bonus value, so it is noted here unscored (estimated cash value ~$200-350, not modeled). Account must stay open 6+ months or points may be clawed back. Extensive Marriott/Amex cross-product exclusions apply."
+        "notes": "Earn 3 Free Night Awards (each up to 35,000 points) after $3,000 in eligible purchases within 3 months. Special offer \u2014 up to $100 in statement credits after $500 in eligible purchases within 3 months of account opening."
       },
       "benefits": [
         "complimentary_elite_status",
         "concierge"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-marriott-bountiful",
@@ -4989,8 +6673,8 @@
         "complimentary_elite_status",
         "concierge"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-marriott-brilliant",
@@ -5006,6 +6690,15 @@
       "cpp_optimistic": 0.9,
       "base_rate": 2,
       "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 6,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible purchases at hotels participating in Marriott Bonvoy (direct)."
+        },
         {
           "type": "category",
           "key": "travel_flights",
@@ -5087,8 +6780,8 @@
         "trip_cancellation_insurance",
         "concierge_service"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "barclays-miles-and-more",
@@ -5103,33 +6796,52 @@
       "cpp_floor": 0.7,
       "cpp_optimistic": 1.2,
       "base_rate": 1,
-      "earn": [],
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_flights",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Miles & More partner airline tickets"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 1,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "All other purchases [moved to base_rate]"
+        }
+      ],
       "credits": [
         {
           "name": "Lufthansa Business Lounge vouchers",
-          "amount_usd": 100,
+          "amount_usd": null,
           "period": "annual",
           "category": null,
           "requires_enrollment": false,
           "expires": null,
-          "notes": "No issuer dollar value stated; $100/year is a curator estimate (2 vouchers x ~$50). A reviewer may adjust or convert to a benefit_flag."
+          "notes": "Two complimentary Lufthansa Business Lounge vouchers annually"
         },
         {
-          "name": "Annual Companion Ticket",
-          "amount_usd": 200,
+          "name": "Annual companion ticket",
+          "amount_usd": null,
           "period": "annual",
-          "category": null,
+          "category": "travel_flights",
           "requires_enrollment": false,
           "expires": null,
-          "notes": "in_kind value is a curator estimate: savings equal the companion base fare minus taxes/fees/surcharges; $200 is a conservative net figure for a typical economy itinerary after Lufthansa's high surcharges, NEEDS human verification. Mirrors the atmos-ascent/atmos-summit companion-certificate modeling convention."
+          "notes": "Companion ticket after each account anniversary (taxes and fees apply)"
         }
       ],
       "signup_bonus": {
-        "points": 50000,
+        "points": 60000,
         "cash_usd": null,
         "spend_usd": 3000,
         "months": 3,
-        "notes": "Also requires paying the annual fee in full within the first 90 days."
+        "notes": "60,000 miles after $3,000 spend and paying the annual fee in full, both within 90 days. Annual fee waived for Senator and HON Circle members."
       },
       "benefits": [
         "companion_certificate",
@@ -5137,8 +6849,82 @@
         "world_elite_mastercard",
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "id": "barclays-old-navy-encore",
+      "name": "Old Navy Encore Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": null,
+      "currency_type": "points",
+      "currency_program": "gap_encore",
+      "cpp_floor": 0.2,
+      "cpp_optimistic": 0.2,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5x at Gap Inc. family of brands (numeric rate follows the shared Encore program structure verified on the Gap and Athleta pages; this card's own page renders the multiplier in graphics not captured in text)"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x at all eligible retail apparel brands (numeric rate follows the shared Encore program structure verified on the Gap and Athleta pages; this card's own page renders the multiplier in graphics not captured in text)"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "30% off first purchase with new card"
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
+    },
+    {
+      "id": "upgrade-onecard-essentials",
+      "name": "OneCard Essentials",
+      "issuer": "upgrade",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 3,
+      "currency_type": "cash",
+      "currency_program": "cash",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1.5,
+      "earn": [],
+      "credits": [],
+      "signup_bonus": null,
+      "benefits": [
+        "visa_signature",
+        "extended_warranty",
+        "price_protection",
+        "roadside_dispatch",
+        "travel_emergency_assistance",
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "penfed-pathfinder",
@@ -5156,51 +6942,51 @@
       "earn": [
         {
           "type": "category",
-          "key": "travel_flights",
-          "rate": 3,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "Part of PenFed's single \"travel\" bonus bucket (airfare). No spending cap was found in available sources; the official rewards T&C PDF could not be fetched \u2014 NEEDS human verification of whether a bonus-category cap exists."
-        },
-        {
-          "type": "category",
-          "key": "travel_hotels",
-          "rate": 3,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "Part of PenFed's single \"travel\" bonus bucket (hotels). No cap found in sources."
-        },
-        {
-          "type": "category",
           "key": "travel_other",
-          "rate": 3,
+          "rate": 4,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Part of PenFed's single \"travel\" bonus bucket (car rentals, cruises, tolls, bus lines). No cap found in sources."
-        },
-        {
-          "type": "category",
-          "key": "transit",
-          "rate": 3,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "Part of PenFed's single \"travel\" bonus bucket (taxi/rideshare). No cap found in sources."
+          "notes": "4x points on travel for PenFed Honors Advantage members; 3x for everyone else, unlimited."
         },
         {
           "type": "category",
           "key": "dining",
-          "rate": 2,
+          "rate": 3,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Dining earn (2X standard / 3X Honors Advantage) is reported only by secondary sources that vary on the exact framing; NOT independently confirmed against official page text \u2014 NEEDS human verification."
+          "notes": "3x points on dining for Honors Advantage members; 2x for everyone else, unlimited."
+        },
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 1.5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "1.5x points on all other purchases."
         }
       ],
       "credits": [
+        {
+          "name": "Airline ancillary credit",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": "travel_other",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$100/calendar-year credit for domestic incidental air travel fees."
+        },
+        {
+          "name": "Global Entry or TSA PreCheck fee credit",
+          "amount_usd": 120,
+          "period": "every_4_years",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$120 Global Entry or $85 TSA PreCheck statement credit every 4 years."
+        },
         {
           "name": "Global Entry / TSA PreCheck application fee credit",
           "amount_usd": 120,
@@ -5216,13 +7002,14 @@
         "cash_usd": null,
         "spend_usd": 3000,
         "months": 3,
-        "notes": "Currently advertised offer per search-indexed penfed.org content; not confirmed by a direct read of the application page. The 90-day window is a relative period, not a fixed calendar end date, so no `expires` is set. NEEDS human verification."
+        "notes": "50,000 bonus points after $3,000 in purchases in the first 90 days."
       },
       "benefits": [
+        "priority_pass",
         "lounge_access"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "synchrony-paypal-cashback",
@@ -5243,8 +7030,8 @@
       "benefits": [
         "special_financing"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "penfed-platinum-rewards",
@@ -5303,11 +7090,11 @@
         "cash_usd": null,
         "spend_usd": 1500,
         "months": 3,
-        "notes": "Per search-indexed penfed.org content; not confirmed by a direct read of the application page. The 90-day window is a relative period, not a fixed calendar end date, so no `expires` is set. NEEDS human verification."
+        "notes": "15,000 bonus points after $1,500 in qualified purchases in the first 90 days."
       },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-premium-rewards",
@@ -5391,8 +7178,8 @@
         "no_foreign_transaction_fee",
         "concierge_service"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-premium-rewards-elite",
@@ -5486,8 +7273,8 @@
         "no_foreign_transaction_fee",
         "concierge_service"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-prime-visa",
@@ -5577,10 +7364,16 @@
         }
       ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 150,
+        "spend_usd": null,
+        "months": null,
+        "notes": "$150 Amazon gift card instantly loaded to the Amazon account gift card balance on approval."
+      },
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "barclays-rci-elite",
@@ -5598,21 +7391,12 @@
       "earn": [
         {
           "type": "category",
-          "key": "travel_flights",
-          "rate": 2,
+          "key": "travel_other",
+          "rate": 5,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Part of the issuer's broad \"eligible travel (including rideshare, gas, EV charging)\" 2X tier; modeled across travel sub-categories plus gas and transit. Exact scope not stated."
-        },
-        {
-          "type": "category",
-          "key": "travel_hotels",
-          "rate": 2,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": null
+          "notes": "All eligible RCI purchases"
         },
         {
           "type": "category",
@@ -5621,51 +7405,42 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
+          "notes": "All eligible travel including rideshare, gas, and EV charging"
         },
         {
           "type": "category",
-          "key": "gas",
-          "rate": 2,
+          "key": "other",
+          "rate": 1,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
-        },
-        {
-          "type": "category",
-          "key": "transit",
-          "rate": 2,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": null
+          "notes": "All other purchases [moved to base_rate]"
         }
       ],
       "credits": [
         {
-          "name": "Annual vacation credit",
+          "name": "Vacation credit",
           "amount_usd": 250,
           "period": "annual",
-          "category": null,
+          "category": "travel_other",
           "requires_enrollment": false,
           "expires": null,
-          "notes": "$250 credit once $10,000 in total net purchases posts in a calendar year. The offer file warns it \"may not be achievable based on assigned credit line,\" so many cardholders will never reach the threshold; captured only by fairly heavy spenders."
+          "notes": "$250 USD vacation credit after spending $10,000 in net purchases each calendar year"
         }
       ],
       "signup_bonus": {
         "points": 5000,
         "cash_usd": null,
-        "spend_usd": 0,
-        "months": 3,
-        "notes": "Earned after the first purchase (no spend threshold); window_months is a nominal placeholder. Issuer markets the 5,000 Rewards as worth $50 (1cpp)."
+        "spend_usd": null,
+        "months": null,
+        "notes": "5,000 bonus Rewards after making first purchase \u2014 worth $50 in RCI Member Rewards. Get 5% of Rewards back every time you redeem."
       },
       "benefits": [
         "zero_fraud_liability",
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "robinhood-gold-card",
@@ -5683,37 +7458,19 @@
       "earn": [
         {
           "type": "category",
-          "key": "travel_flights",
-          "rate": 5,
+          "key": "base",
+          "rate": 3,
           "cap_usd": null,
           "cap_period": null,
-          "portal_only": true,
-          "notes": "5 pts/$1 only on travel booked through Robinhood's own travel portal. Per third-party reporting; not independently confirmed on the primary official Robinhood card page \u2014 NEEDS human verification."
-        },
-        {
-          "type": "category",
-          "key": "travel_hotels",
-          "rate": 5,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": true,
-          "notes": "5 pts/$1 only on travel booked through Robinhood's own travel portal. Per third-party reporting; not independently confirmed on the primary official Robinhood card page \u2014 NEEDS human verification."
-        },
-        {
-          "type": "category",
-          "key": "travel_other",
-          "rate": 5,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": true,
-          "notes": "5 pts/$1 only on travel booked through Robinhood's own travel portal. Per third-party reporting; not independently confirmed on the primary official Robinhood card page \u2014 NEEDS human verification."
+          "portal_only": false,
+          "notes": "3% cash back on all purchases; requires an active Robinhood Gold subscription and a Robinhood Financial brokerage account to redeem."
         }
       ],
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-royal-one-plus",
@@ -5796,17 +7553,17 @@
         }
       ],
       "signup_bonus": {
-        "points": 70000,
+        "points": 60000,
         "cash_usd": null,
-        "spend_usd": 3000,
-        "months": 3,
-        "notes": null
+        "spend_usd": 2500,
+        "months": null,
+        "notes": "60,000 bonus points ($600 onboard credit or cruise discounts) after $2,500 in spend."
       },
       "benefits": [
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-royal-one",
@@ -5853,17 +7610,17 @@
         }
       ],
       "signup_bonus": {
-        "points": 45000,
+        "points": 30000,
         "cash_usd": null,
-        "spend_usd": 2000,
-        "months": 3,
-        "notes": null
+        "spend_usd": 1500,
+        "months": null,
+        "notes": "30,000 bonus points ($300 onboard credit or cruise discounts) after $1,500 in spend."
       },
       "benefits": [
         "no_foreign_transaction_fee"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "synchrony-sams-club-mastercard",
@@ -5886,7 +7643,7 @@
           "cap_usd": 6000,
           "cap_period": "annual",
           "portal_only": false,
-          "notes": "5% on gas anywhere Mastercard is accepted, up to $6,000/calendar year, then 1%."
+          "notes": "5% Sam's Cash on gas anywhere Mastercard is accepted, first $6,000/year, then 1%"
         },
         {
           "type": "category",
@@ -5895,19 +7652,34 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
+          "notes": "3% on dining and takeout"
+        },
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% on Sam's Club purchases for Plus members (Club members earn 1%)"
         }
       ],
       "credits": [],
-      "signup_bonus": null,
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "No standing welcome offer on Synchrony FAQ (2026-10-05)"
+      },
       "benefits": [
         "special_financing"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
-      "id": "sofi-credit-card",
+      "id": "sofi-unlimited-2",
       "name": "SoFi Unlimited 2% Credit Card",
       "issuer": "sofi",
       "network": "mastercard",
@@ -5951,8 +7723,8 @@
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-southwest-plus",
@@ -5960,7 +7732,7 @@
       "issuer": "chase",
       "network": "visa",
       "availability": "active",
-      "annual_fee_usd": 69,
+      "annual_fee_usd": 99,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "southwest_rapid_rewards",
@@ -6047,8 +7819,8 @@
         "no_blackout_dates",
         "companion_pass_qualifying_boost"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-southwest-premier",
@@ -6056,7 +7828,7 @@
       "issuer": "chase",
       "network": "visa",
       "availability": "active",
-      "annual_fee_usd": 99,
+      "annual_fee_usd": 149,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "southwest_rapid_rewards",
@@ -6144,8 +7916,8 @@
         "companion_pass_qualifying_boost",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-southwest-priority",
@@ -6153,7 +7925,7 @@
       "issuer": "chase",
       "network": "visa",
       "availability": "active",
-      "annual_fee_usd": 149,
+      "annual_fee_usd": 229,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "southwest_rapid_rewards",
@@ -6241,8 +8013,8 @@
         "companion_pass_qualifying_boost",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "td-bank-double-up",
@@ -6261,17 +8033,17 @@
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
+        "cash_usd": 200,
         "spend_usd": 1500,
         "months": 3,
-        "notes": "One-Time Bonus Offer; not available if you open in response to a different TD offer or previously received a bonus on any TD account. Bonus posts 6-8 weeks after the spend requirement is met, account open and in good standing."
+        "notes": "$200 cash back as a statement credit after $1,500 in purchases in the first 90 days (max 20,000 Bonus Points for this promo)."
       },
       "benefits": [
         "zero_fraud_liability",
         "cell_phone_protection"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "amex-platinum",
@@ -6363,12 +8135,12 @@
         },
         {
           "name": "CLEAR Plus Credit",
-          "amount_usd": 209,
+          "amount_usd": 219,
           "period": "annual",
           "category": "travel_other",
           "requires_enrollment": true,
           "expires": null,
-          "notes": "Covers a CLEAR+ membership (~$209/yr); full value only to CLEAR users."
+          "notes": "Covers a CLEAR+ membership (~$219/yr); full value only to CLEAR users."
         },
         {
           "name": "Equinox Credit",
@@ -6450,8 +8222,8 @@
         "elite_status",
         "metal_card"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-travel-rewards",
@@ -6478,43 +8250,21 @@
       "benefits": [
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
-      "id": "truist-enjoy-cash-1-5-flat",
-      "name": "Truist Enjoy Cash (1.5% Flat Rewards)",
+      "id": "truist-enjoy-cash",
+      "name": "Truist Enjoy Cash",
       "issuer": "truist",
-      "network": "visa",
+      "network": "mastercard",
       "availability": "active",
       "annual_fee_usd": 0,
-      "foreign_transaction_pct": 0,
+      "foreign_transaction_pct": null,
       "currency_type": "cash",
-      "currency_program": "cash",
-      "cpp_floor": 1.0,
-      "cpp_optimistic": 1.0,
-      "base_rate": 1.5,
-      "earn": [],
-      "credits": [],
-      "signup_bonus": null,
-      "benefits": [
-        "zero_fraud_liability"
-      ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
-    },
-    {
-      "id": "truist-enjoy-cash-3-2-1",
-      "name": "Truist Enjoy Cash (3-2-1 Rewards)",
-      "issuer": "truist",
-      "network": "visa",
-      "availability": "active",
-      "annual_fee_usd": 0,
-      "foreign_transaction_pct": 0,
-      "currency_type": "cash",
-      "currency_program": "cash",
-      "cpp_floor": 1.0,
-      "cpp_optimistic": 1.0,
+      "currency_program": "truist_rewards",
+      "cpp_floor": null,
+      "cpp_optimistic": null,
       "base_rate": 1,
       "earn": [
         {
@@ -6524,7 +8274,7 @@
           "cap_usd": 1000,
           "cap_period": "monthly",
           "portal_only": false,
-          "notes": "Includes service stations, automated fuel dispensers, and EV charging stations. The $1,000/month cap is a single pool shared with the grocery and utilities bonus categories (combined); spend above $1,000/month in those categories reverts to 1%. Category qualification is by merchant MCC only."
+          "notes": "3% on gas and EV charging, only if the 3-2-1 rewards option was chosen at application. $1,000/month combined cap on 2% and 3% category spend."
         },
         {
           "type": "category",
@@ -6533,25 +8283,50 @@
           "cap_usd": 1000,
           "cap_period": "monthly",
           "portal_only": false,
-          "notes": "Grocery store / supermarket MCC only. Offer file warns that groceries bought at a warehouse club or pharmacy may carry a \"warehouse\"/\"pharmacy\" MCC and will NOT earn 2%. Shares the $1,000/month combined cap with gas and utilities."
+          "notes": "2% on groceries and utilities, only if the 3-2-1 rewards option was chosen at application. $1,000/month combined cap on 2% and 3% category spend."
         },
         {
           "type": "category",
-          "key": "utilities",
-          "rate": 2,
-          "cap_usd": 1000,
-          "cap_period": "monthly",
+          "key": "base",
+          "rate": 1.5,
+          "cap_usd": null,
+          "cap_period": null,
           "portal_only": false,
-          "notes": "Truist's utilities definition here bundles phone, cable, television streaming services, gas, water, and sanitary services (broader than a pure utilities key \u2014 streaming is folded in by MCC). Shares the $1,000/month combined cap with gas and groceries."
+          "notes": "1.5% on all eligible purchases, only if the 1.5% flat rewards option was chosen at application. Unlimited."
+        },
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 1,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "1% on everything else for 3-2-1 option holders."
         }
       ],
-      "credits": [],
-      "signup_bonus": null,
-      "benefits": [
-        "zero_fraud_liability"
+      "credits": [
+        {
+          "name": "Loyalty Cash Bonus",
+          "amount_usd": 0,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "10%-50% bonus on redeemed cash when deposited into a Truist checking, savings, or money market account; percentage depends on the Truist deposit relationship tier."
+        }
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "No welcome offer stated on the Truist Enjoy Cash page."
+      },
+      "benefits": [
+        "zero_intro_apr_purchases"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-united-club",
@@ -6559,7 +8334,7 @@
       "issuer": "chase",
       "network": "visa",
       "availability": "active",
-      "annual_fee_usd": 525,
+      "annual_fee_usd": 695,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "united_mileageplus",
@@ -6570,7 +8345,7 @@
         {
           "type": "category",
           "key": "travel_flights",
-          "rate": 5,
+          "rate": 11,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
@@ -6661,7 +8436,7 @@
         }
       ],
       "signup_bonus": {
-        "points": 80000,
+        "points": 100000,
         "cash_usd": null,
         "spend_usd": 5000,
         "months": 3,
@@ -6672,8 +8447,8 @@
         "free_checked_bag",
         "complimentary_elite_status"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-united-explorer",
@@ -6681,7 +8456,7 @@
       "issuer": "chase",
       "network": "visa",
       "availability": "active",
-      "annual_fee_usd": 95,
+      "annual_fee_usd": 150,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "united_mileageplus",
@@ -6718,6 +8493,15 @@
         }
       ],
       "credits": [
+        {
+          "name": "Instacart monthly credit",
+          "amount_usd": 10,
+          "period": "monthly",
+          "category": "groceries",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $10/month ($120/yr) in Instacart credits; monthly forfeit."
+        },
         {
           "name": "United TravelBank credit ($10k spend)",
           "amount_usd": 100,
@@ -6774,7 +8558,7 @@
         }
       ],
       "signup_bonus": {
-        "points": 50000,
+        "points": 80000,
         "cash_usd": null,
         "spend_usd": 3000,
         "months": 3,
@@ -6785,8 +8569,8 @@
         "lounge_access",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-united-gateway",
@@ -6863,7 +8647,7 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "4x applies to purchases made directly with United (tickets, seat upgrades, Economy Plus, inflight food/beverage/WiFi, baggage/other fees) and United Card Events from Chase. Modeled at the co-brand rate; other airlines' tickets fall under the card's general 2x travel category (see travel_other) rather than this line."
+          "notes": "4x applies to purchases made directly with United (tickets, seat upgrades, Economy Plus, inflight food/beverage/WiFi, baggage/other fees) and United Card Events from Chase. other airlines' tickets fall under the card's general 2x travel category (see travel_other) rather than this line."
         },
         {
           "type": "category",
@@ -6968,18 +8752,18 @@
         }
       ],
       "signup_bonus": {
-        "points": 60000,
+        "points": 90000,
         "cash_usd": null,
-        "spend_usd": 4000,
-        "months": 3,
+        "spend_usd": null,
+        "months": null,
         "notes": "Bonus miles don't count toward Premier status. The offer also grants 500 additional PQP after the same $4,000/3-month spend (status-qualifying, not redeemable) and a 10,000-mile authorized-user bonus \u2014 neither is modeled as signup value. Not available to current/recent (24-month) cardmembers."
       },
       "benefits": [
         "free_checked_bag",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "bank-of-america-unlimited-cash",
@@ -7006,35 +8790,47 @@
       "benefits": [
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
-      "id": "upgrade-upgrade-cash-rewards",
-      "name": "Upgrade Cash Rewards Visa",
-      "issuer": "upgrade",
-      "network": "visa",
+      "id": "barclays-upromise",
+      "name": "Upromise World Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
       "availability": "active",
       "annual_fee_usd": 0,
-      "foreign_transaction_pct": 3,
+      "foreign_transaction_pct": 0,
       "currency_type": "cash",
       "currency_program": "cash",
       "cpp_floor": 1.0,
       "cpp_optimistic": 1.0,
-      "base_rate": 1.5,
+      "base_rate": 1.25,
       "earn": [],
-      "credits": [],
-      "signup_bonus": null,
+      "credits": [
+        {
+          "name": "Gift card cash back",
+          "amount_usd": 250,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $250/yr cash back on eligible gift cards at MyGiftCardsPlus"
+        }
+      ],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 300,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "$300 bonus cash back after $1,000 spend in 90 days. Earn 1.529% when linked to College Savings Plan, 1.25% otherwise."
+      },
       "benefits": [
-        "visa_signature",
-        "extended_warranty",
-        "price_protection",
-        "roadside_dispatch",
-        "travel_emergency_assistance",
+        "no_foreign_transaction_fee",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "synchrony-venmo",
@@ -7052,19 +8848,37 @@
       "earn": [
         {
           "type": "category",
-          "key": "choice",
+          "key": "dining",
           "rate": 3,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": null
+          "notes": "3% cash back on dining and entertainment (+1% extra when you split the transaction, up to 4% daily)."
+        },
+        {
+          "type": "merchant",
+          "key": "venmo",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% cash back checking out with Venmo online or paying a business on Venmo."
+        },
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 1,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "1% cash back on everything else; auto-deposited to the Venmo account daily."
         }
       ],
       "credits": [],
       "signup_bonus": null,
       "benefits": [],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "synchrony-verizon-visa",
@@ -7111,24 +8925,24 @@
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
-        "spend_usd": 0,
+        "cash_usd": 150,
+        "spend_usd": null,
         "months": 3,
-        "notes": "Two-part welcome offer within the same 90-day window: $50 after the first purchase, plus $100 more after $1,500 total spend ($150 total). First tranche's spend_requirement is nominal ($0 = \"make a purchase\"). No stated end date, so `expires` is omitted; offer-currency NEEDS human verification."
+        "notes": "Limited-time offer \u2014 $150 statement credit when you open an account and make one purchase in the first 90 days."
       },
       "benefits": [
         "special_financing"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
-      "id": "navy-federal-flagship-rewards",
-      "name": "Visa Signature Flagship Rewards",
+      "id": "navy-federal-flagship-premier",
+      "name": "Visa Signature Flagship Premier",
       "issuer": "navy-federal",
       "network": "visa",
       "availability": "active",
-      "annual_fee_usd": 49,
+      "annual_fee_usd": 95,
       "foreign_transaction_pct": 0,
       "currency_type": "points",
       "currency_program": "navy_federal_rewards",
@@ -7138,42 +8952,51 @@
       "earn": [
         {
           "type": "category",
-          "key": "travel_flights",
-          "rate": 3,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "Part of NFCU's single broad travel bonus (airlines). No spending cap; the same 3x also applies to hotels, other travel, and transit/rideshare (see sibling entries). Mapping of NFCU's broad travel definition onto our split travel keys is an interpretation."
-        },
-        {
-          "type": "category",
-          "key": "travel_hotels",
-          "rate": 3,
-          "cap_usd": null,
-          "cap_period": null,
-          "portal_only": false,
-          "notes": "Part of NFCU's single broad 3x travel bonus (hotels, campgrounds). Uncapped."
-        },
-        {
-          "type": "category",
           "key": "travel_other",
-          "rate": 3,
+          "rate": 4,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Part of NFCU's single broad 3x travel bonus (car rentals, cruises, campgrounds, other travel). Uncapped."
+          "notes": "4x points on travel, no portal booking required."
         },
         {
           "type": "category",
-          "key": "transit",
+          "key": "dining",
           "rate": 3,
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "Part of NFCU's single broad 3x travel bonus (ride-sharing, tolls). Uncapped."
+          "notes": "3x points on dining."
+        },
+        {
+          "type": "category",
+          "key": "base",
+          "rate": 1,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "1x point on everything else."
         }
       ],
       "credits": [
+        {
+          "name": "Airline incidental credit",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": "travel_other",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$100/yr statement credit for eligible airline incidental fees."
+        },
+        {
+          "name": "Global Entry or TSA PreCheck fee credit",
+          "amount_usd": 120,
+          "period": "every_4_years",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Statement credit for a Global Entry or TSA PreCheck application fee, every 4 years."
+        },
         {
           "name": "Global Entry / TSA PreCheck application fee credit",
           "amount_usd": 120,
@@ -7185,11 +9008,11 @@
         }
       ],
       "signup_bonus": {
-        "points": 35000,
+        "points": 50000,
         "cash_usd": null,
-        "spend_usd": 3500,
+        "spend_usd": 4000,
         "months": 3,
-        "notes": "Spend window is 90 days, recorded as 3 months; points post up to 8 weeks after the 90-day period ends. Offer window is 07/01/2026-01/03/2027 and the offer file notes it will roll over, so `expires` marks a re-check date, not necessarily a real expiration. Eligible purchases exclude fees, interest, balance transfers, gambling, convenience checks, cash advances, and cash-equivalents. The offer ALSO bundles a complimentary one-year Amazon Prime membership (NFCU-marketed value $139) \u2014 this in-kind perk is noted but NOT structured/scored here (it is a one-time item, not a recurring credit, and requires manual enrollment). Limited to one bonus per new account."
+        "notes": "50,000 bonus points ($500 value) after $4,000 in purchases in the first 90 days; offer expires Jan 3, 2027."
       },
       "benefits": [
         "zero_fraud_liability",
@@ -7198,8 +9021,8 @@
         "car_rental_insurance",
         "travel_accident_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "wells-fargo-active-cash",
@@ -7230,8 +9053,8 @@
         "zero_fraud_liability",
         "free_fico_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "wells-fargo-autograph",
@@ -7336,8 +9159,8 @@
         "zero_fraud_liability",
         "free_fico_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "wells-fargo-autograph-journey",
@@ -7392,6 +9215,15 @@
       ],
       "credits": [
         {
+          "name": "Airline credit",
+          "amount_usd": 50,
+          "period": "annual",
+          "category": "travel_flights",
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$50/yr statement credit with a minimum $50 airline purchase."
+        },
+        {
           "name": "Annual airline purchase credit",
           "amount_usd": 50,
           "period": "annual",
@@ -7417,8 +9249,8 @@
         "lost_baggage_reimbursement",
         "travel_accident_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "wells-fargo-choice-privileges",
@@ -7476,8 +9308,8 @@
         "world_elite_mastercard",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "wells-fargo-choice-privileges-select",
@@ -7523,6 +9355,15 @@
       ],
       "credits": [
         {
+          "name": "Global Entry or TSA PreCheck fee credit",
+          "amount_usd": 120,
+          "period": "every_4_years",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $120 every 4 years for a trusted-traveler application fee."
+        },
+        {
           "name": "Anniversary bonus points",
           "amount_usd": null,
           "period": "annual",
@@ -7557,8 +9398,161 @@
         "lost_baggage_reimbursement",
         "travel_accident_insurance"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "wells-fargo-one-key",
+      "name": "Wells Fargo One Key Card",
+      "issuer": "wells-fargo",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "wells_onekey",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1.5,
+      "earn": [
+        {
+          "type": "merchant",
+          "key": "expedia_group",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash on Expedia, Hotels.com, and Vrbo (US versions only); 1.5% base + 1.5% bonus."
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash at gas stations."
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash at grocery stores."
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash on dining."
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 250,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "$250 in OneKeyCash after $1,000 in net purchases in the first 3 months. Not eligible if you opened a One Key, One Key+, or Hotels.com card in the last 48 months."
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "elite_status",
+        "cell_phone_protection"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "wells-fargo-one-key-plus",
+      "name": "Wells Fargo One Key+ Card",
+      "issuer": "wells-fargo",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 99,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "wells_onekey",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 2,
+      "earn": [
+        {
+          "type": "merchant",
+          "key": "expedia_group",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash on Expedia, Hotels.com, and Vrbo (US versions only); 2% base + 1% bonus."
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash at gas stations."
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash at grocery stores."
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3% in OneKeyCash on dining."
+        }
+      ],
+      "credits": [
+        {
+          "name": "Anniversary OneKeyCash bonus",
+          "amount_usd": 100,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "$100 in OneKeyCash each anniversary year; expires 12 months after issuance."
+        },
+        {
+          "name": "Global Entry or TSA PreCheck fee credit",
+          "amount_usd": 120,
+          "period": "every_4_years",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "Up to $120 every 4 years for a Global Entry or TSA PreCheck application or renewal fee."
+        }
+      ],
+      "signup_bonus": {
+        "points": null,
+        "cash_usd": 350,
+        "spend_usd": 3000,
+        "months": 3,
+        "notes": "$350 in OneKeyCash after $3,000 in net purchases in the first 3 months. Not eligible if you opened a One Key, One Key+, or Hotels.com card in the last 48 months."
+      },
+      "benefits": [
+        "no_foreign_transaction_fee",
+        "elite_status",
+        "cell_phone_protection"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "wells-fargo-reflect",
@@ -7581,8 +9575,8 @@
         "zero_fraud_liability",
         "free_fico_score"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "chase-world-of-hyatt",
@@ -7605,7 +9599,7 @@
           "cap_usd": null,
           "cap_period": null,
           "portal_only": false,
-          "notes": "4x applies to Hyatt hotels/resorts and World of Hyatt Experiences. Modeled at the co-brand rate; non-Hyatt hotels earn only the 1x base rate but cannot be split by brand within the travel_hotels category. This is the card's earn only \u2014 Hyatt program base points post separately to the World of Hyatt account."
+          "notes": "4x applies to Hyatt hotels/resorts and World of Hyatt Experiences. non-Hyatt hotels earn only the 1x base rate but cannot be split by brand within the travel_hotels category. Card earn only: Hyatt program base points post separately to the World of Hyatt account."
         },
         {
           "type": "category",
@@ -7665,7 +9659,7 @@
         }
       ],
       "signup_bonus": {
-        "points": 30000,
+        "points": 60000,
         "cash_usd": null,
         "spend_usd": 3000,
         "months": 3,
@@ -7675,8 +9669,85 @@
         "complimentary_elite_status",
         "concierge"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
+    },
+    {
+      "id": "barclays-wyndham-earner",
+      "name": "Wyndham Rewards Earner Card",
+      "issuer": "barclays",
+      "network": "visa",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 0,
+      "currency_type": "points",
+      "currency_program": "wyndham_rewards",
+      "cpp_floor": 0.7,
+      "cpp_optimistic": 1.1,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "travel_hotels",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible purchases at Hotels by Wyndham"
+        },
+        {
+          "type": "category",
+          "key": "gas",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Qualifying gas purchases"
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible dining purchases"
+        },
+        {
+          "type": "category",
+          "key": "groceries",
+          "rate": 2,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "Eligible grocery store purchases, excluding Target and Walmart"
+        }
+      ],
+      "credits": [
+        {
+          "name": "Anniversary bonus points",
+          "amount_usd": null,
+          "period": "annual",
+          "category": null,
+          "requires_enrollment": false,
+          "expires": null,
+          "notes": "7,500 bonus points each anniversary year after $15,000 in eligible purchases"
+        }
+      ],
+      "signup_bonus": {
+        "points": 30000,
+        "cash_usd": null,
+        "spend_usd": 1000,
+        "months": 3,
+        "notes": "30,000 bonus points after $1,000 spend in first 90 days. Automatic Wyndham Rewards GOLD member level."
+      },
+      "benefits": [
+        "complimentary_elite_status",
+        "no_foreign_transaction_fee",
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "barclays-wyndham-plus",
@@ -7746,16 +9817,16 @@
           "category": null,
           "requires_enrollment": false,
           "expires": null,
-          "notes": "15,000 Wyndham points each anniversary after the annual fee posts (up to ~2 free nights); captured by every renewing cardholder. Valued via the wyndham_rewards program."
+          "notes": "15,000 bonus points each anniversary year after payment of the annual fee"
         },
         {
-          "name": "Free night after 5 nights stayed",
-          "amount_usd": 105,
+          "name": "Free night after 5-night stay",
+          "amount_usd": null,
           "period": "annual",
-          "category": null,
+          "category": "travel_hotels",
           "requires_enrollment": false,
           "expires": null,
-          "notes": "$105 = 15,000 points x 0.7cpp (wyndham_rewards floor) \u2014 a curator estimate of the free night's value."
+          "notes": "Free night worth up to 15,000 Wyndham Rewards points after staying 5+ nights in a calendar year"
         }
       ],
       "signup_bonus": {
@@ -7763,7 +9834,7 @@
         "cash_usd": null,
         "spend_usd": 1000,
         "months": 3,
-        "notes": "Standard first tranche only. A second tranche of 55,000 bonus points requires $500 at Hotels by Wyndham within the first 180 days \u2014 scoped to a specific merchant and a different window, so it is NOT modeled as a tier (per the conversion protocol). Headline \"up to 100,000 points (up to 13 free nights)\"."
+        "notes": "45,000 bonus points after $1,000 spend in 90 days, PLUS 55,000 bonus points after $500 at Hotels by Wyndham in first 180 days (up to 100,000 total). Automatic DIAMOND status first year, then PLATINUM."
       },
       "benefits": [
         "complimentary_elite_status",
@@ -7771,11 +9842,11 @@
         "no_foreign_transaction_fee",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
-      "id": "barclays-wyndham-earner",
+      "id": "barclays-wyndham-premier",
       "name": "Wyndham Rewards Earner Premier Card",
       "issuer": "barclays",
       "network": "visa",
@@ -7921,8 +9992,64 @@
         "no_foreign_transaction_fee",
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
+      "verified_date": "2026-10-05",
       "confidence": "low"
+    },
+    {
+      "id": "barclays-xbox",
+      "name": "Xbox Mastercard",
+      "issuer": "barclays",
+      "network": "mastercard",
+      "availability": "active",
+      "annual_fee_usd": 0,
+      "foreign_transaction_pct": 3,
+      "currency_type": "points",
+      "currency_program": "xbox_points",
+      "cpp_floor": 1.0,
+      "cpp_optimistic": 1.0,
+      "base_rate": 1,
+      "earn": [
+        {
+          "type": "category",
+          "key": "other",
+          "rate": 5,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "5x on eligible Microsoft Store products"
+        },
+        {
+          "type": "category",
+          "key": "streaming",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x on select streaming platforms"
+        },
+        {
+          "type": "category",
+          "key": "dining",
+          "rate": 3,
+          "cap_usd": null,
+          "cap_period": null,
+          "portal_only": false,
+          "notes": "3x on dining delivery services"
+        }
+      ],
+      "credits": [],
+      "signup_bonus": {
+        "points": 5000,
+        "cash_usd": null,
+        "spend_usd": null,
+        "months": null,
+        "notes": "5,000 card points after first purchase. 3 months Xbox Game Pass Ultimate after first purchase (new members)."
+      },
+      "benefits": [
+        "zero_fraud_liability"
+      ],
+      "verified_date": "2026-10-05",
+      "confidence": "medium"
     },
     {
       "id": "navy-federal-cash-rewards",
@@ -7941,16 +10068,16 @@
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
+        "cash_usd": 250,
         "spend_usd": 2500,
         "months": 3,
-        "notes": "Spend window is stated as 90 days, recorded as 3 months. Eligible purchases exclude fees, interest, balance transfers, gambling, cash advances, and cash-equivalent transactions."
+        "notes": "$250 bonus cash after $2,500 in purchases within 90 days of account opening; offer expires Jan 3, 2027."
       },
       "benefits": [
         "zero_fraud_liability"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     },
     {
       "id": "navy-federal-cash-rewards-plus",
@@ -7969,17 +10096,17 @@
       "credits": [],
       "signup_bonus": {
         "points": null,
-        "cash_usd": null,
+        "cash_usd": 250,
         "spend_usd": 2500,
         "months": 3,
-        "notes": "Spend window is stated as 90 days, recorded as 3 months. Eligible purchases exclude fees, interest, balance transfers, gambling, cash advances, and cash-equivalent transactions. The offer file states one bonus for the cashRewards product; it is recorded identically on both tiers \u2014 NEEDS human verification that the bonus applies to the Plus tier specifically."
+        "notes": "$250 bonus cash after $2,500 in purchases within 90 days of account opening; offer expires Jan 3, 2027."
       },
       "benefits": [
         "zero_fraud_liability",
         "visa_signature"
       ],
-      "verified_date": "2026-07-04",
-      "confidence": "low"
+      "verified_date": "2026-10-05",
+      "confidence": "high"
     }
   ]
 }
